@@ -1,0 +1,5 @@
+/** Scrabble Games
+* AUTORS: 	Juan David Tique Triana 	             -	20181020046
+*	Johnatan GuillermoRuiz Bautista     -	20181020034
+*	José Luis Quintero Cañizalez           - 	20181020061
+**/
