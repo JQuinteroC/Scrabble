@@ -9,7 +9,9 @@ package Logica;
  *
  * @author Estudiantes
  */
-public class Casillas {
-    int x;
-    int y;
+public class Ficha {
+    char letra;
+    int valor;
+    
+   
 }
