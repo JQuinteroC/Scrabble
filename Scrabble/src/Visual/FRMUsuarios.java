@@ -5,6 +5,10 @@
  * */
 package Visual;
 
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import javax.swing.Timer;
+
 /**
  *
  * @author estudiantes
@@ -14,8 +18,10 @@ public class FRMUsuarios extends javax.swing.JFrame {
     /**
      * Creates new form FRMUsuarios
      */
+    Timer t;
     public FRMUsuarios() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -28,48 +34,72 @@ public class FRMUsuarios extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        lblPrimerJugador = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtJugador1 = new javax.swing.JTextField();
         txtJugador2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        btnJugar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        lblAtras = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        lblContador = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(900, 900));
+        setMinimumSize(new java.awt.Dimension(900, 600));
         setPreferredSize(new java.awt.Dimension(900, 900));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        lblPrimerJugador.setFont(new java.awt.Font("Dialog", 0, 1)); // NOI18N
+        lblPrimerJugador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrimerJugador.setText("asas");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 833, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPrimerJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 809, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 347, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPrimerJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jLabel1.setText("Jugador 1");
 
         jLabel2.setText("Jugador 2");
 
-        jButton1.setText("Jugar");
-
-        jButton2.setText("Limpiar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnJugar.setText("Jugar");
+        btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnJugarActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Atras");
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+
+        lblAtras.setText("Atras");
+        lblAtras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblAtrasMousePressed(evt);
+            }
+        });
 
         jLabel4.setText("NUEVA PARTIDA");
+
+        lblContador.setText("-");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -77,31 +107,34 @@ public class FRMUsuarios extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel1)
+                        .addGap(0, 32, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblAtras)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addGap(317, 317, 317))
+                        .addComponent(lblContador)
+                        .addGap(286, 286, 286)
+                        .addComponent(btnLimpiar)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnJugar))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(txtJugador1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(215, 215, 215)
-                                .addComponent(txtJugador2, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(215, 215, 215))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 693, Short.MAX_VALUE)
-                                .addComponent(jButton2)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1)))
-                        .addContainerGap(67, Short.MAX_VALUE))))
+                                .addGap(30, 30, 30)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(txtJugador2, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(67, 67, 67))
             .addGroup(layout.createSequentialGroup()
                 .addGap(416, 416, 416)
-                .addComponent(jLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jLabel4))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,18 +153,74 @@ public class FRMUsuarios extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jLabel3))
+                    .addComponent(btnJugar)
+                    .addComponent(btnLimpiar)
+                    .addComponent(lblAtras)
+                    .addComponent(lblContador))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    // <editor-fold defaultstate="collapsed" desc="Funciones">
+    
+    // Pausa la ejecución durante los milisegundos ingresado por parametro
+    // </editor-fold>        
+
+    
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        txtJugador1.setText("");
+        txtJugador2.setText("");
+        
+        //Codgio para limpiar quien jugara primero
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+    
+    int tamaño = 0; 
+    private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
+       // Agregar codigo para seleccionar aleatoriamente a jugador que inicia partida
+        t = new Timer(1, (ActionEvent e) -> {
+            if (tamaño < 100) {
+                // Recojo la fuente que se esta utilizando actualmente.
+                Font auxFont = lblPrimerJugador.getFont();
+                //Aplico la fuente actual, y al final se define el tamaño del texto
+                lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), tamaño));
+                
+                tamaño = tamaño + 4;
+            } else if (tamaño >= 100 && tamaño < 800) {
+                tamaño++;
+                
+                if (tamaño == 104) {
+                    lblContador.setText("3");
+                } else if (tamaño == 400) {
+                    lblContador.setText("2");
+                } else if (tamaño == 700) {
+                    lblContador.setText("1");
+                } else if (tamaño == 786) {
+                    lblContador.setText("");
+                }
+
+            } else if (tamaño >= 800) {
+                // Llamado a la venta FRM tablero
+                FRMTablero tablero = new FRMTablero();
+                tablero.setVisible(true);
+
+                // Cerrar venta FRM Usuario
+                this.dispose();
+                t.stop();
+            }
+        });
+        t.start();
+    }//GEN-LAST:event_btnJugarActionPerformed
+
+    private void lblAtrasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAtrasMousePressed
+        // Cerrar venta FRM Usuarios
+        this.dispose();
+        
+        // Abrir venta FRM Menu
+        FRMenu menu = new FRMenu();
+        menu.setVisible(true);
+    }//GEN-LAST:event_lblAtrasMousePressed
 
     /**
      * @param args the command line arguments
@@ -161,13 +250,15 @@ public class FRMUsuarios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnJugar;
+    private javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblAtras;
+    private javax.swing.JLabel lblContador;
+    private javax.swing.JLabel lblPrimerJugador;
     private javax.swing.JTextField txtJugador1;
     private javax.swing.JTextField txtJugador2;
     // End of variables declaration//GEN-END:variables
