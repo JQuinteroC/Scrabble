@@ -31,6 +31,8 @@ public class FRMAcerca extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(900, 600));
+        setResizable(false);
 
         btnAtras.setText("Atras");
         btnAtras.addActionListener(new java.awt.event.ActionListener() {

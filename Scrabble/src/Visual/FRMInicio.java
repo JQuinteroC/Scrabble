@@ -33,6 +33,9 @@ public class FRMInicio extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(900, 600));
+        setResizable(false);
+        setSize(new java.awt.Dimension(900, 600));
 
         btnContinuar.setText("Continuar");
         btnContinuar.addActionListener(new java.awt.event.ActionListener() {

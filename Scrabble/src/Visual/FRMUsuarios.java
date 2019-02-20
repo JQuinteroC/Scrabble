@@ -52,6 +52,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(900, 600));
         setPreferredSize(new java.awt.Dimension(900, 600));
+        setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 

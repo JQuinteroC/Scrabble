@@ -34,7 +34,8 @@ public class FRMenu extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(900, 900));
+        setPreferredSize(new java.awt.Dimension(900, 600));
+        setResizable(false);
 
         btnNuevo.setText("Nuevo");
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
