@@ -25,7 +25,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
     
     public FRMUsuarios() {
         initComponents();
-        this.setLocationRelativeTo(null);
+        super.setLocationRelativeTo(null);
     }
 
     /**

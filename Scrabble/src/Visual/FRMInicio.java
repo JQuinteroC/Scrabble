@@ -15,7 +15,9 @@ public class FRMInicio extends javax.swing.JFrame {
      * Creates new form FRMInicio
      */
     public FRMInicio() {
+        
         initComponents();
+        super.setLocationRelativeTo(null);
     }
 
     /**
@@ -102,6 +104,7 @@ public class FRMInicio extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(FRMInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {

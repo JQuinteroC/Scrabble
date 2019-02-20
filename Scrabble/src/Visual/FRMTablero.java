@@ -15,6 +15,7 @@ public class FRMTablero extends javax.swing.JFrame {
      */
     public FRMTablero() {
         initComponents();
+        super.setLocationRelativeTo(null);
     }
 
     /**

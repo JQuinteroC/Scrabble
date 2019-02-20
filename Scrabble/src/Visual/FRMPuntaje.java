@@ -16,6 +16,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
      */
     public FRMPuntaje() {
         initComponents();
+        super.setLocationRelativeTo(null);
     }
 
     /**

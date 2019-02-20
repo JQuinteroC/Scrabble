@@ -16,6 +16,7 @@ public class FRMAcerca extends javax.swing.JFrame {
      */
     public FRMAcerca() {
         initComponents();
+        super.setLocationRelativeTo(null);
     }
 
     /**
