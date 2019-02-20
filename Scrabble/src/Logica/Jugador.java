@@ -12,4 +12,10 @@ package Logica;
 public class Jugador {
     String nombre;
     int puntaje;
+
+    public Jugador(String nombre, int puntaje) {
+        this.nombre = nombre;
+        this.puntaje = puntaje;
+    }
+    
 }

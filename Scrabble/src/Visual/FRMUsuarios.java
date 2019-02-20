@@ -8,6 +8,7 @@ package Visual;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import javax.swing.Timer;
+import Logica.Jugador;
 
 /**
  *
@@ -19,6 +20,9 @@ public class FRMUsuarios extends javax.swing.JFrame {
      * Creates new form FRMUsuarios
      */
     Timer t;
+    Jugador j1;
+    Jugador j2;
+    
     public FRMUsuarios() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -47,7 +51,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(900, 600));
-        setPreferredSize(new java.awt.Dimension(900, 900));
+        setPreferredSize(new java.awt.Dimension(900, 600));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -61,7 +65,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblPrimerJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 809, Short.MAX_VALUE)
+                .addComponent(lblPrimerJugador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -76,7 +80,20 @@ public class FRMUsuarios extends javax.swing.JFrame {
 
         jLabel2.setText("Jugador 2");
 
+        txtJugador1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtJugador1KeyReleased(evt);
+            }
+        });
+
+        txtJugador2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtJugador2KeyReleased(evt);
+            }
+        });
+
         btnJugar.setText("Jugar");
+        btnJugar.setEnabled(false);
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJugarActionPerformed(evt);
@@ -99,6 +116,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
 
         jLabel4.setText("NUEVA PARTIDA");
 
+        lblContador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblContador.setText("-");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -106,35 +124,30 @@ public class FRMUsuarios extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(416, 416, 416)
+                .addComponent(jLabel4)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 32, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblAtras)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblContador)
-                        .addGap(286, 286, 286)
+                        .addComponent(lblContador, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnLimpiar)
                         .addGap(18, 18, 18)
                         .addComponent(btnJugar))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(txtJugador1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(215, 215, 215))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabel1)
+                            .addComponent(txtJugador1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 217, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(txtJugador2, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(67, 67, 67))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(416, 416, 416)
-                .addComponent(jLabel4))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -173,12 +186,25 @@ public class FRMUsuarios extends javax.swing.JFrame {
         txtJugador1.setText("");
         txtJugador2.setText("");
         
-        //Codgio para limpiar quien jugara primero
+        Font auxFont = lblPrimerJugador.getFont();
+        lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), 1));
     }//GEN-LAST:event_btnLimpiarActionPerformed
     
     int tamaño = 0; 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
-       // Agregar codigo para seleccionar aleatoriamente a jugador que inicia partida
+        btnLimpiar.setEnabled(false);
+        
+        
+        // Selección aleatoria del jugador
+       int numero = (int) (Math.random() * 2) + 1;
+       if(numero == 1){
+           lblPrimerJugador.setText(txtJugador1.getText());
+           j1 = new Jugador(txtJugador1.getText(), 0);
+       } else{
+           lblPrimerJugador.setText(txtJugador2.getText());
+           j1 = new Jugador(txtJugador2.getText(), 0);
+       }
+       
         t = new Timer(1, (ActionEvent e) -> {
             if (tamaño < 100) {
                 // Recojo la fuente que se esta utilizando actualmente.
@@ -214,13 +240,32 @@ public class FRMUsuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void lblAtrasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAtrasMousePressed
-        // Cerrar venta FRM Usuarios
-        this.dispose();
-        
-        // Abrir venta FRM Menu
-        FRMenu menu = new FRMenu();
-        menu.setVisible(true);
+        if (j1 == null) {
+            // Cerrar venta FRM Usuarios
+            this.dispose();
+
+            // Abrir venta FRM Menu
+            FRMenu menu = new FRMenu();
+            menu.setVisible(true);
+        }
+
     }//GEN-LAST:event_lblAtrasMousePressed
+
+    private void txtJugador1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtJugador1KeyReleased
+        if("".equals(txtJugador1.getText()) || "".equals(txtJugador2.getText())){
+            btnJugar.setEnabled(false);
+        } else{
+            btnJugar.setEnabled(true);
+        }
+    }//GEN-LAST:event_txtJugador1KeyReleased
+
+    private void txtJugador2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtJugador2KeyReleased
+         if("".equals(txtJugador1.getText()) || "".equals(txtJugador2.getText())){
+            btnJugar.setEnabled(false);
+        } else{
+            btnJugar.setEnabled(true);
+        }
+    }//GEN-LAST:event_txtJugador2KeyReleased
 
     /**
      * @param args the command line arguments
