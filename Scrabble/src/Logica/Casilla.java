@@ -18,9 +18,4 @@ public class Casilla {
     Ficha fichaActual;
     boolean estaOcupado;
     
-    
-    
-    public int calcularValor(){
-        return fichaActual.valor;
-    }
 }
