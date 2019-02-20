@@ -31,11 +31,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="370" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="273" max="-2" attributes="0"/>
               <Component id="btnSalir" min="-2" pref="119" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
               <Component id="btnContinuar" min="-2" pref="119" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="422" max="-2" attributes="0"/>
+              <EmptySpace pref="271" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
