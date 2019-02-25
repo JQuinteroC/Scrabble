@@ -4,14 +4,7 @@
  *	Jos� Luis Quintero Ca�izalez           - 	20181020061
  * */
 package Visual;
-
-import Logica.CTriLetra;
-import Logica.CTriPalabra;
-import Logica.Casilla;
-import Logica.Ficha;
-import Logica.CDoLetra;
-import Logica.CDoPalabra;
-
+import Logica.*;
 /**
  *
  * @author estudiantes
@@ -24,8 +17,6 @@ public class FRMTablero extends javax.swing.JFrame {
     public FRMTablero() {
         initComponents();
         super.setLocationRelativeTo(null);
-        
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="Variables globales"> 
@@ -162,7 +153,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH13 = new javax.swing.JButton();
         btnH14 = new javax.swing.JButton();
         btnH15 = new javax.swing.JButton();
-        btn1 = new javax.swing.JButton();
+        btnI1 = new javax.swing.JButton();
         btnI2 = new javax.swing.JButton();
         btnI3 = new javax.swing.JButton();
         btnI4 = new javax.swing.JButton();
@@ -925,10 +916,10 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH15.setEnabled(false);
         jPanel2.add(btnH15);
 
-        btn1.setBackground(new java.awt.Color(255, 255, 255));
-        btn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btn1.setEnabled(false);
-        jPanel2.add(btn1);
+        btnI1.setBackground(new java.awt.Color(255, 255, 255));
+        btnI1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnI1.setEnabled(false);
+        jPanel2.add(btnI1);
 
         btnI2.setBackground(new java.awt.Color(255, 255, 255));
         btnI2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1562,9 +1553,7 @@ public class FRMTablero extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1572,8 +1561,8 @@ public class FRMTablero extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -1618,7 +1607,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn1;
     private javax.swing.JButton btnA1;
     private javax.swing.JButton btnA10;
     private javax.swing.JButton btnA11;
@@ -1739,6 +1727,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnH7;
     private javax.swing.JButton btnH8;
     private javax.swing.JButton btnH9;
+    private javax.swing.JButton btnI1;
     private javax.swing.JButton btnI10;
     private javax.swing.JButton btnI11;
     private javax.swing.JButton btnI12;

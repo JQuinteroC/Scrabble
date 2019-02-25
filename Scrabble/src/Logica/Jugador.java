@@ -11,10 +11,8 @@ import java.util.ArrayList;
  * @author Estudiantes
  */
 public class Jugador {
-    String nombre;
+    public String nombre;
     int puntaje;
-    
-
    private ArrayList<Ficha> FichaJug = new ArrayList<Ficha>();
     
     public Jugador(){
