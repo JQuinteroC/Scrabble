@@ -20,14 +20,14 @@ public class FRMUsuarios extends javax.swing.JFrame {
      * Creates new form FRMUsuarios
      */
     Timer t;
-    Jugador j1;
-    Jugador j2;
+    static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
+    static Jugador j2 = new Jugador();  // esa es la razon del static declarado
     
     public FRMUsuarios() {
         initComponents();
         super.setLocationRelativeTo(null);
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

@@ -10,8 +10,35 @@ package Logica;
  * @author Estudiantes
  */
 public class Ficha {
-    char letra;
-    int valor;
+    private char letra;
+    private int valor;
+
+    public Ficha(){
+        
+    }
+    public Ficha(char letra, int valor){
+        this.letra = letra;
+        this.valor = valor;
+    }
+    
+    
+    
+    
+    public char getLetra() {
+        return letra;
+    }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public void setLetra(char letra) {
+        this.letra = letra;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
     
    
 }

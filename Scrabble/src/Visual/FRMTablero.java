@@ -4,6 +4,8 @@
  *	Jos� Luis Quintero Ca�izalez           - 	20181020061
  * */
 package Visual;
+import Logica.*;
+import Visual.FRMUsuarios;
 /**
  *
  * @author estudiantes
@@ -17,7 +19,7 @@ public class FRMTablero extends javax.swing.JFrame {
         initComponents();
         super.setLocationRelativeTo(null);
     }
-
+    Ficha selected = new Ficha();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -255,6 +257,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnO15 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1044, 774));
@@ -269,6 +272,11 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA1.setOpaque(true);
         btnA1.setBackground(new java.awt.Color(254, 69, 69));
         btnA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnA1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnA1MouseClicked(evt);
+            }
+        });
         jPanel2.add(btnA1);
 
         btnA2.setContentAreaFilled(false);
@@ -1636,15 +1644,34 @@ public class FRMTablero extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Fichas"));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/A.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jLabel1KeyReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 254, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(179, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1677,7 +1704,9 @@ public class FRMTablero extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+     
+    
+    
     private void btnC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnC3ActionPerformed
@@ -1685,6 +1714,22 @@ public class FRMTablero extends javax.swing.JFrame {
     private void btnB14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB14ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnB14ActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        FRMUsuarios.j1.getFichaJug().add(new Ficha('A',0)); // creo una nueva ficha ((modificar más adelante))
+        jLabel1.setEnabled(false);  // Indicar que está clickeada
+        selected = FRMUsuarios.j1.getFichaJug().get(0);   // guardo la ficha elegida en selected
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void btnA1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA1MouseClicked
+       
+           btnA1.setText(String.valueOf(selected.getLetra()));  //solo compruedo que selected funcione
+       
+    }//GEN-LAST:event_btnA1MouseClicked
+
+    private void jLabel1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyReleased
+        jLabel1.setEnabled(true); // 
+    }//GEN-LAST:event_jLabel1KeyReleased
 
     /**
      * @param args the command line arguments
@@ -1939,6 +1984,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnO7;
     private javax.swing.JButton btnO8;
     private javax.swing.JButton btnO9;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
