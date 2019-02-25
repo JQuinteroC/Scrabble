@@ -12,6 +12,6 @@ package Logica;
 public class Ficha {
     char letra;
     int valor;
-    
+    boolean enUso;
    
 }

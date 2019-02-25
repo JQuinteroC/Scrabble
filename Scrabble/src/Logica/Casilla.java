@@ -5,6 +5,8 @@
  */
 package Logica;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author Estudiantes
@@ -14,8 +16,19 @@ public class Casilla {
     int x;
     int y;
     //Indica el tipo de casilla para calcular el valor de la jugada supertipo casilla normal
-    int tipo;
+ //   int tipo;
     Ficha fichaActual;
     boolean estaOcupado;
+    JButton botonAsociado;
+
+    public Casilla(int x, int y, Ficha fichaActual, boolean estaOcupado, JButton botonAsociado) {
+        this.x = x;
+        this.y = y;
+        this.fichaActual = fichaActual;
+        this.estaOcupado = estaOcupado;
+        this.botonAsociado = botonAsociado;
+    }
     
+    public void CalcularPuntaje(){};
+            
 }
