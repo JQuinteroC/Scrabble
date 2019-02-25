@@ -148,7 +148,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH13 = new javax.swing.JButton();
         btnH14 = new javax.swing.JButton();
         btnH15 = new javax.swing.JButton();
-        btn1 = new javax.swing.JButton();
+        btnI1 = new javax.swing.JButton();
         btnI2 = new javax.swing.JButton();
         btnI3 = new javax.swing.JButton();
         btnI4 = new javax.swing.JButton();
@@ -355,390 +355,590 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnA15);
 
+        btnB1.setContentAreaFilled(false);
+        btnB1.setOpaque(true);
         btnB1.setBackground(new java.awt.Color(255, 255, 255));
         btnB1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB1);
 
+        btnB2.setContentAreaFilled(false);
+        btnB2.setOpaque(true);
         btnB2.setBackground(new java.awt.Color(254, 179, 179));
         btnB2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB2);
 
+        btnB3.setContentAreaFilled(false);
+        btnB3.setOpaque(true);
         btnB3.setBackground(new java.awt.Color(255, 255, 255));
         btnB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB3);
 
+        btnB4.setContentAreaFilled(false);
+        btnB4.setOpaque(true);
         btnB4.setBackground(new java.awt.Color(255, 255, 255));
         btnB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB4);
 
+        btnB5.setContentAreaFilled(false);
+        btnB5.setOpaque(true);
         btnB5.setBackground(new java.awt.Color(255, 255, 255));
         btnB5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB5);
 
+        btnB6.setContentAreaFilled(false);
+        btnB6.setOpaque(true);
         btnB6.setBackground(new java.awt.Color(99, 99, 254));
         btnB6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB6);
 
+        btnB7.setContentAreaFilled(false);
+        btnB7.setOpaque(true);
         btnB7.setBackground(new java.awt.Color(255, 255, 255));
         btnB7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB7);
 
+        btnB8.setContentAreaFilled(false);
+        btnB8.setOpaque(true);
         btnB8.setBackground(new java.awt.Color(255, 255, 255));
         btnB8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB8);
 
+        btnB9.setContentAreaFilled(false);
+        btnB9.setOpaque(true);
         btnB9.setBackground(new java.awt.Color(255, 255, 255));
         btnB9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB9);
 
+        btnB10.setContentAreaFilled(false);
+        btnB10.setOpaque(true);
         btnB10.setBackground(new java.awt.Color(99, 99, 254));
         btnB10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB10);
 
+        btnB11.setContentAreaFilled(false);
+        btnB11.setOpaque(true);
         btnB11.setBackground(new java.awt.Color(255, 255, 255));
         btnB11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB11);
 
+        btnB12.setContentAreaFilled(false);
+        btnB12.setOpaque(true);
         btnB12.setBackground(new java.awt.Color(255, 255, 255));
         btnB12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB12);
 
+        btnB13.setContentAreaFilled(false);
+        btnB13.setOpaque(true);
         btnB13.setBackground(new java.awt.Color(255, 255, 255));
         btnB13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB13);
 
+        btnB14.setContentAreaFilled(false);
+        btnB14.setOpaque(true);
         btnB14.setBackground(new java.awt.Color(254, 179, 179));
         btnB14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnB14.setContentAreaFilled(false);
+        btnB14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnB14ActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnB14);
 
+        btnB15.setContentAreaFilled(false);
+        btnB15.setOpaque(true);
         btnB15.setBackground(new java.awt.Color(255, 255, 255));
         btnB15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnB15);
 
+        btnC1.setContentAreaFilled(false);
+        btnC1.setOpaque(true);
         btnC1.setBackground(new java.awt.Color(255, 255, 255));
         btnC1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC1);
 
+        btnC2.setContentAreaFilled(false);
+        btnC2.setOpaque(true);
         btnC2.setBackground(new java.awt.Color(255, 255, 255));
         btnC2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC2);
 
+        btnC3.setContentAreaFilled(false);
+        btnC3.setOpaque(true);
         btnC3.setBackground(new java.awt.Color(254, 179, 179));
         btnC3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC3);
 
+        btnC4.setContentAreaFilled(false);
+        btnC4.setOpaque(true);
         btnC4.setBackground(new java.awt.Color(255, 255, 255));
         btnC4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC4);
 
+        btnC5.setContentAreaFilled(false);
+        btnC5.setOpaque(true);
         btnC5.setBackground(new java.awt.Color(255, 255, 255));
         btnC5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC5);
 
+        btnC6.setContentAreaFilled(false);
+        btnC6.setOpaque(true);
         btnC6.setBackground(new java.awt.Color(255, 255, 255));
         btnC6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC6);
 
+        btnC7.setContentAreaFilled(false);
+        btnC7.setOpaque(true);
         btnC7.setBackground(new java.awt.Color(218, 219, 252));
         btnC7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC7);
 
+        btnC8.setContentAreaFilled(false);
+        btnC8.setOpaque(true);
         btnC8.setBackground(new java.awt.Color(255, 255, 255));
         btnC8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC8);
 
+        btnC9.setContentAreaFilled(false);
+        btnC9.setOpaque(true);
         btnC9.setBackground(new java.awt.Color(218, 219, 252));
         btnC9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC9);
 
+        btnC10.setContentAreaFilled(false);
+        btnC10.setOpaque(true);
         btnC10.setBackground(new java.awt.Color(255, 255, 255));
         btnC10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC10);
 
+        btnC11.setContentAreaFilled(false);
+        btnC11.setOpaque(true);
         btnC11.setBackground(new java.awt.Color(255, 255, 255));
         btnC11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC11);
 
+        btnC12.setContentAreaFilled(false);
+        btnC12.setOpaque(true);
         btnC12.setBackground(new java.awt.Color(255, 255, 255));
         btnC12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC12);
 
+        btnC13.setContentAreaFilled(false);
+        btnC13.setOpaque(true);
         btnC13.setBackground(new java.awt.Color(254, 179, 179));
         btnC13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC13);
 
+        btnC14.setContentAreaFilled(false);
+        btnC14.setOpaque(true);
         btnC14.setBackground(new java.awt.Color(255, 255, 255));
         btnC14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC14);
 
+        btnC15.setContentAreaFilled(false);
+        btnC15.setOpaque(true);
         btnC15.setBackground(new java.awt.Color(255, 255, 255));
         btnC15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnC15);
 
+        btnD1.setContentAreaFilled(false);
+        btnD1.setOpaque(true);
         btnD1.setBackground(new java.awt.Color(218, 219, 252));
         btnD1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD1);
 
+        btnD2.setContentAreaFilled(false);
+        btnD2.setOpaque(true);
         btnD2.setBackground(new java.awt.Color(255, 255, 255));
         btnD2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD2);
 
+        btnD3.setContentAreaFilled(false);
+        btnD3.setOpaque(true);
         btnD3.setBackground(new java.awt.Color(255, 255, 255));
         btnD3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD3);
 
+        btnD4.setContentAreaFilled(false);
+        btnD4.setOpaque(true);
         btnD4.setBackground(new java.awt.Color(254, 179, 179));
         btnD4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD4);
 
+        btnD5.setContentAreaFilled(false);
+        btnD5.setOpaque(true);
         btnD5.setBackground(new java.awt.Color(255, 255, 255));
         btnD5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD5);
 
+        btnD6.setContentAreaFilled(false);
+        btnD6.setOpaque(true);
         btnD6.setBackground(new java.awt.Color(255, 255, 255));
         btnD6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD6);
 
+        btnD7.setContentAreaFilled(false);
+        btnD7.setOpaque(true);
         btnD7.setBackground(new java.awt.Color(255, 255, 255));
         btnD7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD7);
 
+        btnD8.setContentAreaFilled(false);
+        btnD8.setOpaque(true);
         btnD8.setBackground(new java.awt.Color(218, 219, 252));
         btnD8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD8);
 
+        btnD9.setContentAreaFilled(false);
+        btnD9.setOpaque(true);
         btnD9.setBackground(new java.awt.Color(255, 255, 255));
         btnD9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD9);
 
+        btnD10.setContentAreaFilled(false);
+        btnD10.setOpaque(true);
         btnD10.setBackground(new java.awt.Color(255, 255, 255));
         btnD10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD10);
 
+        btnD11.setContentAreaFilled(false);
+        btnD11.setOpaque(true);
         btnD11.setBackground(new java.awt.Color(255, 255, 255));
         btnD11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD11);
 
+        btnD12.setContentAreaFilled(false);
+        btnD12.setOpaque(true);
         btnD12.setBackground(new java.awt.Color(254, 179, 179));
         btnD12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD12);
 
+        btnD13.setContentAreaFilled(false);
+        btnD13.setOpaque(true);
         btnD13.setBackground(new java.awt.Color(255, 255, 255));
         btnD13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD13);
 
+        btnD14.setContentAreaFilled(false);
+        btnD14.setOpaque(true);
         btnD14.setBackground(new java.awt.Color(255, 255, 255));
         btnD14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD14);
 
+        btnD15.setContentAreaFilled(false);
+        btnD15.setOpaque(true);
         btnD15.setBackground(new java.awt.Color(218, 219, 252));
         btnD15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnD15);
 
+        btnE1.setContentAreaFilled(false);
+        btnE1.setOpaque(true);
         btnE1.setBackground(new java.awt.Color(255, 255, 255));
         btnE1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE1);
 
+        btnE2.setContentAreaFilled(false);
+        btnE2.setOpaque(true);
         btnE2.setBackground(new java.awt.Color(255, 255, 255));
         btnE2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE2);
 
+        btnE3.setContentAreaFilled(false);
+        btnE3.setOpaque(true);
         btnE3.setBackground(new java.awt.Color(255, 255, 255));
         btnE3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE3);
 
+        btnE4.setContentAreaFilled(false);
+        btnE4.setOpaque(true);
         btnE4.setBackground(new java.awt.Color(255, 255, 255));
         btnE4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE4);
 
+        btnE5.setContentAreaFilled(false);
+        btnE5.setOpaque(true);
         btnE5.setBackground(new java.awt.Color(254, 179, 179));
         btnE5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE5);
 
+        btnE6.setContentAreaFilled(false);
+        btnE6.setOpaque(true);
         btnE6.setBackground(new java.awt.Color(255, 255, 255));
         btnE6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE6);
 
+        btnE7.setContentAreaFilled(false);
+        btnE7.setOpaque(true);
         btnE7.setBackground(new java.awt.Color(255, 255, 255));
         btnE7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE7);
 
+        btnE8.setContentAreaFilled(false);
+        btnE8.setOpaque(true);
         btnE8.setBackground(new java.awt.Color(255, 255, 255));
         btnE8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE8);
 
+        btnE9.setContentAreaFilled(false);
+        btnE9.setOpaque(true);
         btnE9.setBackground(new java.awt.Color(255, 255, 255));
         btnE9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE9);
 
+        btnE10.setContentAreaFilled(false);
+        btnE10.setOpaque(true);
         btnE10.setBackground(new java.awt.Color(255, 255, 255));
         btnE10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE10);
 
+        btnE11.setContentAreaFilled(false);
+        btnE11.setOpaque(true);
         btnE11.setBackground(new java.awt.Color(254, 179, 179));
         btnE11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE11);
 
+        btnE12.setContentAreaFilled(false);
+        btnE12.setOpaque(true);
         btnE12.setBackground(new java.awt.Color(255, 255, 255));
         btnE12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE12);
 
+        btnE13.setContentAreaFilled(false);
+        btnE13.setOpaque(true);
         btnE13.setBackground(new java.awt.Color(255, 255, 255));
         btnE13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE13);
 
+        btnE14.setContentAreaFilled(false);
+        btnE14.setOpaque(true);
         btnE14.setBackground(new java.awt.Color(255, 255, 255));
         btnE14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE14);
 
+        btnE15.setContentAreaFilled(false);
+        btnE15.setOpaque(true);
         btnE15.setBackground(new java.awt.Color(255, 255, 255));
         btnE15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnE15);
 
+        btnF1.setContentAreaFilled(false);
+        btnF1.setOpaque(true);
         btnF1.setBackground(new java.awt.Color(255, 255, 255));
         btnF1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF1);
 
+        btnF2.setContentAreaFilled(false);
+        btnF2.setOpaque(true);
         btnF2.setBackground(new java.awt.Color(99, 99, 254));
         btnF2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF2);
 
+        btnF3.setContentAreaFilled(false);
+        btnF3.setOpaque(true);
         btnF3.setBackground(new java.awt.Color(255, 255, 255));
         btnF3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF3);
 
+        btnF4.setContentAreaFilled(false);
+        btnF4.setOpaque(true);
         btnF4.setBackground(new java.awt.Color(255, 255, 255));
         btnF4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF4);
 
+        btnF5.setContentAreaFilled(false);
+        btnF5.setOpaque(true);
         btnF5.setBackground(new java.awt.Color(255, 255, 255));
         btnF5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF5);
 
+        btnF6.setContentAreaFilled(false);
+        btnF6.setOpaque(true);
         btnF6.setBackground(new java.awt.Color(99, 99, 254));
         btnF6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF6);
 
+        btnF7.setContentAreaFilled(false);
+        btnF7.setOpaque(true);
         btnF7.setBackground(new java.awt.Color(255, 255, 255));
         btnF7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF7);
 
+        btnF8.setContentAreaFilled(false);
+        btnF8.setOpaque(true);
         btnF8.setBackground(new java.awt.Color(255, 255, 255));
         btnF8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF8);
 
+        btnF9.setContentAreaFilled(false);
+        btnF9.setOpaque(true);
         btnF9.setBackground(new java.awt.Color(255, 255, 255));
         btnF9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF9);
 
+        btnF10.setContentAreaFilled(false);
+        btnF10.setOpaque(true);
         btnF10.setBackground(new java.awt.Color(99, 99, 254));
         btnF10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF10);
 
+        btnF11.setContentAreaFilled(false);
+        btnF11.setOpaque(true);
         btnF11.setBackground(new java.awt.Color(255, 255, 255));
         btnF11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF11);
 
+        btnF12.setContentAreaFilled(false);
+        btnF12.setOpaque(true);
         btnF12.setBackground(new java.awt.Color(255, 255, 255));
         btnF12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF12);
 
+        btnF13.setContentAreaFilled(false);
+        btnF13.setOpaque(true);
         btnF13.setBackground(new java.awt.Color(255, 255, 255));
         btnF13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF13);
 
+        btnF14.setContentAreaFilled(false);
+        btnF14.setOpaque(true);
         btnF14.setBackground(new java.awt.Color(99, 99, 254));
         btnF14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF14);
 
+        btnF15.setContentAreaFilled(false);
+        btnF15.setOpaque(true);
         btnF15.setBackground(new java.awt.Color(255, 255, 255));
         btnF15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnF15);
 
+        btnG1.setContentAreaFilled(false);
+        btnG1.setOpaque(true);
         btnG1.setBackground(new java.awt.Color(255, 255, 255));
         btnG1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG1);
 
+        btnG2.setContentAreaFilled(false);
+        btnG2.setOpaque(true);
         btnG2.setBackground(new java.awt.Color(255, 255, 255));
         btnG2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG2);
 
+        btnG3.setContentAreaFilled(false);
+        btnG3.setOpaque(true);
         btnG3.setBackground(new java.awt.Color(218, 219, 252));
         btnG3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG3);
 
+        btnG4.setContentAreaFilled(false);
+        btnG4.setOpaque(true);
         btnG4.setBackground(new java.awt.Color(255, 255, 255));
         btnG4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG4);
 
+        btnG5.setContentAreaFilled(false);
+        btnG5.setOpaque(true);
         btnG5.setBackground(new java.awt.Color(255, 255, 255));
         btnG5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG5);
 
+        btnG6.setContentAreaFilled(false);
+        btnG6.setOpaque(true);
         btnG6.setBackground(new java.awt.Color(255, 255, 255));
         btnG6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG6);
 
+        btnG7.setContentAreaFilled(false);
+        btnG7.setOpaque(true);
         btnG7.setBackground(new java.awt.Color(218, 219, 252));
         btnG7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG7);
 
+        btnG8.setContentAreaFilled(false);
+        btnG8.setOpaque(true);
         btnG8.setBackground(new java.awt.Color(255, 255, 255));
         btnG8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG8);
 
+        btnG9.setContentAreaFilled(false);
+        btnG9.setOpaque(true);
         btnG9.setBackground(new java.awt.Color(218, 219, 252));
         btnG9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG9);
 
+        btnG10.setContentAreaFilled(false);
+        btnG10.setOpaque(true);
         btnG10.setBackground(new java.awt.Color(255, 255, 255));
         btnG10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG10);
 
+        btnG11.setContentAreaFilled(false);
+        btnG11.setOpaque(true);
         btnG11.setBackground(new java.awt.Color(255, 255, 255));
         btnG11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG11);
 
+        btnG12.setContentAreaFilled(false);
+        btnG12.setOpaque(true);
         btnG12.setBackground(new java.awt.Color(255, 255, 255));
         btnG12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG12);
 
+        btnG13.setContentAreaFilled(false);
+        btnG13.setOpaque(true);
         btnG13.setBackground(new java.awt.Color(218, 219, 252));
         btnG13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG13);
 
+        btnG14.setContentAreaFilled(false);
+        btnG14.setOpaque(true);
         btnG14.setBackground(new java.awt.Color(255, 255, 255));
         btnG14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG14);
 
+        btnG15.setContentAreaFilled(false);
+        btnG15.setOpaque(true);
         btnG15.setBackground(new java.awt.Color(255, 255, 255));
         btnG15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnG15);
 
+        btnH1.setContentAreaFilled(false);
+        btnH1.setOpaque(true);
         btnH1.setBackground(new java.awt.Color(254, 69, 69));
         btnH1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH1);
 
+        btnH2.setContentAreaFilled(false);
+        btnH2.setOpaque(true);
         btnH2.setBackground(new java.awt.Color(255, 255, 255));
         btnH2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH2);
 
+        btnH3.setContentAreaFilled(false);
+        btnH3.setOpaque(true);
         btnH3.setBackground(new java.awt.Color(255, 255, 255));
         btnH3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH3);
 
+        btnH4.setContentAreaFilled(false);
+        btnH4.setOpaque(true);
         btnH4.setBackground(new java.awt.Color(218, 219, 252));
         btnH4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH4);
 
+        btnH5.setContentAreaFilled(false);
+        btnH5.setOpaque(true);
         btnH5.setBackground(new java.awt.Color(255, 255, 255));
         btnH5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH5);
 
+        btnH6.setContentAreaFilled(false);
+        btnH6.setOpaque(true);
         btnH6.setBackground(new java.awt.Color(255, 255, 255));
         btnH6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH6);
 
+        btnH7.setContentAreaFilled(false);
+        btnH7.setOpaque(true);
         btnH7.setBackground(new java.awt.Color(255, 255, 255));
         btnH7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH7);
@@ -749,450 +949,674 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH8);
 
+        btnH9.setContentAreaFilled(false);
+        btnH9.setOpaque(true);
         btnH9.setBackground(new java.awt.Color(255, 255, 255));
         btnH9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH9);
 
+        btnH10.setContentAreaFilled(false);
+        btnH10.setOpaque(true);
         btnH10.setBackground(new java.awt.Color(255, 255, 255));
         btnH10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH10);
 
+        btnH11.setContentAreaFilled(false);
+        btnH11.setOpaque(true);
         btnH11.setBackground(new java.awt.Color(255, 255, 255));
         btnH11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH11);
 
+        btnH12.setContentAreaFilled(false);
+        btnH12.setOpaque(true);
         btnH12.setBackground(new java.awt.Color(218, 219, 252));
         btnH12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH12);
 
+        btnH13.setContentAreaFilled(false);
+        btnH13.setOpaque(true);
         btnH13.setBackground(new java.awt.Color(255, 255, 255));
         btnH13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH13);
 
+        btnH14.setContentAreaFilled(false);
+        btnH14.setOpaque(true);
         btnH14.setBackground(new java.awt.Color(255, 255, 255));
         btnH14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH14);
 
+        btnH15.setContentAreaFilled(false);
+        btnH15.setOpaque(true);
         btnH15.setBackground(new java.awt.Color(254, 69, 69));
         btnH15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnH15);
 
-        btn1.setBackground(new java.awt.Color(255, 255, 255));
-        btn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel2.add(btn1);
+        btnI1.setContentAreaFilled(false);
+        btnI1.setOpaque(true);
+        btnI1.setBackground(new java.awt.Color(255, 255, 255));
+        btnI1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.add(btnI1);
 
+        btnI2.setContentAreaFilled(false);
+        btnI2.setOpaque(true);
         btnI2.setBackground(new java.awt.Color(255, 255, 255));
         btnI2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI2);
 
+        btnI3.setContentAreaFilled(false);
+        btnI3.setOpaque(true);
         btnI3.setBackground(new java.awt.Color(218, 219, 252));
         btnI3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI3);
 
+        btnI4.setContentAreaFilled(false);
+        btnI4.setOpaque(true);
         btnI4.setBackground(new java.awt.Color(255, 255, 255));
         btnI4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI4);
 
+        btnI5.setContentAreaFilled(false);
+        btnI5.setOpaque(true);
         btnI5.setBackground(new java.awt.Color(255, 255, 255));
         btnI5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI5);
 
+        btnI6.setContentAreaFilled(false);
+        btnI6.setOpaque(true);
         btnI6.setBackground(new java.awt.Color(255, 255, 255));
         btnI6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI6);
 
+        btnI7.setContentAreaFilled(false);
+        btnI7.setOpaque(true);
         btnI7.setBackground(new java.awt.Color(218, 219, 252));
         btnI7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI7);
 
+        btnI8.setContentAreaFilled(false);
+        btnI8.setOpaque(true);
         btnI8.setBackground(new java.awt.Color(255, 255, 255));
         btnI8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI8);
 
+        btnI9.setContentAreaFilled(false);
+        btnI9.setOpaque(true);
         btnI9.setBackground(new java.awt.Color(218, 219, 252));
         btnI9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI9);
 
+        btnI10.setContentAreaFilled(false);
+        btnI10.setOpaque(true);
         btnI10.setBackground(new java.awt.Color(255, 255, 255));
         btnI10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI10);
 
+        btnI11.setContentAreaFilled(false);
+        btnI11.setOpaque(true);
         btnI11.setBackground(new java.awt.Color(255, 255, 255));
         btnI11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI11);
 
+        btnI12.setContentAreaFilled(false);
+        btnI12.setOpaque(true);
         btnI12.setBackground(new java.awt.Color(255, 255, 255));
         btnI12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI12);
 
+        btnI13.setContentAreaFilled(false);
+        btnI13.setOpaque(true);
         btnI13.setBackground(new java.awt.Color(218, 219, 252));
         btnI13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI13);
 
+        btnI14.setContentAreaFilled(false);
+        btnI14.setOpaque(true);
         btnI14.setBackground(new java.awt.Color(255, 255, 255));
         btnI14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI14);
 
+        btnI15.setContentAreaFilled(false);
+        btnI15.setOpaque(true);
         btnI15.setBackground(new java.awt.Color(255, 255, 255));
         btnI15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnI15);
 
+        btnJ1.setContentAreaFilled(false);
+        btnJ1.setOpaque(true);
         btnJ1.setBackground(new java.awt.Color(255, 255, 255));
         btnJ1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ1);
 
+        btnJ2.setContentAreaFilled(false);
+        btnJ2.setOpaque(true);
         btnJ2.setBackground(new java.awt.Color(99, 99, 254));
         btnJ2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ2);
 
+        btnJ3.setContentAreaFilled(false);
+        btnJ3.setOpaque(true);
         btnJ3.setBackground(new java.awt.Color(255, 255, 255));
         btnJ3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ3);
 
+        btnJ4.setContentAreaFilled(false);
+        btnJ4.setOpaque(true);
         btnJ4.setBackground(new java.awt.Color(255, 255, 255));
         btnJ4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ4);
 
+        btnJ5.setContentAreaFilled(false);
+        btnJ5.setOpaque(true);
         btnJ5.setBackground(new java.awt.Color(255, 255, 255));
         btnJ5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ5);
 
+        btnJ6.setContentAreaFilled(false);
+        btnJ6.setOpaque(true);
         btnJ6.setBackground(new java.awt.Color(99, 99, 254));
         btnJ6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ6);
 
+        btnJ7.setContentAreaFilled(false);
+        btnJ7.setOpaque(true);
         btnJ7.setBackground(new java.awt.Color(255, 255, 255));
         btnJ7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ7);
 
+        btnJ8.setContentAreaFilled(false);
+        btnJ8.setOpaque(true);
         btnJ8.setBackground(new java.awt.Color(255, 255, 255));
         btnJ8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ8);
 
+        btnJ9.setContentAreaFilled(false);
+        btnJ9.setOpaque(true);
         btnJ9.setBackground(new java.awt.Color(255, 255, 255));
         btnJ9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ9);
 
+        btnJ10.setContentAreaFilled(false);
+        btnJ10.setOpaque(true);
         btnJ10.setBackground(new java.awt.Color(99, 99, 254));
         btnJ10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ10);
 
+        btnJ11.setContentAreaFilled(false);
+        btnJ11.setOpaque(true);
         btnJ11.setBackground(new java.awt.Color(255, 255, 255));
         btnJ11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ11);
 
+        btnJ12.setContentAreaFilled(false);
+        btnJ12.setOpaque(true);
         btnJ12.setBackground(new java.awt.Color(255, 255, 255));
         btnJ12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ12);
 
+        btnJ13.setContentAreaFilled(false);
+        btnJ13.setOpaque(true);
         btnJ13.setBackground(new java.awt.Color(255, 255, 255));
         btnJ13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ13);
 
+        btnJ14.setContentAreaFilled(false);
+        btnJ14.setOpaque(true);
         btnJ14.setBackground(new java.awt.Color(99, 99, 254));
         btnJ14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ14);
 
+        btnJ15.setContentAreaFilled(false);
+        btnJ15.setOpaque(true);
         btnJ15.setBackground(new java.awt.Color(255, 255, 255));
         btnJ15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnJ15);
 
+        btnK1.setContentAreaFilled(false);
+        btnK1.setOpaque(true);
         btnK1.setBackground(new java.awt.Color(255, 255, 255));
         btnK1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK1);
 
+        btnK2.setContentAreaFilled(false);
+        btnK2.setOpaque(true);
         btnK2.setBackground(new java.awt.Color(255, 255, 255));
         btnK2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK2);
 
+        btnK3.setContentAreaFilled(false);
+        btnK3.setOpaque(true);
         btnK3.setBackground(new java.awt.Color(255, 255, 255));
         btnK3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK3);
 
+        btnK4.setContentAreaFilled(false);
+        btnK4.setOpaque(true);
         btnK4.setBackground(new java.awt.Color(255, 255, 255));
         btnK4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK4);
 
+        btnK5.setContentAreaFilled(false);
+        btnK5.setOpaque(true);
         btnK5.setBackground(new java.awt.Color(254, 179, 179));
         btnK5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK5);
 
+        btnK6.setContentAreaFilled(false);
+        btnK6.setOpaque(true);
         btnK6.setBackground(new java.awt.Color(255, 255, 255));
         btnK6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK6);
 
+        btnK7.setContentAreaFilled(false);
+        btnK7.setOpaque(true);
         btnK7.setBackground(new java.awt.Color(255, 255, 255));
         btnK7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK7);
 
+        btnK8.setContentAreaFilled(false);
+        btnK8.setOpaque(true);
         btnK8.setBackground(new java.awt.Color(255, 255, 255));
         btnK8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK8);
 
+        btnK9.setContentAreaFilled(false);
+        btnK9.setOpaque(true);
         btnK9.setBackground(new java.awt.Color(255, 255, 255));
         btnK9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK9);
 
+        btnK10.setContentAreaFilled(false);
+        btnK10.setOpaque(true);
         btnK10.setBackground(new java.awt.Color(255, 255, 255));
         btnK10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK10);
 
+        btnK11.setContentAreaFilled(false);
+        btnK11.setOpaque(true);
         btnK11.setBackground(new java.awt.Color(254, 179, 179));
         btnK11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK11);
 
+        btnK12.setContentAreaFilled(false);
+        btnK12.setOpaque(true);
         btnK12.setBackground(new java.awt.Color(255, 255, 255));
         btnK12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK12);
 
+        btnK13.setContentAreaFilled(false);
+        btnK13.setOpaque(true);
         btnK13.setBackground(new java.awt.Color(255, 255, 255));
         btnK13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK13);
 
+        btnK14.setContentAreaFilled(false);
+        btnK14.setOpaque(true);
         btnK14.setBackground(new java.awt.Color(255, 255, 255));
         btnK14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK14);
 
+        btnK15.setContentAreaFilled(false);
+        btnK15.setOpaque(true);
         btnK15.setBackground(new java.awt.Color(255, 255, 255));
         btnK15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnK15);
 
+        btnL1.setContentAreaFilled(false);
+        btnL1.setOpaque(true);
         btnL1.setBackground(new java.awt.Color(218, 219, 252));
         btnL1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL1);
 
+        btnL2.setContentAreaFilled(false);
+        btnL2.setOpaque(true);
         btnL2.setBackground(new java.awt.Color(255, 255, 255));
         btnL2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL2);
 
+        btnL3.setContentAreaFilled(false);
+        btnL3.setOpaque(true);
         btnL3.setBackground(new java.awt.Color(255, 255, 255));
         btnL3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL3);
 
+        btnL4.setContentAreaFilled(false);
+        btnL4.setOpaque(true);
         btnL4.setBackground(new java.awt.Color(254, 179, 179));
         btnL4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL4);
 
+        btnL5.setContentAreaFilled(false);
+        btnL5.setOpaque(true);
         btnL5.setBackground(new java.awt.Color(255, 255, 255));
         btnL5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL5);
 
+        btnL6.setContentAreaFilled(false);
+        btnL6.setOpaque(true);
         btnL6.setBackground(new java.awt.Color(255, 255, 255));
         btnL6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL6);
 
+        btnL7.setContentAreaFilled(false);
+        btnL7.setOpaque(true);
         btnL7.setBackground(new java.awt.Color(255, 255, 255));
         btnL7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL7);
 
+        btnL8.setContentAreaFilled(false);
+        btnL8.setOpaque(true);
         btnL8.setBackground(new java.awt.Color(218, 219, 252));
         btnL8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL8);
 
+        btnL9.setContentAreaFilled(false);
+        btnL9.setOpaque(true);
         btnL9.setBackground(new java.awt.Color(255, 255, 255));
         btnL9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL9);
 
+        btnL10.setContentAreaFilled(false);
+        btnL10.setOpaque(true);
         btnL10.setBackground(new java.awt.Color(255, 255, 255));
         btnL10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL10);
 
+        btnL11.setContentAreaFilled(false);
+        btnL11.setOpaque(true);
         btnL11.setBackground(new java.awt.Color(255, 255, 255));
         btnL11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL11);
 
+        btnL12.setContentAreaFilled(false);
+        btnL12.setOpaque(true);
         btnL12.setBackground(new java.awt.Color(254, 179, 179));
         btnL12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL12);
 
+        btnL13.setContentAreaFilled(false);
+        btnL13.setOpaque(true);
         btnL13.setBackground(new java.awt.Color(255, 255, 255));
         btnL13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL13);
 
+        btnL14.setContentAreaFilled(false);
+        btnL14.setOpaque(true);
         btnL14.setBackground(new java.awt.Color(255, 255, 255));
         btnL14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL14);
 
+        btnL15.setContentAreaFilled(false);
+        btnL15.setOpaque(true);
         btnL15.setBackground(new java.awt.Color(218, 219, 252));
         btnL15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnL15);
 
+        btnM1.setContentAreaFilled(false);
+        btnM1.setOpaque(true);
         btnM1.setBackground(new java.awt.Color(255, 255, 255));
         btnM1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM1);
 
+        btnM2.setContentAreaFilled(false);
+        btnM2.setOpaque(true);
         btnM2.setBackground(new java.awt.Color(255, 255, 255));
         btnM2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM2);
 
+        btnM3.setContentAreaFilled(false);
+        btnM3.setOpaque(true);
         btnM3.setBackground(new java.awt.Color(254, 179, 179));
         btnM3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM3);
 
+        btnM4.setContentAreaFilled(false);
+        btnM4.setOpaque(true);
         btnM4.setBackground(new java.awt.Color(255, 255, 255));
         btnM4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM4);
 
+        btnM5.setContentAreaFilled(false);
+        btnM5.setOpaque(true);
         btnM5.setBackground(new java.awt.Color(255, 255, 255));
         btnM5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM5);
 
+        btnM6.setContentAreaFilled(false);
+        btnM6.setOpaque(true);
         btnM6.setBackground(new java.awt.Color(255, 255, 255));
         btnM6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM6);
 
+        btnM7.setContentAreaFilled(false);
+        btnM7.setOpaque(true);
         btnM7.setBackground(new java.awt.Color(218, 219, 252));
         btnM7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM7);
 
+        btnM8.setContentAreaFilled(false);
+        btnM8.setOpaque(true);
         btnM8.setBackground(new java.awt.Color(255, 255, 255));
         btnM8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM8);
 
+        btnM9.setContentAreaFilled(false);
+        btnM9.setOpaque(true);
         btnM9.setBackground(new java.awt.Color(218, 219, 252));
         btnM9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM9);
 
+        btnM10.setContentAreaFilled(false);
+        btnM10.setOpaque(true);
         btnM10.setBackground(new java.awt.Color(255, 255, 255));
         btnM10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM10);
 
+        btnM11.setContentAreaFilled(false);
+        btnM11.setOpaque(true);
         btnM11.setBackground(new java.awt.Color(255, 255, 255));
         btnM11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM11);
 
+        btnM12.setContentAreaFilled(false);
+        btnM12.setOpaque(true);
         btnM12.setBackground(new java.awt.Color(255, 255, 255));
         btnM12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM12);
 
+        btnM13.setContentAreaFilled(false);
+        btnM13.setOpaque(true);
         btnM13.setBackground(new java.awt.Color(254, 179, 179));
         btnM13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM13);
 
+        btnM14.setContentAreaFilled(false);
+        btnM14.setOpaque(true);
         btnM14.setBackground(new java.awt.Color(255, 255, 255));
         btnM14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM14);
 
+        btnM15.setContentAreaFilled(false);
+        btnM15.setOpaque(true);
         btnM15.setBackground(new java.awt.Color(255, 255, 255));
         btnM15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnM15);
 
+        btnN1.setContentAreaFilled(false);
+        btnN1.setOpaque(true);
         btnN1.setBackground(new java.awt.Color(255, 255, 255));
         btnN1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN1);
 
+        btnN2.setContentAreaFilled(false);
+        btnN2.setOpaque(true);
         btnN2.setBackground(new java.awt.Color(254, 179, 179));
         btnN2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN2);
 
+        btnN3.setContentAreaFilled(false);
+        btnN3.setOpaque(true);
         btnN3.setBackground(new java.awt.Color(255, 255, 255));
         btnN3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN3);
 
+        btnN4.setContentAreaFilled(false);
+        btnN4.setOpaque(true);
         btnN4.setBackground(new java.awt.Color(255, 255, 255));
         btnN4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN4);
 
+        btnN5.setContentAreaFilled(false);
+        btnN5.setOpaque(true);
         btnN5.setBackground(new java.awt.Color(255, 255, 255));
         btnN5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN5);
 
+        btnN6.setContentAreaFilled(false);
+        btnN6.setOpaque(true);
         btnN6.setBackground(new java.awt.Color(99, 99, 254));
         btnN6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN6);
 
+        btnN7.setContentAreaFilled(false);
+        btnN7.setOpaque(true);
         btnN7.setBackground(new java.awt.Color(255, 255, 255));
         btnN7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN7);
 
+        btnN8.setContentAreaFilled(false);
+        btnN8.setOpaque(true);
         btnN8.setBackground(new java.awt.Color(255, 255, 255));
         btnN8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN8);
 
+        btnN9.setContentAreaFilled(false);
+        btnN9.setOpaque(true);
         btnN9.setBackground(new java.awt.Color(99, 99, 254));
         btnN9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN9);
 
+        btnN10.setContentAreaFilled(false);
+        btnN10.setOpaque(true);
         btnN10.setBackground(new java.awt.Color(255, 255, 255));
         btnN10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN10);
 
+        btnN11.setContentAreaFilled(false);
+        btnN11.setOpaque(true);
         btnN11.setBackground(new java.awt.Color(255, 255, 255));
         btnN11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN11);
 
+        btnN12.setContentAreaFilled(false);
+        btnN12.setOpaque(true);
         btnN12.setBackground(new java.awt.Color(255, 255, 255));
         btnN12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN12);
 
+        btnN13.setContentAreaFilled(false);
+        btnN13.setOpaque(true);
         btnN13.setBackground(new java.awt.Color(255, 255, 255));
         btnN13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN13);
 
+        btnN14.setContentAreaFilled(false);
+        btnN14.setOpaque(true);
         btnN14.setBackground(new java.awt.Color(254, 179, 179));
         btnN14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN14);
 
+        btnN15.setContentAreaFilled(false);
+        btnN15.setOpaque(true);
         btnN15.setBackground(new java.awt.Color(255, 255, 255));
         btnN15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnN15);
 
+        btnO1.setContentAreaFilled(false);
+        btnO1.setOpaque(true);
         btnO1.setBackground(new java.awt.Color(254, 69, 69));
         btnO1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO1);
 
+        btnO2.setContentAreaFilled(false);
+        btnO2.setOpaque(true);
         btnO2.setBackground(new java.awt.Color(255, 255, 255));
         btnO2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO2);
 
+        btnO3.setContentAreaFilled(false);
+        btnO3.setOpaque(true);
         btnO3.setBackground(new java.awt.Color(255, 255, 255));
         btnO3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO3);
 
+        btnO4.setContentAreaFilled(false);
+        btnO4.setOpaque(true);
         btnO4.setBackground(new java.awt.Color(218, 219, 252));
         btnO4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO4);
 
+        btnO5.setContentAreaFilled(false);
+        btnO5.setOpaque(true);
         btnO5.setBackground(new java.awt.Color(255, 255, 255));
         btnO5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO5);
 
+        btnO6.setContentAreaFilled(false);
+        btnO6.setOpaque(true);
         btnO6.setBackground(new java.awt.Color(255, 255, 255));
         btnO6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO6);
 
+        btnO7.setContentAreaFilled(false);
+        btnO7.setOpaque(true);
         btnO7.setBackground(new java.awt.Color(255, 255, 255));
         btnO7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO7);
 
+        btnO8.setContentAreaFilled(false);
+        btnO8.setOpaque(true);
         btnO8.setBackground(new java.awt.Color(254, 69, 69));
         btnO8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO8);
 
+        btnO9.setContentAreaFilled(false);
+        btnO9.setOpaque(true);
         btnO9.setBackground(new java.awt.Color(255, 255, 255));
         btnO9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO9);
 
+        btnO10.setContentAreaFilled(false);
+        btnO10.setOpaque(true);
         btnO10.setBackground(new java.awt.Color(255, 255, 255));
         btnO10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO10);
 
+        btnO11.setContentAreaFilled(false);
+        btnO11.setOpaque(true);
         btnO11.setBackground(new java.awt.Color(255, 255, 255));
         btnO11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO11);
 
+        btnO12.setContentAreaFilled(false);
+        btnO12.setOpaque(true);
         btnO12.setBackground(new java.awt.Color(218, 219, 252));
         btnO12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO12);
 
+        btnO13.setContentAreaFilled(false);
+        btnO13.setOpaque(true);
         btnO13.setBackground(new java.awt.Color(255, 255, 255));
         btnO13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO13);
 
+        btnO14.setContentAreaFilled(false);
+        btnO14.setOpaque(true);
         btnO14.setBackground(new java.awt.Color(255, 255, 255));
         btnO14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO14);
 
+        btnO15.setContentAreaFilled(false);
+        btnO15.setOpaque(true);
         btnO15.setBackground(new java.awt.Color(254, 69, 69));
         btnO15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.add(btnO15);
@@ -1258,6 +1682,10 @@ public class FRMTablero extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnC3ActionPerformed
 
+    private void btnB14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnB14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnB14ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1286,7 +1714,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn1;
     private javax.swing.JButton btnA1;
     private javax.swing.JButton btnA10;
     private javax.swing.JButton btnA11;
@@ -1407,6 +1834,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnH7;
     private javax.swing.JButton btnH8;
     private javax.swing.JButton btnH9;
+    private javax.swing.JButton btnI1;
     private javax.swing.JButton btnI10;
     private javax.swing.JButton btnI11;
     private javax.swing.JButton btnI12;

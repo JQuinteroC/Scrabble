@@ -318,6 +318,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB1.setContentAreaFilled(false);&#xa;btnB1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB2">
           <Properties>
@@ -330,6 +333,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB2.setContentAreaFilled(false);&#xa;btnB2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB3">
           <Properties>
@@ -342,6 +348,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB3.setContentAreaFilled(false);&#xa;btnB3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB4">
           <Properties>
@@ -354,6 +363,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB4.setContentAreaFilled(false);&#xa;btnB4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB5">
           <Properties>
@@ -366,6 +378,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB5.setContentAreaFilled(false);&#xa;btnB5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB6">
           <Properties>
@@ -378,6 +393,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB6.setContentAreaFilled(false);&#xa;btnB6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB7">
           <Properties>
@@ -390,6 +408,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB7.setContentAreaFilled(false);&#xa;btnB7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB8">
           <Properties>
@@ -402,6 +423,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB8.setContentAreaFilled(false);&#xa;btnB8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB9">
           <Properties>
@@ -414,6 +438,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB9.setContentAreaFilled(false);&#xa;btnB9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB10">
           <Properties>
@@ -426,6 +453,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB10.setContentAreaFilled(false);&#xa;btnB10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB11">
           <Properties>
@@ -438,6 +468,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB11.setContentAreaFilled(false);&#xa;btnB11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB12">
           <Properties>
@@ -450,6 +483,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB12.setContentAreaFilled(false);&#xa;btnB12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB13">
           <Properties>
@@ -462,6 +498,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB13.setContentAreaFilled(false);&#xa;btnB13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB14">
           <Properties>
@@ -473,7 +512,16 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="contentAreaFilled" type="boolean" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="false" type="code"/>
+            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnB14ActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB14.setContentAreaFilled(false);&#xa;btnB14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnB15">
           <Properties>
@@ -486,6 +534,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB15.setContentAreaFilled(false);&#xa;btnB15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC1">
           <Properties>
@@ -498,6 +549,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC1.setContentAreaFilled(false);&#xa;btnC1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC2">
           <Properties>
@@ -510,6 +564,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC2.setContentAreaFilled(false);&#xa;btnC2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC3">
           <Properties>
@@ -522,6 +579,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC3.setContentAreaFilled(false);&#xa;btnC3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC4">
           <Properties>
@@ -534,6 +594,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC4.setContentAreaFilled(false);&#xa;btnC4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC5">
           <Properties>
@@ -546,6 +609,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC5.setContentAreaFilled(false);&#xa;btnC5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC6">
           <Properties>
@@ -558,6 +624,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC6.setContentAreaFilled(false);&#xa;btnC6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC7">
           <Properties>
@@ -570,6 +639,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC7.setContentAreaFilled(false);&#xa;btnC7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC8">
           <Properties>
@@ -582,6 +654,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC8.setContentAreaFilled(false);&#xa;btnC8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC9">
           <Properties>
@@ -594,6 +669,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC9.setContentAreaFilled(false);&#xa;btnC9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC10">
           <Properties>
@@ -606,6 +684,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC10.setContentAreaFilled(false);&#xa;btnC10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC11">
           <Properties>
@@ -618,6 +699,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC11.setContentAreaFilled(false);&#xa;btnC11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC12">
           <Properties>
@@ -630,6 +714,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC12.setContentAreaFilled(false);&#xa;btnC12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC13">
           <Properties>
@@ -642,6 +729,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC13.setContentAreaFilled(false);&#xa;btnC13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC14">
           <Properties>
@@ -654,6 +744,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC14.setContentAreaFilled(false);&#xa;btnC14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnC15">
           <Properties>
@@ -666,6 +759,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC15.setContentAreaFilled(false);&#xa;btnC15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD1">
           <Properties>
@@ -678,6 +774,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD1.setContentAreaFilled(false);&#xa;btnD1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD2">
           <Properties>
@@ -690,6 +789,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD2.setContentAreaFilled(false);&#xa;btnD2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD3">
           <Properties>
@@ -702,6 +804,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD3.setContentAreaFilled(false);&#xa;btnD3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD4">
           <Properties>
@@ -714,6 +819,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD4.setContentAreaFilled(false);&#xa;btnD4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD5">
           <Properties>
@@ -726,6 +834,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD5.setContentAreaFilled(false);&#xa;btnD5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD6">
           <Properties>
@@ -738,6 +849,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD6.setContentAreaFilled(false);&#xa;btnD6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD7">
           <Properties>
@@ -750,6 +864,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD7.setContentAreaFilled(false);&#xa;btnD7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD8">
           <Properties>
@@ -762,6 +879,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD8.setContentAreaFilled(false);&#xa;btnD8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD9">
           <Properties>
@@ -774,6 +894,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD9.setContentAreaFilled(false);&#xa;btnD9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD10">
           <Properties>
@@ -786,6 +909,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD10.setContentAreaFilled(false);&#xa;btnD10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD11">
           <Properties>
@@ -798,6 +924,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD11.setContentAreaFilled(false);&#xa;btnD11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD12">
           <Properties>
@@ -810,6 +939,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD12.setContentAreaFilled(false);&#xa;btnD12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD13">
           <Properties>
@@ -822,6 +954,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD13.setContentAreaFilled(false);&#xa;btnD13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD14">
           <Properties>
@@ -834,6 +969,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD14.setContentAreaFilled(false);&#xa;btnD14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnD15">
           <Properties>
@@ -846,6 +984,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD15.setContentAreaFilled(false);&#xa;btnD15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE1">
           <Properties>
@@ -858,6 +999,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE1.setContentAreaFilled(false);&#xa;btnE1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE2">
           <Properties>
@@ -870,6 +1014,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE2.setContentAreaFilled(false);&#xa;btnE2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE3">
           <Properties>
@@ -882,6 +1029,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE3.setContentAreaFilled(false);&#xa;btnE3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE4">
           <Properties>
@@ -894,6 +1044,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE4.setContentAreaFilled(false);&#xa;btnE4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE5">
           <Properties>
@@ -906,6 +1059,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE5.setContentAreaFilled(false);&#xa;btnE5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE6">
           <Properties>
@@ -918,6 +1074,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE6.setContentAreaFilled(false);&#xa;btnE6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE7">
           <Properties>
@@ -930,6 +1089,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE7.setContentAreaFilled(false);&#xa;btnE7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE8">
           <Properties>
@@ -942,6 +1104,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE8.setContentAreaFilled(false);&#xa;btnE8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE9">
           <Properties>
@@ -954,6 +1119,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE9.setContentAreaFilled(false);&#xa;btnE9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE10">
           <Properties>
@@ -966,6 +1134,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE10.setContentAreaFilled(false);&#xa;btnE10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE11">
           <Properties>
@@ -978,6 +1149,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE11.setContentAreaFilled(false);&#xa;btnE11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE12">
           <Properties>
@@ -990,6 +1164,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE12.setContentAreaFilled(false);&#xa;btnE12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE13">
           <Properties>
@@ -1002,6 +1179,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE13.setContentAreaFilled(false);&#xa;btnE13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE14">
           <Properties>
@@ -1014,6 +1194,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE14.setContentAreaFilled(false);&#xa;btnE14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnE15">
           <Properties>
@@ -1026,6 +1209,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE15.setContentAreaFilled(false);&#xa;btnE15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF1">
           <Properties>
@@ -1038,6 +1224,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF1.setContentAreaFilled(false);&#xa;btnF1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF2">
           <Properties>
@@ -1050,6 +1239,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF2.setContentAreaFilled(false);&#xa;btnF2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF3">
           <Properties>
@@ -1062,6 +1254,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF3.setContentAreaFilled(false);&#xa;btnF3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF4">
           <Properties>
@@ -1074,6 +1269,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF4.setContentAreaFilled(false);&#xa;btnF4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF5">
           <Properties>
@@ -1086,6 +1284,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF5.setContentAreaFilled(false);&#xa;btnF5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF6">
           <Properties>
@@ -1098,6 +1299,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF6.setContentAreaFilled(false);&#xa;btnF6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF7">
           <Properties>
@@ -1110,6 +1314,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF7.setContentAreaFilled(false);&#xa;btnF7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF8">
           <Properties>
@@ -1122,6 +1329,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF8.setContentAreaFilled(false);&#xa;btnF8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF9">
           <Properties>
@@ -1134,6 +1344,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF9.setContentAreaFilled(false);&#xa;btnF9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF10">
           <Properties>
@@ -1146,6 +1359,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF10.setContentAreaFilled(false);&#xa;btnF10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF11">
           <Properties>
@@ -1158,6 +1374,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF11.setContentAreaFilled(false);&#xa;btnF11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF12">
           <Properties>
@@ -1170,6 +1389,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF12.setContentAreaFilled(false);&#xa;btnF12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF13">
           <Properties>
@@ -1182,6 +1404,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF13.setContentAreaFilled(false);&#xa;btnF13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF14">
           <Properties>
@@ -1194,6 +1419,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF14.setContentAreaFilled(false);&#xa;btnF14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnF15">
           <Properties>
@@ -1206,6 +1434,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF15.setContentAreaFilled(false);&#xa;btnF15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG1">
           <Properties>
@@ -1218,6 +1449,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG1.setContentAreaFilled(false);&#xa;btnG1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG2">
           <Properties>
@@ -1230,6 +1464,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG2.setContentAreaFilled(false);&#xa;btnG2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG3">
           <Properties>
@@ -1242,6 +1479,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG3.setContentAreaFilled(false);&#xa;btnG3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG4">
           <Properties>
@@ -1254,6 +1494,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG4.setContentAreaFilled(false);&#xa;btnG4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG5">
           <Properties>
@@ -1266,6 +1509,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG5.setContentAreaFilled(false);&#xa;btnG5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG6">
           <Properties>
@@ -1278,6 +1524,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG6.setContentAreaFilled(false);&#xa;btnG6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG7">
           <Properties>
@@ -1290,6 +1539,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG7.setContentAreaFilled(false);&#xa;btnG7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG8">
           <Properties>
@@ -1302,6 +1554,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG8.setContentAreaFilled(false);&#xa;btnG8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG9">
           <Properties>
@@ -1314,6 +1569,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG9.setContentAreaFilled(false);&#xa;btnG9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG10">
           <Properties>
@@ -1326,6 +1584,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG10.setContentAreaFilled(false);&#xa;btnG10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG11">
           <Properties>
@@ -1338,6 +1599,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG11.setContentAreaFilled(false);&#xa;btnG11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG12">
           <Properties>
@@ -1350,6 +1614,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG12.setContentAreaFilled(false);&#xa;btnG12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG13">
           <Properties>
@@ -1362,6 +1629,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG13.setContentAreaFilled(false);&#xa;btnG13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG14">
           <Properties>
@@ -1374,6 +1644,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG14.setContentAreaFilled(false);&#xa;btnG14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnG15">
           <Properties>
@@ -1386,6 +1659,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG15.setContentAreaFilled(false);&#xa;btnG15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH1">
           <Properties>
@@ -1398,6 +1674,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH1.setContentAreaFilled(false);&#xa;btnH1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH2">
           <Properties>
@@ -1410,6 +1689,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH2.setContentAreaFilled(false);&#xa;btnH2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH3">
           <Properties>
@@ -1422,6 +1704,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH3.setContentAreaFilled(false);&#xa;btnH3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH4">
           <Properties>
@@ -1434,6 +1719,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH4.setContentAreaFilled(false);&#xa;btnH4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH5">
           <Properties>
@@ -1446,6 +1734,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH5.setContentAreaFilled(false);&#xa;btnH5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH6">
           <Properties>
@@ -1458,6 +1749,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH6.setContentAreaFilled(false);&#xa;btnH6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH7">
           <Properties>
@@ -1470,6 +1764,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH7.setContentAreaFilled(false);&#xa;btnH7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH8">
           <Properties>
@@ -1497,6 +1794,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH9.setContentAreaFilled(false);&#xa;btnH9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH10">
           <Properties>
@@ -1509,6 +1809,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH10.setContentAreaFilled(false);&#xa;btnH10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH11">
           <Properties>
@@ -1521,6 +1824,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH11.setContentAreaFilled(false);&#xa;btnH11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH12">
           <Properties>
@@ -1533,6 +1839,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH12.setContentAreaFilled(false);&#xa;btnH12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH13">
           <Properties>
@@ -1545,6 +1854,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH13.setContentAreaFilled(false);&#xa;btnH13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH14">
           <Properties>
@@ -1557,6 +1869,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH14.setContentAreaFilled(false);&#xa;btnH14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnH15">
           <Properties>
@@ -1569,8 +1884,11 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH15.setContentAreaFilled(false);&#xa;btnH15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btn1">
+        <Component class="javax.swing.JButton" name="btnI1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1581,6 +1899,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI1.setContentAreaFilled(false);&#xa;btnI1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI2">
           <Properties>
@@ -1593,6 +1914,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI2.setContentAreaFilled(false);&#xa;btnI2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI3">
           <Properties>
@@ -1605,6 +1929,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI3.setContentAreaFilled(false);&#xa;btnI3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI4">
           <Properties>
@@ -1617,6 +1944,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI4.setContentAreaFilled(false);&#xa;btnI4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI5">
           <Properties>
@@ -1629,6 +1959,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI5.setContentAreaFilled(false);&#xa;btnI5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI6">
           <Properties>
@@ -1641,6 +1974,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI6.setContentAreaFilled(false);&#xa;btnI6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI7">
           <Properties>
@@ -1653,6 +1989,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI7.setContentAreaFilled(false);&#xa;btnI7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI8">
           <Properties>
@@ -1665,6 +2004,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI8.setContentAreaFilled(false);&#xa;btnI8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI9">
           <Properties>
@@ -1677,6 +2019,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI9.setContentAreaFilled(false);&#xa;btnI9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI10">
           <Properties>
@@ -1689,6 +2034,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI10.setContentAreaFilled(false);&#xa;btnI10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI11">
           <Properties>
@@ -1701,6 +2049,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI11.setContentAreaFilled(false);&#xa;btnI11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI12">
           <Properties>
@@ -1713,6 +2064,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI12.setContentAreaFilled(false);&#xa;btnI12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI13">
           <Properties>
@@ -1725,6 +2079,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI13.setContentAreaFilled(false);&#xa;btnI13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI14">
           <Properties>
@@ -1737,6 +2094,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI14.setContentAreaFilled(false);&#xa;btnI14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI15">
           <Properties>
@@ -1749,6 +2109,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI15.setContentAreaFilled(false);&#xa;btnI15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ1">
           <Properties>
@@ -1761,6 +2124,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ1.setContentAreaFilled(false);&#xa;btnJ1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ2">
           <Properties>
@@ -1773,6 +2139,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ2.setContentAreaFilled(false);&#xa;btnJ2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ3">
           <Properties>
@@ -1785,6 +2154,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ3.setContentAreaFilled(false);&#xa;btnJ3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ4">
           <Properties>
@@ -1797,6 +2169,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ4.setContentAreaFilled(false);&#xa;btnJ4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ5">
           <Properties>
@@ -1809,6 +2184,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ5.setContentAreaFilled(false);&#xa;btnJ5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ6">
           <Properties>
@@ -1821,6 +2199,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ6.setContentAreaFilled(false);&#xa;btnJ6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ7">
           <Properties>
@@ -1833,6 +2214,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ7.setContentAreaFilled(false);&#xa;btnJ7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ8">
           <Properties>
@@ -1845,6 +2229,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ8.setContentAreaFilled(false);&#xa;btnJ8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ9">
           <Properties>
@@ -1857,6 +2244,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ9.setContentAreaFilled(false);&#xa;btnJ9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ10">
           <Properties>
@@ -1869,6 +2259,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ10.setContentAreaFilled(false);&#xa;btnJ10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ11">
           <Properties>
@@ -1881,6 +2274,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ11.setContentAreaFilled(false);&#xa;btnJ11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ12">
           <Properties>
@@ -1893,6 +2289,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ12.setContentAreaFilled(false);&#xa;btnJ12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ13">
           <Properties>
@@ -1905,6 +2304,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ13.setContentAreaFilled(false);&#xa;btnJ13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ14">
           <Properties>
@@ -1917,6 +2319,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ14.setContentAreaFilled(false);&#xa;btnJ14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnJ15">
           <Properties>
@@ -1929,6 +2334,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ15.setContentAreaFilled(false);&#xa;btnJ15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK1">
           <Properties>
@@ -1941,6 +2349,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK1.setContentAreaFilled(false);&#xa;btnK1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK2">
           <Properties>
@@ -1953,6 +2364,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK2.setContentAreaFilled(false);&#xa;btnK2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK3">
           <Properties>
@@ -1965,6 +2379,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK3.setContentAreaFilled(false);&#xa;btnK3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK4">
           <Properties>
@@ -1977,6 +2394,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK4.setContentAreaFilled(false);&#xa;btnK4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK5">
           <Properties>
@@ -1989,6 +2409,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK5.setContentAreaFilled(false);&#xa;btnK5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK6">
           <Properties>
@@ -2001,6 +2424,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK6.setContentAreaFilled(false);&#xa;btnK6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK7">
           <Properties>
@@ -2013,6 +2439,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK7.setContentAreaFilled(false);&#xa;btnK7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK8">
           <Properties>
@@ -2025,6 +2454,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK8.setContentAreaFilled(false);&#xa;btnK8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK9">
           <Properties>
@@ -2037,6 +2469,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK9.setContentAreaFilled(false);&#xa;btnK9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK10">
           <Properties>
@@ -2049,6 +2484,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK10.setContentAreaFilled(false);&#xa;btnK10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK11">
           <Properties>
@@ -2061,6 +2499,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK11.setContentAreaFilled(false);&#xa;btnK11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK12">
           <Properties>
@@ -2073,6 +2514,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK12.setContentAreaFilled(false);&#xa;btnK12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK13">
           <Properties>
@@ -2085,6 +2529,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK13.setContentAreaFilled(false);&#xa;btnK13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK14">
           <Properties>
@@ -2097,6 +2544,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK14.setContentAreaFilled(false);&#xa;btnK14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnK15">
           <Properties>
@@ -2109,6 +2559,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK15.setContentAreaFilled(false);&#xa;btnK15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL1">
           <Properties>
@@ -2121,6 +2574,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL1.setContentAreaFilled(false);&#xa;btnL1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL2">
           <Properties>
@@ -2133,6 +2589,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL2.setContentAreaFilled(false);&#xa;btnL2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL3">
           <Properties>
@@ -2145,6 +2604,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL3.setContentAreaFilled(false);&#xa;btnL3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL4">
           <Properties>
@@ -2157,6 +2619,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL4.setContentAreaFilled(false);&#xa;btnL4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL5">
           <Properties>
@@ -2169,6 +2634,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL5.setContentAreaFilled(false);&#xa;btnL5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL6">
           <Properties>
@@ -2181,6 +2649,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL6.setContentAreaFilled(false);&#xa;btnL6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL7">
           <Properties>
@@ -2193,6 +2664,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL7.setContentAreaFilled(false);&#xa;btnL7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL8">
           <Properties>
@@ -2205,6 +2679,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL8.setContentAreaFilled(false);&#xa;btnL8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL9">
           <Properties>
@@ -2217,6 +2694,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL9.setContentAreaFilled(false);&#xa;btnL9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL10">
           <Properties>
@@ -2229,6 +2709,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL10.setContentAreaFilled(false);&#xa;btnL10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL11">
           <Properties>
@@ -2241,6 +2724,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL11.setContentAreaFilled(false);&#xa;btnL11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL12">
           <Properties>
@@ -2253,6 +2739,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL12.setContentAreaFilled(false);&#xa;btnL12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL13">
           <Properties>
@@ -2265,6 +2754,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL13.setContentAreaFilled(false);&#xa;btnL13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL14">
           <Properties>
@@ -2277,6 +2769,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL14.setContentAreaFilled(false);&#xa;btnL14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnL15">
           <Properties>
@@ -2289,6 +2784,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL15.setContentAreaFilled(false);&#xa;btnL15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM1">
           <Properties>
@@ -2301,6 +2799,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM1.setContentAreaFilled(false);&#xa;btnM1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM2">
           <Properties>
@@ -2313,6 +2814,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM2.setContentAreaFilled(false);&#xa;btnM2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM3">
           <Properties>
@@ -2325,6 +2829,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM3.setContentAreaFilled(false);&#xa;btnM3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM4">
           <Properties>
@@ -2337,6 +2844,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM4.setContentAreaFilled(false);&#xa;btnM4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM5">
           <Properties>
@@ -2349,6 +2859,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM5.setContentAreaFilled(false);&#xa;btnM5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM6">
           <Properties>
@@ -2361,6 +2874,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM6.setContentAreaFilled(false);&#xa;btnM6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM7">
           <Properties>
@@ -2373,6 +2889,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM7.setContentAreaFilled(false);&#xa;btnM7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM8">
           <Properties>
@@ -2385,6 +2904,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM8.setContentAreaFilled(false);&#xa;btnM8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM9">
           <Properties>
@@ -2397,6 +2919,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM9.setContentAreaFilled(false);&#xa;btnM9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM10">
           <Properties>
@@ -2409,6 +2934,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM10.setContentAreaFilled(false);&#xa;btnM10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM11">
           <Properties>
@@ -2421,6 +2949,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM11.setContentAreaFilled(false);&#xa;btnM11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM12">
           <Properties>
@@ -2433,6 +2964,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM12.setContentAreaFilled(false);&#xa;btnM12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM13">
           <Properties>
@@ -2445,6 +2979,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM13.setContentAreaFilled(false);&#xa;btnM13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM14">
           <Properties>
@@ -2457,6 +2994,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM14.setContentAreaFilled(false);&#xa;btnM14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnM15">
           <Properties>
@@ -2469,6 +3009,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM15.setContentAreaFilled(false);&#xa;btnM15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN1">
           <Properties>
@@ -2481,6 +3024,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN1.setContentAreaFilled(false);&#xa;btnN1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN2">
           <Properties>
@@ -2493,6 +3039,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN2.setContentAreaFilled(false);&#xa;btnN2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN3">
           <Properties>
@@ -2505,6 +3054,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN3.setContentAreaFilled(false);&#xa;btnN3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN4">
           <Properties>
@@ -2517,6 +3069,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN4.setContentAreaFilled(false);&#xa;btnN4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN5">
           <Properties>
@@ -2529,6 +3084,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN5.setContentAreaFilled(false);&#xa;btnN5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN6">
           <Properties>
@@ -2541,6 +3099,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN6.setContentAreaFilled(false);&#xa;btnN6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN7">
           <Properties>
@@ -2553,6 +3114,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN7.setContentAreaFilled(false);&#xa;btnN7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN8">
           <Properties>
@@ -2565,6 +3129,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN8.setContentAreaFilled(false);&#xa;btnN8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN9">
           <Properties>
@@ -2577,6 +3144,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN9.setContentAreaFilled(false);&#xa;btnN9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN10">
           <Properties>
@@ -2589,6 +3159,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN10.setContentAreaFilled(false);&#xa;btnN10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN11">
           <Properties>
@@ -2601,6 +3174,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN11.setContentAreaFilled(false);&#xa;btnN11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN12">
           <Properties>
@@ -2613,6 +3189,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN12.setContentAreaFilled(false);&#xa;btnN12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN13">
           <Properties>
@@ -2625,6 +3204,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN13.setContentAreaFilled(false);&#xa;btnN13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN14">
           <Properties>
@@ -2637,6 +3219,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN14.setContentAreaFilled(false);&#xa;btnN14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnN15">
           <Properties>
@@ -2649,6 +3234,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN15.setContentAreaFilled(false);&#xa;btnN15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO1">
           <Properties>
@@ -2661,6 +3249,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO1.setContentAreaFilled(false);&#xa;btnO1.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO2">
           <Properties>
@@ -2673,6 +3264,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO2.setContentAreaFilled(false);&#xa;btnO2.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO3">
           <Properties>
@@ -2685,6 +3279,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO3.setContentAreaFilled(false);&#xa;btnO3.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO4">
           <Properties>
@@ -2697,6 +3294,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO4.setContentAreaFilled(false);&#xa;btnO4.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO5">
           <Properties>
@@ -2709,6 +3309,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO5.setContentAreaFilled(false);&#xa;btnO5.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO6">
           <Properties>
@@ -2721,6 +3324,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO6.setContentAreaFilled(false);&#xa;btnO6.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO7">
           <Properties>
@@ -2733,6 +3339,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO7.setContentAreaFilled(false);&#xa;btnO7.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO8">
           <Properties>
@@ -2745,6 +3354,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO8.setContentAreaFilled(false);&#xa;btnO8.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO9">
           <Properties>
@@ -2757,6 +3369,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO9.setContentAreaFilled(false);&#xa;btnO9.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO10">
           <Properties>
@@ -2769,6 +3384,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO10.setContentAreaFilled(false);&#xa;btnO10.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO11">
           <Properties>
@@ -2781,6 +3399,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO11.setContentAreaFilled(false);&#xa;btnO11.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO12">
           <Properties>
@@ -2793,6 +3414,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO12.setContentAreaFilled(false);&#xa;btnO12.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO13">
           <Properties>
@@ -2805,6 +3429,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO13.setContentAreaFilled(false);&#xa;btnO13.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO14">
           <Properties>
@@ -2817,6 +3444,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO14.setContentAreaFilled(false);&#xa;btnO14.setOpaque(true);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnO15">
           <Properties>
@@ -2829,6 +3459,9 @@
               </Border>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO15.setContentAreaFilled(false);&#xa;btnO15.setOpaque(true);"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
