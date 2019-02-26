@@ -13,7 +13,6 @@ public class Ficha {
     private char letra;
     int valor;
     boolean enUso;
-    
     public Ficha(){
         
     }
@@ -21,9 +20,6 @@ public class Ficha {
         this.letra = letra;
         this.valor = valor;
     }
-    
-    
-    
     
     public char getLetra() {
         return letra;
