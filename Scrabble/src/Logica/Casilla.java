@@ -5,6 +5,8 @@
  */
 package Logica;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author Estudiantes
@@ -17,5 +19,16 @@ public class Casilla {
     int tipo;
     Ficha fichaActual;
     boolean estaOcupado;
+    JButton botonAsociado;
+
+    public Casilla(int x, int y, Ficha fichaActual, boolean estaOcupado, JButton botonAsociado) {
+        this.x = x;
+        this.y = y;
+        this.fichaActual = fichaActual;
+        this.estaOcupado = estaOcupado;
+        this.botonAsociado = botonAsociado;
+    }
     
+    public void CalcularPuntaje(){};
+            
 }

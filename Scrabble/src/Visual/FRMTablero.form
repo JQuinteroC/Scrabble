@@ -31,8 +31,15 @@
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" max="32767" attributes="0"/>
-                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Component id="jButton9" min="-2" pref="119" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jButton8" min="-2" pref="119" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jPanel3" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -43,17 +50,19 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel3" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jPanel1" min="-2" pref="97" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jPanel3" min="-2" pref="532" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton8" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="jButton9" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -92,6 +101,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnA1MouseClicked"/>
@@ -110,6 +120,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA2.setContentAreaFilled(false);&#xa;btnA2.setOpaque(true);"/>
@@ -125,6 +136,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA3.setContentAreaFilled(false);&#xa;btnA3.setOpaque(true);"/>
@@ -140,6 +152,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA4.setContentAreaFilled(false);&#xa;btnA4.setOpaque(true);"/>
@@ -155,6 +168,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA5.setContentAreaFilled(false);&#xa;btnA5.setOpaque(true);"/>
@@ -170,6 +184,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA6.setContentAreaFilled(false);&#xa;btnA6.setOpaque(true);"/>
@@ -185,6 +200,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA7.setContentAreaFilled(false);&#xa;btnA7.setOpaque(true);"/>
@@ -200,6 +216,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA8.setContentAreaFilled(false);&#xa;btnA8.setOpaque(true);"/>
@@ -215,6 +232,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA9.setContentAreaFilled(false);&#xa;btnA9.setOpaque(true);"/>
@@ -230,6 +248,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA10.setContentAreaFilled(false);&#xa;btnA10.setOpaque(true);"/>
@@ -245,6 +264,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA11.setContentAreaFilled(false);&#xa;btnA11.setOpaque(true);"/>
@@ -260,6 +280,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA12.setContentAreaFilled(false);&#xa;btnA12.setOpaque(true);"/>
@@ -275,6 +296,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA13.setContentAreaFilled(false);&#xa;btnA13.setOpaque(true);"/>
@@ -290,6 +312,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA14.setContentAreaFilled(false);&#xa;btnA14.setOpaque(true);"/>
@@ -305,6 +328,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnA15.setContentAreaFilled(false);&#xa;btnA15.setOpaque(true);"/>
@@ -320,6 +344,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB1.setContentAreaFilled(false);&#xa;btnB1.setOpaque(true);"/>
@@ -335,6 +360,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB2.setContentAreaFilled(false);&#xa;btnB2.setOpaque(true);"/>
@@ -350,6 +376,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB3.setContentAreaFilled(false);&#xa;btnB3.setOpaque(true);"/>
@@ -365,6 +392,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB4.setContentAreaFilled(false);&#xa;btnB4.setOpaque(true);"/>
@@ -380,6 +408,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB5.setContentAreaFilled(false);&#xa;btnB5.setOpaque(true);"/>
@@ -395,6 +424,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB6.setContentAreaFilled(false);&#xa;btnB6.setOpaque(true);"/>
@@ -410,6 +440,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB7.setContentAreaFilled(false);&#xa;btnB7.setOpaque(true);"/>
@@ -425,6 +456,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB8.setContentAreaFilled(false);&#xa;btnB8.setOpaque(true);"/>
@@ -440,6 +472,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB9.setContentAreaFilled(false);&#xa;btnB9.setOpaque(true);"/>
@@ -455,6 +488,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB10.setContentAreaFilled(false);&#xa;btnB10.setOpaque(true);"/>
@@ -470,6 +504,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB11.setContentAreaFilled(false);&#xa;btnB11.setOpaque(true);"/>
@@ -485,6 +520,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB12.setContentAreaFilled(false);&#xa;btnB12.setOpaque(true);"/>
@@ -500,6 +536,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB13.setContentAreaFilled(false);&#xa;btnB13.setOpaque(true);"/>
@@ -515,9 +552,8 @@
                 <LineBorder/>
               </Border>
             </Property>
-            <Property name="contentAreaFilled" type="boolean" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="false" type="code"/>
-            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnB14ActionPerformed"/>
@@ -536,6 +572,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnB15.setContentAreaFilled(false);&#xa;btnB15.setOpaque(true);"/>
@@ -551,6 +588,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC1.setContentAreaFilled(false);&#xa;btnC1.setOpaque(true);"/>
@@ -566,6 +604,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC2.setContentAreaFilled(false);&#xa;btnC2.setOpaque(true);"/>
@@ -581,6 +620,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC3.setContentAreaFilled(false);&#xa;btnC3.setOpaque(true);"/>
@@ -596,6 +636,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC4.setContentAreaFilled(false);&#xa;btnC4.setOpaque(true);"/>
@@ -611,6 +652,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC5.setContentAreaFilled(false);&#xa;btnC5.setOpaque(true);"/>
@@ -626,6 +668,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC6.setContentAreaFilled(false);&#xa;btnC6.setOpaque(true);"/>
@@ -641,6 +684,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC7.setContentAreaFilled(false);&#xa;btnC7.setOpaque(true);"/>
@@ -656,6 +700,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC8.setContentAreaFilled(false);&#xa;btnC8.setOpaque(true);"/>
@@ -671,6 +716,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC9.setContentAreaFilled(false);&#xa;btnC9.setOpaque(true);"/>
@@ -686,6 +732,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC10.setContentAreaFilled(false);&#xa;btnC10.setOpaque(true);"/>
@@ -701,6 +748,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC11.setContentAreaFilled(false);&#xa;btnC11.setOpaque(true);"/>
@@ -716,6 +764,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC12.setContentAreaFilled(false);&#xa;btnC12.setOpaque(true);"/>
@@ -731,6 +780,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC13.setContentAreaFilled(false);&#xa;btnC13.setOpaque(true);"/>
@@ -746,6 +796,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC14.setContentAreaFilled(false);&#xa;btnC14.setOpaque(true);"/>
@@ -761,6 +812,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnC15.setContentAreaFilled(false);&#xa;btnC15.setOpaque(true);"/>
@@ -776,6 +828,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD1.setContentAreaFilled(false);&#xa;btnD1.setOpaque(true);"/>
@@ -791,6 +844,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD2.setContentAreaFilled(false);&#xa;btnD2.setOpaque(true);"/>
@@ -806,6 +860,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD3.setContentAreaFilled(false);&#xa;btnD3.setOpaque(true);"/>
@@ -821,6 +876,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD4.setContentAreaFilled(false);&#xa;btnD4.setOpaque(true);"/>
@@ -836,6 +892,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD5.setContentAreaFilled(false);&#xa;btnD5.setOpaque(true);"/>
@@ -851,6 +908,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD6.setContentAreaFilled(false);&#xa;btnD6.setOpaque(true);"/>
@@ -866,6 +924,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD7.setContentAreaFilled(false);&#xa;btnD7.setOpaque(true);"/>
@@ -881,6 +940,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD8.setContentAreaFilled(false);&#xa;btnD8.setOpaque(true);"/>
@@ -896,6 +956,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD9.setContentAreaFilled(false);&#xa;btnD9.setOpaque(true);"/>
@@ -911,6 +972,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD10.setContentAreaFilled(false);&#xa;btnD10.setOpaque(true);"/>
@@ -926,6 +988,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD11.setContentAreaFilled(false);&#xa;btnD11.setOpaque(true);"/>
@@ -941,6 +1004,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD12.setContentAreaFilled(false);&#xa;btnD12.setOpaque(true);"/>
@@ -956,6 +1020,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD13.setContentAreaFilled(false);&#xa;btnD13.setOpaque(true);"/>
@@ -971,6 +1036,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD14.setContentAreaFilled(false);&#xa;btnD14.setOpaque(true);"/>
@@ -986,6 +1052,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnD15.setContentAreaFilled(false);&#xa;btnD15.setOpaque(true);"/>
@@ -1001,6 +1068,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE1.setContentAreaFilled(false);&#xa;btnE1.setOpaque(true);"/>
@@ -1016,6 +1084,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE2.setContentAreaFilled(false);&#xa;btnE2.setOpaque(true);"/>
@@ -1031,6 +1100,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE3.setContentAreaFilled(false);&#xa;btnE3.setOpaque(true);"/>
@@ -1046,6 +1116,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE4.setContentAreaFilled(false);&#xa;btnE4.setOpaque(true);"/>
@@ -1061,6 +1132,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE5.setContentAreaFilled(false);&#xa;btnE5.setOpaque(true);"/>
@@ -1076,6 +1148,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE6.setContentAreaFilled(false);&#xa;btnE6.setOpaque(true);"/>
@@ -1091,6 +1164,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE7.setContentAreaFilled(false);&#xa;btnE7.setOpaque(true);"/>
@@ -1106,6 +1180,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE8.setContentAreaFilled(false);&#xa;btnE8.setOpaque(true);"/>
@@ -1121,6 +1196,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE9.setContentAreaFilled(false);&#xa;btnE9.setOpaque(true);"/>
@@ -1136,6 +1212,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE10.setContentAreaFilled(false);&#xa;btnE10.setOpaque(true);"/>
@@ -1151,6 +1228,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE11.setContentAreaFilled(false);&#xa;btnE11.setOpaque(true);"/>
@@ -1166,6 +1244,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE12.setContentAreaFilled(false);&#xa;btnE12.setOpaque(true);"/>
@@ -1181,6 +1260,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE13.setContentAreaFilled(false);&#xa;btnE13.setOpaque(true);"/>
@@ -1196,6 +1276,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE14.setContentAreaFilled(false);&#xa;btnE14.setOpaque(true);"/>
@@ -1211,6 +1292,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnE15.setContentAreaFilled(false);&#xa;btnE15.setOpaque(true);"/>
@@ -1226,6 +1308,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF1.setContentAreaFilled(false);&#xa;btnF1.setOpaque(true);"/>
@@ -1241,6 +1324,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF2.setContentAreaFilled(false);&#xa;btnF2.setOpaque(true);"/>
@@ -1256,6 +1340,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF3.setContentAreaFilled(false);&#xa;btnF3.setOpaque(true);"/>
@@ -1271,6 +1356,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF4.setContentAreaFilled(false);&#xa;btnF4.setOpaque(true);"/>
@@ -1286,6 +1372,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF5.setContentAreaFilled(false);&#xa;btnF5.setOpaque(true);"/>
@@ -1301,6 +1388,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF6.setContentAreaFilled(false);&#xa;btnF6.setOpaque(true);"/>
@@ -1316,6 +1404,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF7.setContentAreaFilled(false);&#xa;btnF7.setOpaque(true);"/>
@@ -1331,6 +1420,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF8.setContentAreaFilled(false);&#xa;btnF8.setOpaque(true);"/>
@@ -1346,6 +1436,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF9.setContentAreaFilled(false);&#xa;btnF9.setOpaque(true);"/>
@@ -1361,6 +1452,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF10.setContentAreaFilled(false);&#xa;btnF10.setOpaque(true);"/>
@@ -1376,6 +1468,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF11.setContentAreaFilled(false);&#xa;btnF11.setOpaque(true);"/>
@@ -1391,6 +1484,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF12.setContentAreaFilled(false);&#xa;btnF12.setOpaque(true);"/>
@@ -1406,6 +1500,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF13.setContentAreaFilled(false);&#xa;btnF13.setOpaque(true);"/>
@@ -1421,6 +1516,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF14.setContentAreaFilled(false);&#xa;btnF14.setOpaque(true);"/>
@@ -1436,6 +1532,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnF15.setContentAreaFilled(false);&#xa;btnF15.setOpaque(true);"/>
@@ -1451,6 +1548,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG1.setContentAreaFilled(false);&#xa;btnG1.setOpaque(true);"/>
@@ -1466,6 +1564,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG2.setContentAreaFilled(false);&#xa;btnG2.setOpaque(true);"/>
@@ -1481,6 +1580,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG3.setContentAreaFilled(false);&#xa;btnG3.setOpaque(true);"/>
@@ -1496,6 +1596,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG4.setContentAreaFilled(false);&#xa;btnG4.setOpaque(true);"/>
@@ -1511,6 +1612,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG5.setContentAreaFilled(false);&#xa;btnG5.setOpaque(true);"/>
@@ -1526,6 +1628,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG6.setContentAreaFilled(false);&#xa;btnG6.setOpaque(true);"/>
@@ -1541,6 +1644,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG7.setContentAreaFilled(false);&#xa;btnG7.setOpaque(true);"/>
@@ -1556,6 +1660,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG8.setContentAreaFilled(false);&#xa;btnG8.setOpaque(true);"/>
@@ -1571,6 +1676,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG9.setContentAreaFilled(false);&#xa;btnG9.setOpaque(true);"/>
@@ -1586,6 +1692,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG10.setContentAreaFilled(false);&#xa;btnG10.setOpaque(true);"/>
@@ -1601,6 +1708,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG11.setContentAreaFilled(false);&#xa;btnG11.setOpaque(true);"/>
@@ -1616,6 +1724,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG12.setContentAreaFilled(false);&#xa;btnG12.setOpaque(true);"/>
@@ -1631,6 +1740,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG13.setContentAreaFilled(false);&#xa;btnG13.setOpaque(true);"/>
@@ -1646,6 +1756,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG14.setContentAreaFilled(false);&#xa;btnG14.setOpaque(true);"/>
@@ -1661,6 +1772,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnG15.setContentAreaFilled(false);&#xa;btnG15.setOpaque(true);"/>
@@ -1676,6 +1788,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH1.setContentAreaFilled(false);&#xa;btnH1.setOpaque(true);"/>
@@ -1691,6 +1804,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH2.setContentAreaFilled(false);&#xa;btnH2.setOpaque(true);"/>
@@ -1706,6 +1820,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH3.setContentAreaFilled(false);&#xa;btnH3.setOpaque(true);"/>
@@ -1721,6 +1836,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH4.setContentAreaFilled(false);&#xa;btnH4.setOpaque(true);"/>
@@ -1736,6 +1852,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH5.setContentAreaFilled(false);&#xa;btnH5.setOpaque(true);"/>
@@ -1751,6 +1868,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH6.setContentAreaFilled(false);&#xa;btnH6.setOpaque(true);"/>
@@ -1766,6 +1884,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH7.setContentAreaFilled(false);&#xa;btnH7.setOpaque(true);"/>
@@ -1774,11 +1893,13 @@
         <Component class="javax.swing.JButton" name="btnH8">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="45" green="45" red="fe" type="rgb"/>
+              <Color blue="b3" green="b3" red="fe" type="rgb"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
+                <LineBorder>
+                  <Color PropertyName="color" blue="0" green="66" red="ff" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
           </Properties>
@@ -1796,6 +1917,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH9.setContentAreaFilled(false);&#xa;btnH9.setOpaque(true);"/>
@@ -1811,6 +1933,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH10.setContentAreaFilled(false);&#xa;btnH10.setOpaque(true);"/>
@@ -1826,6 +1949,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH11.setContentAreaFilled(false);&#xa;btnH11.setOpaque(true);"/>
@@ -1841,6 +1965,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH12.setContentAreaFilled(false);&#xa;btnH12.setOpaque(true);"/>
@@ -1856,6 +1981,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH13.setContentAreaFilled(false);&#xa;btnH13.setOpaque(true);"/>
@@ -1871,6 +1997,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH14.setContentAreaFilled(false);&#xa;btnH14.setOpaque(true);"/>
@@ -1886,6 +2013,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH15.setContentAreaFilled(false);&#xa;btnH15.setOpaque(true);"/>
@@ -1901,6 +2029,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI1.setContentAreaFilled(false);&#xa;btnI1.setOpaque(true);"/>
@@ -1916,6 +2045,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI2.setContentAreaFilled(false);&#xa;btnI2.setOpaque(true);"/>
@@ -1931,6 +2061,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI3.setContentAreaFilled(false);&#xa;btnI3.setOpaque(true);"/>
@@ -1946,6 +2077,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI4.setContentAreaFilled(false);&#xa;btnI4.setOpaque(true);"/>
@@ -1961,6 +2093,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI5.setContentAreaFilled(false);&#xa;btnI5.setOpaque(true);"/>
@@ -1976,6 +2109,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI6.setContentAreaFilled(false);&#xa;btnI6.setOpaque(true);"/>
@@ -1991,6 +2125,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI7.setContentAreaFilled(false);&#xa;btnI7.setOpaque(true);"/>
@@ -2006,6 +2141,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI8.setContentAreaFilled(false);&#xa;btnI8.setOpaque(true);"/>
@@ -2021,6 +2157,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI9.setContentAreaFilled(false);&#xa;btnI9.setOpaque(true);"/>
@@ -2036,6 +2173,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI10.setContentAreaFilled(false);&#xa;btnI10.setOpaque(true);"/>
@@ -2051,6 +2189,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI11.setContentAreaFilled(false);&#xa;btnI11.setOpaque(true);"/>
@@ -2066,6 +2205,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI12.setContentAreaFilled(false);&#xa;btnI12.setOpaque(true);"/>
@@ -2081,6 +2221,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI13.setContentAreaFilled(false);&#xa;btnI13.setOpaque(true);"/>
@@ -2096,6 +2237,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI14.setContentAreaFilled(false);&#xa;btnI14.setOpaque(true);"/>
@@ -2111,6 +2253,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI15.setContentAreaFilled(false);&#xa;btnI15.setOpaque(true);"/>
@@ -2126,6 +2269,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ1.setContentAreaFilled(false);&#xa;btnJ1.setOpaque(true);"/>
@@ -2141,6 +2285,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ2.setContentAreaFilled(false);&#xa;btnJ2.setOpaque(true);"/>
@@ -2156,6 +2301,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ3.setContentAreaFilled(false);&#xa;btnJ3.setOpaque(true);"/>
@@ -2171,6 +2317,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ4.setContentAreaFilled(false);&#xa;btnJ4.setOpaque(true);"/>
@@ -2186,6 +2333,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ5.setContentAreaFilled(false);&#xa;btnJ5.setOpaque(true);"/>
@@ -2201,6 +2349,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ6.setContentAreaFilled(false);&#xa;btnJ6.setOpaque(true);"/>
@@ -2216,6 +2365,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ7.setContentAreaFilled(false);&#xa;btnJ7.setOpaque(true);"/>
@@ -2231,6 +2381,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ8.setContentAreaFilled(false);&#xa;btnJ8.setOpaque(true);"/>
@@ -2246,6 +2397,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ9.setContentAreaFilled(false);&#xa;btnJ9.setOpaque(true);"/>
@@ -2261,6 +2413,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ10.setContentAreaFilled(false);&#xa;btnJ10.setOpaque(true);"/>
@@ -2276,6 +2429,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ11.setContentAreaFilled(false);&#xa;btnJ11.setOpaque(true);"/>
@@ -2291,6 +2445,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ12.setContentAreaFilled(false);&#xa;btnJ12.setOpaque(true);"/>
@@ -2306,6 +2461,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ13.setContentAreaFilled(false);&#xa;btnJ13.setOpaque(true);"/>
@@ -2321,6 +2477,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ14.setContentAreaFilled(false);&#xa;btnJ14.setOpaque(true);"/>
@@ -2336,6 +2493,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnJ15.setContentAreaFilled(false);&#xa;btnJ15.setOpaque(true);"/>
@@ -2351,6 +2509,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK1.setContentAreaFilled(false);&#xa;btnK1.setOpaque(true);"/>
@@ -2366,6 +2525,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK2.setContentAreaFilled(false);&#xa;btnK2.setOpaque(true);"/>
@@ -2381,6 +2541,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK3.setContentAreaFilled(false);&#xa;btnK3.setOpaque(true);"/>
@@ -2396,6 +2557,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK4.setContentAreaFilled(false);&#xa;btnK4.setOpaque(true);"/>
@@ -2411,6 +2573,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK5.setContentAreaFilled(false);&#xa;btnK5.setOpaque(true);"/>
@@ -2426,6 +2589,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK6.setContentAreaFilled(false);&#xa;btnK6.setOpaque(true);"/>
@@ -2441,6 +2605,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK7.setContentAreaFilled(false);&#xa;btnK7.setOpaque(true);"/>
@@ -2456,6 +2621,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK8.setContentAreaFilled(false);&#xa;btnK8.setOpaque(true);"/>
@@ -2471,6 +2637,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK9.setContentAreaFilled(false);&#xa;btnK9.setOpaque(true);"/>
@@ -2486,6 +2653,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK10.setContentAreaFilled(false);&#xa;btnK10.setOpaque(true);"/>
@@ -2501,6 +2669,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK11.setContentAreaFilled(false);&#xa;btnK11.setOpaque(true);"/>
@@ -2516,6 +2685,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK12.setContentAreaFilled(false);&#xa;btnK12.setOpaque(true);"/>
@@ -2531,6 +2701,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK13.setContentAreaFilled(false);&#xa;btnK13.setOpaque(true);"/>
@@ -2546,6 +2717,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK14.setContentAreaFilled(false);&#xa;btnK14.setOpaque(true);"/>
@@ -2561,6 +2733,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnK15.setContentAreaFilled(false);&#xa;btnK15.setOpaque(true);"/>
@@ -2576,6 +2749,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL1.setContentAreaFilled(false);&#xa;btnL1.setOpaque(true);"/>
@@ -2591,6 +2765,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL2.setContentAreaFilled(false);&#xa;btnL2.setOpaque(true);"/>
@@ -2606,6 +2781,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL3.setContentAreaFilled(false);&#xa;btnL3.setOpaque(true);"/>
@@ -2621,6 +2797,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL4.setContentAreaFilled(false);&#xa;btnL4.setOpaque(true);"/>
@@ -2636,6 +2813,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL5.setContentAreaFilled(false);&#xa;btnL5.setOpaque(true);"/>
@@ -2651,6 +2829,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL6.setContentAreaFilled(false);&#xa;btnL6.setOpaque(true);"/>
@@ -2666,6 +2845,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL7.setContentAreaFilled(false);&#xa;btnL7.setOpaque(true);"/>
@@ -2681,6 +2861,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL8.setContentAreaFilled(false);&#xa;btnL8.setOpaque(true);"/>
@@ -2696,6 +2877,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL9.setContentAreaFilled(false);&#xa;btnL9.setOpaque(true);"/>
@@ -2711,6 +2893,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL10.setContentAreaFilled(false);&#xa;btnL10.setOpaque(true);"/>
@@ -2726,6 +2909,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL11.setContentAreaFilled(false);&#xa;btnL11.setOpaque(true);"/>
@@ -2741,6 +2925,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL12.setContentAreaFilled(false);&#xa;btnL12.setOpaque(true);"/>
@@ -2756,6 +2941,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL13.setContentAreaFilled(false);&#xa;btnL13.setOpaque(true);"/>
@@ -2771,6 +2957,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL14.setContentAreaFilled(false);&#xa;btnL14.setOpaque(true);"/>
@@ -2786,6 +2973,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnL15.setContentAreaFilled(false);&#xa;btnL15.setOpaque(true);"/>
@@ -2801,6 +2989,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM1.setContentAreaFilled(false);&#xa;btnM1.setOpaque(true);"/>
@@ -2816,6 +3005,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM2.setContentAreaFilled(false);&#xa;btnM2.setOpaque(true);"/>
@@ -2831,6 +3021,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM3.setContentAreaFilled(false);&#xa;btnM3.setOpaque(true);"/>
@@ -2846,6 +3037,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM4.setContentAreaFilled(false);&#xa;btnM4.setOpaque(true);"/>
@@ -2861,6 +3053,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM5.setContentAreaFilled(false);&#xa;btnM5.setOpaque(true);"/>
@@ -2876,6 +3069,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM6.setContentAreaFilled(false);&#xa;btnM6.setOpaque(true);"/>
@@ -2891,6 +3085,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM7.setContentAreaFilled(false);&#xa;btnM7.setOpaque(true);"/>
@@ -2906,6 +3101,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM8.setContentAreaFilled(false);&#xa;btnM8.setOpaque(true);"/>
@@ -2921,6 +3117,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM9.setContentAreaFilled(false);&#xa;btnM9.setOpaque(true);"/>
@@ -2936,6 +3133,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM10.setContentAreaFilled(false);&#xa;btnM10.setOpaque(true);"/>
@@ -2951,6 +3149,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM11.setContentAreaFilled(false);&#xa;btnM11.setOpaque(true);"/>
@@ -2966,6 +3165,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM12.setContentAreaFilled(false);&#xa;btnM12.setOpaque(true);"/>
@@ -2981,6 +3181,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM13.setContentAreaFilled(false);&#xa;btnM13.setOpaque(true);"/>
@@ -2996,6 +3197,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM14.setContentAreaFilled(false);&#xa;btnM14.setOpaque(true);"/>
@@ -3011,6 +3213,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnM15.setContentAreaFilled(false);&#xa;btnM15.setOpaque(true);"/>
@@ -3026,6 +3229,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN1.setContentAreaFilled(false);&#xa;btnN1.setOpaque(true);"/>
@@ -3041,6 +3245,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN2.setContentAreaFilled(false);&#xa;btnN2.setOpaque(true);"/>
@@ -3056,6 +3261,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN3.setContentAreaFilled(false);&#xa;btnN3.setOpaque(true);"/>
@@ -3071,6 +3277,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN4.setContentAreaFilled(false);&#xa;btnN4.setOpaque(true);"/>
@@ -3086,6 +3293,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN5.setContentAreaFilled(false);&#xa;btnN5.setOpaque(true);"/>
@@ -3101,6 +3309,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN6.setContentAreaFilled(false);&#xa;btnN6.setOpaque(true);"/>
@@ -3116,6 +3325,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN7.setContentAreaFilled(false);&#xa;btnN7.setOpaque(true);"/>
@@ -3131,6 +3341,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN8.setContentAreaFilled(false);&#xa;btnN8.setOpaque(true);"/>
@@ -3146,6 +3357,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN9.setContentAreaFilled(false);&#xa;btnN9.setOpaque(true);"/>
@@ -3161,6 +3373,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN10.setContentAreaFilled(false);&#xa;btnN10.setOpaque(true);"/>
@@ -3176,6 +3389,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN11.setContentAreaFilled(false);&#xa;btnN11.setOpaque(true);"/>
@@ -3191,6 +3405,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN12.setContentAreaFilled(false);&#xa;btnN12.setOpaque(true);"/>
@@ -3206,6 +3421,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN13.setContentAreaFilled(false);&#xa;btnN13.setOpaque(true);"/>
@@ -3221,6 +3437,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN14.setContentAreaFilled(false);&#xa;btnN14.setOpaque(true);"/>
@@ -3236,6 +3453,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnN15.setContentAreaFilled(false);&#xa;btnN15.setOpaque(true);"/>
@@ -3251,6 +3469,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO1.setContentAreaFilled(false);&#xa;btnO1.setOpaque(true);"/>
@@ -3266,6 +3485,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO2.setContentAreaFilled(false);&#xa;btnO2.setOpaque(true);"/>
@@ -3281,6 +3501,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO3.setContentAreaFilled(false);&#xa;btnO3.setOpaque(true);"/>
@@ -3296,6 +3517,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO4.setContentAreaFilled(false);&#xa;btnO4.setOpaque(true);"/>
@@ -3311,6 +3533,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO5.setContentAreaFilled(false);&#xa;btnO5.setOpaque(true);"/>
@@ -3326,6 +3549,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO6.setContentAreaFilled(false);&#xa;btnO6.setOpaque(true);"/>
@@ -3341,6 +3565,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO7.setContentAreaFilled(false);&#xa;btnO7.setOpaque(true);"/>
@@ -3356,6 +3581,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO8.setContentAreaFilled(false);&#xa;btnO8.setOpaque(true);"/>
@@ -3371,6 +3597,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO9.setContentAreaFilled(false);&#xa;btnO9.setOpaque(true);"/>
@@ -3386,6 +3613,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO10.setContentAreaFilled(false);&#xa;btnO10.setOpaque(true);"/>
@@ -3401,6 +3629,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO11.setContentAreaFilled(false);&#xa;btnO11.setOpaque(true);"/>
@@ -3416,6 +3645,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO12.setContentAreaFilled(false);&#xa;btnO12.setOpaque(true);"/>
@@ -3431,6 +3661,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO13.setContentAreaFilled(false);&#xa;btnO13.setOpaque(true);"/>
@@ -3446,6 +3677,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO14.setContentAreaFilled(false);&#xa;btnO14.setOpaque(true);"/>
@@ -3461,6 +3693,7 @@
                 <LineBorder/>
               </Border>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnO15.setContentAreaFilled(false);&#xa;btnO15.setOpaque(true);"/>
@@ -3471,8 +3704,8 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Puntaje"/>
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
           </Border>
         </Property>
       </Properties>
@@ -3480,41 +3713,45 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-    </Container>
-    <Container class="javax.swing.JPanel" name="jPanel3">
-      <Properties>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Fichas"/>
-          </Border>
-        </Property>
-      </Properties>
-
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="65" max="-2" attributes="0"/>
-                  <EmptySpace pref="179" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel5" min="-2" pref="44" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="52" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel5" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -3522,17 +3759,113 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/recursos/A.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="jLabel1"/>
+            <Property name="text" type="java.lang.String" value="Jugadores"/>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
-            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jLabel1KeyReleased"/>
-          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="[J2]"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="[J1]"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Turno"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Fichas">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="rows" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton6"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton7"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nuevas Fichas"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pasar turno"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[119, 60]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Aceptar"/>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[55, 25]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[119, 60]"/>
+        </Property>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

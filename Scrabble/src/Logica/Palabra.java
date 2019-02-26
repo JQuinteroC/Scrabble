@@ -12,6 +12,6 @@ import java.util.ArrayList;
  * @author estudiantes
  */
 public class Palabra {
-    
+    int puntaje;
     ArrayList<Ficha> palabra;
 }
