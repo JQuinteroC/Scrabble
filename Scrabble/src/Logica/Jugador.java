@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package Logica;
-import Logica.Ficha;
 import java.util.ArrayList;
 /**
  *
@@ -13,7 +12,7 @@ import java.util.ArrayList;
 public class Jugador {
     public String nombre;
     int puntaje;
-   private ArrayList<Ficha> FichaJug = new ArrayList<Ficha>();
+   private ArrayList<Ficha> FichaJug = new ArrayList<>();
     
     public Jugador(){
         
