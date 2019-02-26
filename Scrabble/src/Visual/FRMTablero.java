@@ -1714,14 +1714,14 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnN9.setContentAreaFilled(false);
         btnN9.setOpaque(true);
-        btnN9.setBackground(new java.awt.Color(99, 99, 254));
+        btnN9.setBackground(new java.awt.Color(255, 255, 255));
         btnN9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnN9.setEnabled(false);
         jPanel2.add(btnN9);
 
         btnN10.setContentAreaFilled(false);
         btnN10.setOpaque(true);
-        btnN10.setBackground(new java.awt.Color(255, 255, 255));
+        btnN10.setBackground(new java.awt.Color(99, 99, 254));
         btnN10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnN10.setEnabled(false);
         jPanel2.add(btnN10);
@@ -1944,11 +1944,6 @@ public class FRMTablero extends javax.swing.JFrame {
 
         jButton8.setText("Pasar turno");
         jButton8.setPreferredSize(new java.awt.Dimension(119, 60));
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
 
         jButton9.setText("Aceptar");
         jButton9.setMinimumSize(new java.awt.Dimension(55, 25));
