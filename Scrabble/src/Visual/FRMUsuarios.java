@@ -19,9 +19,15 @@ public class FRMUsuarios extends javax.swing.JFrame {
     /**
      * Creates new form FRMUsuarios
      */
+
+    // <editor-fold defaultstate="collapsed" desc="Variables globales">
     Timer t;
     static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
     static Jugador j2 = new Jugador();  // esa es la razon del static declarado
+    int tamaño = 0;
+    boolean iniciarJuego = false;
+    // </editor-fold>  
+   
 
     public FRMUsuarios() {
         initComponents();
@@ -47,7 +53,6 @@ public class FRMUsuarios extends javax.swing.JFrame {
         btnLimpiar = new javax.swing.JButton();
         lblAtras = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        lblContador = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(900, 600));
@@ -93,7 +98,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
             }
         });
 
-        btnJugar.setText("Jugar");
+        btnJugar.setText("Seleccionar jugador");
         btnJugar.setEnabled(false);
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,9 +122,6 @@ public class FRMUsuarios extends javax.swing.JFrame {
 
         jLabel4.setText("NUEVA PARTIDA");
 
-        lblContador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblContador.setText("-");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -133,8 +135,6 @@ public class FRMUsuarios extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblAtras)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblContador, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnLimpiar)
                         .addGap(18, 18, 18)
@@ -169,8 +169,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnJugar)
                     .addComponent(btnLimpiar)
-                    .addComponent(lblAtras)
-                    .addComponent(lblContador))
+                    .addComponent(lblAtras))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
@@ -180,60 +179,55 @@ public class FRMUsuarios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Funciones">
     // Pausa la ejecución durante los milisegundos ingresado por parametro
     // </editor-fold>        
+    
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         txtJugador1.setText("");
         txtJugador2.setText("");
 
         Font auxFont = lblPrimerJugador.getFont();
         lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), 1));
+        
+        iniciarJuego = false;
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
-    int tamaño = 0;
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
-        btnLimpiar.setEnabled(false);
+        if (iniciarJuego) {
+             // Cerrar venta FRM Usuarios
+            this.dispose();
 
-        // Selección aleatoria del jugador
-        int numero = (int) (Math.random() * 2) + 1;
-        if (numero == 1) {
-            lblPrimerJugador.setText(txtJugador1.getText());
-            j1 = new Jugador(txtJugador1.getText(), 0);
-        } else {
-            lblPrimerJugador.setText(txtJugador2.getText());
-            j1 = new Jugador(txtJugador2.getText(), 0);
-        }
+            // Abrir venta FRM Menu
+            FRMTablero tablero = new FRMTablero();
+            tablero.setVisible(true);
+        } else{
+            btnLimpiar.setEnabled(false);
 
-        t = new Timer(1, (ActionEvent e) -> {
-            if (tamaño < 100) {
-                // Recojo la fuente que se esta utilizando actualmente.
-                Font auxFont = lblPrimerJugador.getFont();
-                //Aplico la fuente actual, y al final se define el tamaño del texto
-                lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), tamaño));
-
-                tamaño = tamaño + 4;
-            } else if (tamaño >= 100 && tamaño < 800) {
-                tamaño++;
-
-                if (tamaño == 104) {
-                    lblContador.setText("3");
-                } else if (tamaño == 400) {
-                    lblContador.setText("2");
-                } else if (tamaño == 700) {
-                    lblContador.setText("1");
-                } else if (tamaño == 786) {
-                    lblContador.setText("");
-                }
-
-            } else if (tamaño >= 800) {
-                // Llamado a la venta FRM tablero
-                FRMTablero tablero = new FRMTablero();
-                tablero.setVisible(true);
-
-                // Cerrar venta FRM Usuario
-                this.dispose();
-                t.stop();
+            // Selección aleatoria del jugador
+            int numero = (int) (Math.random() * 2) + 1;
+            if (numero == 1) {
+                lblPrimerJugador.setText(txtJugador1.getText());
+                j1 = new Jugador(txtJugador1.getText(), 0);
+            } else {
+                lblPrimerJugador.setText(txtJugador2.getText());
+                j1 = new Jugador(txtJugador2.getText(), 0);
             }
-        });
-        t.start();
+
+            t = new Timer(1, (ActionEvent e) -> {
+                if (tamaño < 100) {
+                    // Recojo la fuente que se esta utilizando actualmente.
+                    Font auxFont = lblPrimerJugador.getFont();
+                    //Aplico la fuente actual, y al final se define el tamaño del texto
+                    lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), tamaño));
+
+                    tamaño = tamaño + 4;
+                } else if (tamaño >= 100 && tamaño < 800) {
+                    tamaño++;
+                    t.stop();
+                }
+            });
+            t.start();
+            btnJugar.setText("Jugar");
+            iniciarJuego = true;
+        }
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void lblAtrasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAtrasMousePressed
@@ -272,7 +266,6 @@ public class FRMUsuarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblAtras;
-    private javax.swing.JLabel lblContador;
     private javax.swing.JLabel lblPrimerJugador;
     private javax.swing.JTextField txtJugador1;
     private javax.swing.JTextField txtJugador2;

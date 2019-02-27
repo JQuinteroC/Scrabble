@@ -41,8 +41,6 @@
                   <Group type="102" attributes="0">
                       <Component id="lblAtras" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="lblContador" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="btnLimpiar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnJugar" min="-2" max="-2" attributes="0"/>
@@ -86,7 +84,6 @@
                   <Component id="btnJugar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnLimpiar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblAtras" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblContador" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="29" max="32767" attributes="0"/>
           </Group>
@@ -157,7 +154,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnJugar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Jugar"/>
+        <Property name="text" type="java.lang.String" value="Seleccionar jugador"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
@@ -183,12 +180,6 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="text" type="java.lang.String" value="NUEVA PARTIDA"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblContador">
-      <Properties>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
     </Component>
   </SubComponents>
