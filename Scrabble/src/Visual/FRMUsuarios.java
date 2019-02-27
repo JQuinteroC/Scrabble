@@ -20,14 +20,13 @@ public class FRMUsuarios extends javax.swing.JFrame {
      * Creates new form FRMUsuarios
      */
 
-    // <editor-fold defaultstate="collapsed" desc="Variables globales">
+   // <editor-fold defaultstate="collapsed" desc="Variables globales">
     Timer t;
-    static Jugador j1 = new Jugador("", 1);  // se crearon jugadores a los que no puedo acceder desde el tablero.
-    static Jugador j2 = new Jugador("", 1);  // esa es la razon del static declarado
+    static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
+    static Jugador j2 = new Jugador();  // esa es la razon del static declarado
     int tamaño = 0;
     boolean iniciarJuego = false;
     // </editor-fold>  
-   
 
     public FRMUsuarios() {
         initComponents();
@@ -181,7 +180,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
     // </editor-fold>        
     
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        txtJugador1.setText("");
+         txtJugador1.setText("");
         txtJugador2.setText("");
 
         Font auxFont = lblPrimerJugador.getFont();
