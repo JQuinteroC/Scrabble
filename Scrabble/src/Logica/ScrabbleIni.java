@@ -11,11 +11,11 @@ import Visual.FRMInicio;
  *
  * @author Holligan
  */
-public class ScrabbleInicio {
+public class ScrabbleIni {
 
     public static void main(String[] args) {
         FRMInicio interfaz = FRMInicio.getInstance();
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -32,8 +32,7 @@ public class ScrabbleInicio {
         java.awt.EventQueue.invokeLater(() -> {
             interfaz.setVisible(true);
         });
-        
-        
+
         interfaz.setVisible(true);
     }
 }

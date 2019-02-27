@@ -22,8 +22,8 @@ public class FRMUsuarios extends javax.swing.JFrame {
 
     // <editor-fold defaultstate="collapsed" desc="Variables globales">
     Timer t;
-    static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
-    static Jugador j2 = new Jugador();  // esa es la razon del static declarado
+    static Jugador j1 = new Jugador("", 1);  // se crearon jugadores a los que no puedo acceder desde el tablero.
+    static Jugador j2 = new Jugador("", 1);  // esa es la razon del static declarado
     int tamaño = 0;
     boolean iniciarJuego = false;
     // </editor-fold>  

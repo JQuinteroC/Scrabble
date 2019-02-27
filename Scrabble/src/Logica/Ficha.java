@@ -10,32 +10,49 @@ package Logica;
  * @author Estudiantes
  */
 public class Ficha {
-    private char letra;
-    int valor;
-    boolean enUso;
-    public Ficha(){
-        
-    }
-    public Ficha(char letra, int valor){
+
+    //Atributos de clase 
+    private String letra; //Simbolo sobre la ficha
+    private int valor;
+    private int estado; //Estado actual de la ficha -> { 0: En monton, 1: En mano, 2: En tablero}
+    private Casilla casillaAct;
+
+    public Ficha(String letra, int valor) {
         this.letra = letra;
         this.valor = valor;
+        this.estado = 0;
     }
-    
-    public char getLetra() {
+
+    public String getLetra() {
         return letra;
+    }
+
+    public void setLetra(String letra) {
+        this.letra = letra;
     }
 
     public int getValor() {
         return valor;
     }
 
-    public void setLetra(char letra) {
-        this.letra = letra;
-    }
-
     public void setValor(int valor) {
         this.valor = valor;
     }
-    
-   
+
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+
+    public Casilla getCasillaAct() {
+        return casillaAct;
+    }
+
+    public void setCasillaAct(Casilla casillaAct) {
+        this.casillaAct = casillaAct;
+    }
+
 }
