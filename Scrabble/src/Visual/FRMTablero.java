@@ -6,7 +6,6 @@
 package Visual;
 
 import Logica.*;
-import Visual.FRMUsuarios;
 
 /**
  *
@@ -1986,7 +1985,8 @@ public class FRMTablero extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // <editor-fold defaultstate="collapsed" desc="Funciones"> 
-    // </editor-fold>       
+    // </editor-fold>   
+    
     private void btnC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnC3ActionPerformed

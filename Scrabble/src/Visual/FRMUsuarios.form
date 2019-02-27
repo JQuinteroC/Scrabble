@@ -154,7 +154,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnJugar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Jugar"/>
+        <Property name="text" type="java.lang.String" value="Seleccionar jugador"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>

@@ -19,6 +19,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
     /**
      * Creates new form FRMUsuarios
      */
+
    // <editor-fold defaultstate="collapsed" desc="Variables globales">
     Timer t;
     static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
@@ -96,7 +97,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
             }
         });
 
-        btnJugar.setText("Jugar");
+        btnJugar.setText("Seleccionar jugador");
         btnJugar.setEnabled(false);
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,6 +178,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Funciones">
     // Pausa la ejecución durante los milisegundos ingresado por parametro
     // </editor-fold>        
+    
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
          txtJugador1.setText("");
         txtJugador2.setText("");
