@@ -11,7 +11,7 @@ import Visual.FRMInicio;
  *
  * @author Holligan
  */
-public class ScrabbleInicio {
+public class ScrabbleIni {
 
     public static void main(String[] args) {
 

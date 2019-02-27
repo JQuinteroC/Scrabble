@@ -5,30 +5,21 @@
  */
 package Logica;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  *
  * @author Estudiantes
  */
 public class Jugador {
-    public String nombre;
-    int puntaje;
-    private ArrayList<Ficha> FichaJug = new ArrayList<>();
-    
-    public Jugador(){
-        
-    }
+
+    private String nombre;
+    private int puntaje;
+    private HashMap<String, Ficha> FichasDis = new HashMap();
+
     public Jugador(String nombre, int puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
     }
 
-    public void setFichaJug(ArrayList<Ficha> FichaJug) {
-        this.FichaJug = FichaJug;
-    }
-
-    public ArrayList<Ficha> getFichaJug() {
-        return FichaJug;
-    }
-    
 }

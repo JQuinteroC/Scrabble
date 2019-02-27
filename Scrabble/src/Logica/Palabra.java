@@ -12,6 +12,32 @@ import java.util.ArrayList;
  * @author estudiantes
  */
 public class Palabra {
-    int puntaje;
-    ArrayList<Ficha> palabra;
+
+    private int puntaje;
+    private ArrayList<Ficha> palabra;
+
+    public Palabra() {
+        this.palabra = new ArrayList<>();
+    }
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
+
+    public void agregarFic(Ficha ficha) {
+        palabra.add(ficha);
+    }
+
+    public void calcularPun() {
+        int sum = 0;
+        int mult = 1;
+        for (Ficha ficha : palabra) {
+            
+        }
+    }
+
 }
