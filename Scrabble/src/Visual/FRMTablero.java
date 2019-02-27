@@ -24,10 +24,6 @@ public class FRMTablero extends javax.swing.JFrame {
 
     // <editor-fold defaultstate="collapsed" desc="Variables globales"> 
     Casilla[] cNormal;
-    CTriPalabra[] cTripleP;
-    CTriLetra[] cTripleL;
-    CDoPalabra[] cDobleP;
-    CDoLetra[] cDobleL;
     Ficha[] fichas;
     // </editor-fold>      
 

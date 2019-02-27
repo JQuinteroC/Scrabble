@@ -17,6 +17,10 @@ public class Jugador {
     private int puntaje;
     private HashMap<String, Ficha> FichasDis = new HashMap();
 
+    public Jugador() {
+    }
+
+    
     public Jugador(String nombre, int puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
