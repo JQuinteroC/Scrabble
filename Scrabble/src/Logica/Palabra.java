@@ -23,21 +23,27 @@ public class Palabra {
     public int getPuntaje() {
         return puntaje;
     }
-
-    public void setPuntaje(int puntaje) {
-        this.puntaje = puntaje;
-    }
-
+    
     public void agregarFic(Ficha ficha) {
         palabra.add(ficha);
     }
 
     public void calcularPun() {
-        int sum = 0;
-        int mult = 1;
+        int suma = 0;
+        int multiplicador = 1;
         for (Ficha ficha : palabra) {
-            
+            int valorFicha = ficha.getValor();
+            if(ficha.getCasillaAct().isDoblePun())
+                valorFicha *= 2;
+            else if(ficha.getCasillaAct().isTriplePun())
+                valorFicha *= 3;
+            else if(ficha.getCasillaAct().isDoblePal())
+                multiplicador *= 2;
+            else if(ficha.getCasillaAct().isTriplePal())
+                multiplicador *= 3;
+            suma += valorFicha;
         }
+        puntaje = suma * multiplicador;
     }
 
 }

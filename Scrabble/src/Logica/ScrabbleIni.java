@@ -27,12 +27,17 @@ public class ScrabbleIni {
             java.util.logging.Logger.getLogger(interfaz.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        Tablero tablero = new Tablero(15);
+        tablero.getTablero()[0][0].setDoblePal(true);
+
+        interfaz.setVisible(true);
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             interfaz.setVisible(true);
         });
-
-        interfaz.setVisible(true);
+        
+        
     }
 }

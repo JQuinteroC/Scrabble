@@ -21,18 +21,33 @@ public class Casilla {
     private boolean doblePun;
     private boolean triplePal;
     private boolean triplePun;
+    private boolean salida;
     private boolean ocupado;
 
-    public Casilla(int x, int y, boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean ocupado) {
+    public Casilla(int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.doblePal = false;
+        this.doblePun = false;
+        this.triplePal = false;
+        this.triplePun = false;
+        this.salida = false;
+        this.ocupado = false;
+    }
+    
+    
+
+    public Casilla(int x, int y, boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean salida, boolean ocupado) {
         this.x = x;
         this.y = y;
         this.doblePal = doblePal;
         this.doblePun = doblePun;
         this.triplePal = triplePal;
         this.triplePun = triplePun;
+        this.salida = salida;
         this.ocupado = ocupado;
     }
-
+    
     public int getX() {
         return x;
     }
