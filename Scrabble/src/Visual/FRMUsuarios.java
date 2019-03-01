@@ -9,6 +9,8 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import javax.swing.Timer;
 import Logica.Jugador;
+import java.awt.Image;
+import java.awt.Toolkit;
 
 /**
  *
@@ -22,12 +24,12 @@ public class FRMUsuarios extends javax.swing.JFrame {
     Timer t;
     static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
     static Jugador j2 = new Jugador();  // esa es la razon del static declarado
-    
+
     public FRMUsuarios() {
         initComponents();
         super.setLocationRelativeTo(null);
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -50,8 +52,8 @@ public class FRMUsuarios extends javax.swing.JFrame {
         lblContador = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(900, 600));
-        setPreferredSize(new java.awt.Dimension(900, 600));
         setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -178,45 +180,49 @@ public class FRMUsuarios extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // <editor-fold defaultstate="collapsed" desc="Funciones">
-    
-    // Pausa la ejecución durante los milisegundos ingresado por parametro
+    // Define el ICO del JFrame
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().
+                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
+
+        return retValue;
+    }
     // </editor-fold>        
 
-    
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         txtJugador1.setText("");
         txtJugador2.setText("");
-        
+
         Font auxFont = lblPrimerJugador.getFont();
         lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), 1));
     }//GEN-LAST:event_btnLimpiarActionPerformed
-    
-    int tamaño = 0; 
+
+    int tamaño = 0;
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         btnLimpiar.setEnabled(false);
-        
-        
+
         // Selección aleatoria del jugador
-       int numero = (int) (Math.random() * 2) + 1;
-       if(numero == 1){
-           lblPrimerJugador.setText(txtJugador1.getText());
-           j1 = new Jugador(txtJugador1.getText(), 0);
-       } else{
-           lblPrimerJugador.setText(txtJugador2.getText());
-           j1 = new Jugador(txtJugador2.getText(), 0);
-       }
-       
+        int numero = (int) (Math.random() * 2) + 1;
+        if (numero == 1) {
+            lblPrimerJugador.setText(txtJugador1.getText());
+            j1 = new Jugador(txtJugador1.getText(), 0);
+        } else {
+            lblPrimerJugador.setText(txtJugador2.getText());
+            j1 = new Jugador(txtJugador2.getText(), 0);
+        }
+
         t = new Timer(1, (ActionEvent e) -> {
             if (tamaño < 100) {
                 // Recojo la fuente que se esta utilizando actualmente.
                 Font auxFont = lblPrimerJugador.getFont();
                 //Aplico la fuente actual, y al final se define el tamaño del texto
                 lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), tamaño));
-                
+
                 tamaño = tamaño + 4;
             } else if (tamaño >= 100 && tamaño < 800) {
                 tamaño++;
-                
+
                 if (tamaño == 104) {
                     lblContador.setText("3");
                 } else if (tamaño == 400) {
@@ -253,17 +259,17 @@ public class FRMUsuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_lblAtrasMousePressed
 
     private void txtJugador1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtJugador1KeyReleased
-        if("".equals(txtJugador1.getText()) || "".equals(txtJugador2.getText())){
+        if ("".equals(txtJugador1.getText()) || "".equals(txtJugador2.getText())) {
             btnJugar.setEnabled(false);
-        } else{
+        } else {
             btnJugar.setEnabled(true);
         }
     }//GEN-LAST:event_txtJugador1KeyReleased
 
     private void txtJugador2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtJugador2KeyReleased
-         if("".equals(txtJugador1.getText()) || "".equals(txtJugador2.getText())){
+        if ("".equals(txtJugador1.getText()) || "".equals(txtJugador2.getText())) {
             btnJugar.setEnabled(false);
-        } else{
+        } else {
             btnJugar.setEnabled(true);
         }
     }//GEN-LAST:event_txtJugador2KeyReleased

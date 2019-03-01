@@ -5,6 +5,9 @@
  * */
 package Visual;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+
 /**
  *
  * @author estudiantes
@@ -15,7 +18,7 @@ public class FRMInicio extends javax.swing.JFrame {
      * Creates new form FRMInicio
      */
     public FRMInicio() {
-        
+
         initComponents();
         super.setLocationRelativeTo(null);
     }
@@ -33,6 +36,7 @@ public class FRMInicio extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setPreferredSize(new java.awt.Dimension(900, 600));
         setResizable(false);
         setSize(new java.awt.Dimension(900, 600));
@@ -75,6 +79,17 @@ public class FRMInicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // <editor-fold defaultstate="collapsed" desc="Funciones">
+    // Define el ICO del JFrame
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().
+                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
+
+        return retValue;
+    }
+    // </editor-fold>  
+
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
         // TODO add your handling code here:
         FRMenu menu = new FRMenu();
@@ -107,7 +122,7 @@ public class FRMInicio extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(FRMInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {

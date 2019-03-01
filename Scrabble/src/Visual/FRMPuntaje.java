@@ -5,6 +5,9 @@
  * */
 package Visual;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+
 /**
  *
  * @author estudiantes
@@ -31,7 +34,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(900, 600));
+        setIconImage(getIconImage());
         setResizable(false);
 
         btnAtras.setText("Atras");
@@ -63,6 +66,17 @@ public class FRMPuntaje extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    // <editor-fold defaultstate="collapsed" desc="Funciones">
+    // Define el ICO del JFrame
+    @Override
+    public Image getIconImage() {
+        Image retValue = Toolkit.getDefaultToolkit().
+                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
+
+        return retValue;
+    }
+    // </editor-fold>  
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
         // TODO add your handling code here:
