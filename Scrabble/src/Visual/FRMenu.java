@@ -7,6 +7,7 @@ package Visual;
 
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.JButton;
 
 /**
  *
@@ -20,6 +21,7 @@ public class FRMenu extends javax.swing.JFrame {
     public FRMenu() {
         initComponents();
         super.setLocationRelativeTo(null);
+        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
     }
 
     /**
@@ -40,28 +42,96 @@ public class FRMenu extends javax.swing.JFrame {
         setIconImage(getIconImage());
         setResizable(false);
 
+        btnNuevo.setContentAreaFilled(false);
+        btnNuevo.setOpaque(true);
+        btnNuevo.setBackground(new java.awt.Color(39, 170, 240));
+        btnNuevo.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnNuevo.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevo.setText("Nuevo");
+        btnNuevo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnNuevo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnNuevoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnNuevoMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnNuevoMousePressed(evt);
+            }
+        });
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoActionPerformed(evt);
             }
         });
 
+        btnPuntaje.setContentAreaFilled(false);
+        btnPuntaje.setOpaque(true);
+        btnPuntaje.setBackground(new java.awt.Color(39, 170, 240));
+        btnPuntaje.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnPuntaje.setForeground(new java.awt.Color(255, 255, 255));
         btnPuntaje.setText("Puntajes Maximos");
+        btnPuntaje.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnPuntaje.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnPuntajeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnPuntajeMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnPuntajeMousePressed(evt);
+            }
+        });
         btnPuntaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPuntajeActionPerformed(evt);
             }
         });
 
+        btnAcerca.setContentAreaFilled(false);
+        btnAcerca.setOpaque(true);
+        btnAcerca.setBackground(new java.awt.Color(39, 170, 240));
+        btnAcerca.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnAcerca.setForeground(new java.awt.Color(255, 255, 255));
         btnAcerca.setText("Acerca de");
+        btnAcerca.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnAcerca.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAcercaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAcercaMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAcercaMousePressed(evt);
+            }
+        });
         btnAcerca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAcercaActionPerformed(evt);
             }
         });
 
+        btnAtras.setContentAreaFilled(false);
+        btnAtras.setOpaque(true);
+        btnAtras.setBackground(new java.awt.Color(39, 170, 240));
+        btnAtras.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnAtras.setForeground(new java.awt.Color(255, 255, 255));
         btnAtras.setText("Atras");
+        btnAtras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnAtras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAtrasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAtrasMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAtrasMousePressed(evt);
+            }
+        });
         btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasActionPerformed(evt);
@@ -73,14 +143,14 @@ public class FRMenu extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(167, 537, Short.MAX_VALUE)
+                .addGap(167, 481, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnPuntaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnAcerca, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnAcerca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(204, 204, 204))
             .addGroup(layout.createSequentialGroup()
-                .addGap(93, 93, 93)
+                .addGap(105, 105, 105)
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -93,9 +163,9 @@ public class FRMenu extends javax.swing.JFrame {
                 .addComponent(btnPuntaje, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnAcerca, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95)
+                .addGap(103, 103, 103)
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102))
+                .addGap(94, 94, 94))
         );
 
         pack();
@@ -109,6 +179,20 @@ public class FRMenu extends javax.swing.JFrame {
                 getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
 
         return retValue;
+    }
+    
+    // Eventos visuales de botones
+    public void mouseEntrante(JButton boton){
+        boton.setBackground(new java.awt.Color(61, 179, 229));
+    }
+    
+    public void mouseSaliente(JButton boton){
+        //boton.setBackground(new java.awt.Color(39,170,240));
+        boton.setBackground(new java.awt.Color(39,170,240));
+    }
+    
+    public void mousePulsado(JButton boton){
+        boton.setBackground(new java.awt.Color(30, 156, 209));
     }
     // </editor-fold>  
 
@@ -139,6 +223,54 @@ public class FRMenu extends javax.swing.JFrame {
         inicio.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAtrasActionPerformed
+
+    private void btnAtrasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMouseEntered
+        mouseEntrante(btnAtras);
+    }//GEN-LAST:event_btnAtrasMouseEntered
+
+    private void btnAtrasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMouseExited
+        mouseSaliente(btnAtras);
+    }//GEN-LAST:event_btnAtrasMouseExited
+
+    private void btnAtrasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMousePressed
+        mousePulsado(btnAtras);
+    }//GEN-LAST:event_btnAtrasMousePressed
+
+    private void btnNuevoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNuevoMouseEntered
+        mouseEntrante(btnNuevo);
+    }//GEN-LAST:event_btnNuevoMouseEntered
+
+    private void btnNuevoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNuevoMouseExited
+        mouseSaliente(btnNuevo);
+    }//GEN-LAST:event_btnNuevoMouseExited
+
+    private void btnNuevoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNuevoMousePressed
+        mousePulsado(btnNuevo);
+    }//GEN-LAST:event_btnNuevoMousePressed
+
+    private void btnPuntajeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPuntajeMouseEntered
+        mouseEntrante(btnPuntaje);
+    }//GEN-LAST:event_btnPuntajeMouseEntered
+
+    private void btnPuntajeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPuntajeMouseExited
+        mouseSaliente(btnPuntaje);
+    }//GEN-LAST:event_btnPuntajeMouseExited
+
+    private void btnPuntajeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPuntajeMousePressed
+        mousePulsado(btnPuntaje);
+    }//GEN-LAST:event_btnPuntajeMousePressed
+
+    private void btnAcercaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAcercaMouseEntered
+        mouseEntrante(btnAcerca);
+    }//GEN-LAST:event_btnAcercaMouseEntered
+
+    private void btnAcercaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAcercaMouseExited
+        mouseSaliente(btnAcerca);
+    }//GEN-LAST:event_btnAcercaMouseExited
+
+    private void btnAcercaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAcercaMousePressed
+        mousePulsado(btnAcerca);
+    }//GEN-LAST:event_btnAcercaMousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAcerca;

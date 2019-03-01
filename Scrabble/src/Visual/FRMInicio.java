@@ -24,8 +24,7 @@ public class FRMInicio extends javax.swing.JFrame {
         
         initComponents();
         super.setLocationRelativeTo(null);
-        this.getContentPane().setBackground(new java.awt.Color(207,236,252));
-        //this.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
     }
     
     public static FRMInicio getInstance() {
@@ -48,7 +47,6 @@ public class FRMInicio extends javax.swing.JFrame {
         btnContinuar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(105, 197, 236));
@@ -108,8 +106,6 @@ public class FRMInicio extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("SCRABBLE");
 
-        jButton1.setText("jButton1");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -124,10 +120,6 @@ public class FRMInicio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(87, 87, 87))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,9 +130,7 @@ public class FRMInicio extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnContinuar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addComponent(jButton1)
-                .addGap(32, 32, 32))
+                .addGap(110, 110, 110))
         );
 
         pack();
@@ -210,7 +200,6 @@ public class FRMInicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnContinuar;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

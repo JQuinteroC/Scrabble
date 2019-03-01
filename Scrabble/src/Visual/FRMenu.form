@@ -28,16 +28,16 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="167" pref="537" max="32767" attributes="0"/>
+              <EmptySpace min="167" pref="481" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="btnPuntaje" max="32767" attributes="0"/>
                   <Component id="btnNuevo" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnAcerca" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                  <Component id="btnAcerca" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
               <Component id="btnAtras" min="-2" pref="119" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -52,9 +52,9 @@
               <Component id="btnPuntaje" min="-2" pref="60" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnAcerca" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
               <Component id="btnAtras" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -62,35 +62,123 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="btnNuevo">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="aa" red="27" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dotum" size="20" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Nuevo"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2">
+              <Color PropertyName="color" blue="ba" green="8a" red="1a" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
       </Properties>
       <Events>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnNuevoMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnNuevoMouseExited"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnNuevoMousePressed"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNuevoActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnNuevo.setContentAreaFilled(false);&#xa;btnNuevo.setOpaque(true);"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btnPuntaje">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="aa" red="27" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dotum" size="20" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Puntajes Maximos"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2">
+              <Color PropertyName="color" blue="ba" green="8a" red="1a" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
       </Properties>
       <Events>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnPuntajeMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnPuntajeMouseExited"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnPuntajeMousePressed"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPuntajeActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnPuntaje.setContentAreaFilled(false);&#xa;btnPuntaje.setOpaque(true);"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btnAcerca">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="aa" red="27" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dotum" size="20" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Acerca de"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2">
+              <Color PropertyName="color" blue="ba" green="8a" red="1a" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
       </Properties>
       <Events>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAcercaMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAcercaMouseExited"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAcercaMousePressed"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAcercaActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnAcerca.setContentAreaFilled(false);&#xa;btnAcerca.setOpaque(true);"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btnAtras">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="aa" red="27" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dotum" size="20" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Atras"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2">
+              <Color PropertyName="color" blue="ba" green="8a" red="1a" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
       </Properties>
       <Events>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAtrasMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAtrasMouseExited"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAtrasMousePressed"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtrasActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnAtras.setContentAreaFilled(false);&#xa;btnAtras.setOpaque(true);"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

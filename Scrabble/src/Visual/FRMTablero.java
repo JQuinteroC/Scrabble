@@ -21,6 +21,9 @@ public class FRMTablero extends javax.swing.JFrame {
     public FRMTablero() {
         initComponents();
         super.setLocationRelativeTo(null);
+        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        jPanel3.setBackground(new  java.awt.Color(255,255,255));
+        jPanel1.setBackground(new  java.awt.Color(255,255,255));
     }
 
     // <editor-fold defaultstate="collapsed" desc="Variables globales"> 
@@ -270,20 +273,22 @@ public class FRMTablero extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btnFicha1 = new javax.swing.JButton();
+        btnFicha2 = new javax.swing.JButton();
+        btnFicha3 = new javax.swing.JButton();
+        btnFicha4 = new javax.swing.JButton();
+        btnFicha5 = new javax.swing.JButton();
+        btnFicha6 = new javax.swing.JButton();
+        btnFicha7 = new javax.swing.JButton();
+        btnCambiar = new javax.swing.JButton();
+        btnPasar = new javax.swing.JButton();
+        btnAceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(1044, 774));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setMaximumSize(new java.awt.Dimension(750, 750));
@@ -1865,16 +1870,23 @@ public class FRMTablero extends javax.swing.JFrame {
         btnO15.setEnabled(false);
         jPanel2.add(btnO15);
 
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
+
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jLabel1.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
         jLabel1.setText("Jugadores");
 
+        jLabel2.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
         jLabel2.setText("[J2]");
 
+        jLabel3.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
         jLabel3.setText("[J1]");
 
+        jLabel4.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
         jLabel4.setText("Turno");
 
+        jLabel5.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("1");
 
@@ -1914,75 +1926,76 @@ public class FRMTablero extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Fichas"));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 11, 268, 97));
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Fichas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dotum", 0, 13))); // NOI18N
         jPanel3.setLayout(new java.awt.GridLayout(4, 2));
 
-        jButton1.setText("jButton1");
-        jPanel3.add(jButton1);
+        btnFicha1.setContentAreaFilled(false);
+        btnFicha1.setOpaque(true);
+        btnFicha1.setText("jButton1");
+        jPanel3.add(btnFicha1);
 
-        jButton2.setText("jButton2");
-        jPanel3.add(jButton2);
+        btnFicha2.setContentAreaFilled(false);
+        btnFicha2.setOpaque(true);
+        btnFicha2.setText("jButton2");
+        jPanel3.add(btnFicha2);
 
-        jButton3.setText("jButton3");
-        jPanel3.add(jButton3);
+        btnFicha3.setContentAreaFilled(false);
+        btnFicha3.setOpaque(true);
+        btnFicha3.setText("jButton3");
+        jPanel3.add(btnFicha3);
 
-        jButton4.setText("jButton4");
-        jPanel3.add(jButton4);
+        btnFicha4.setContentAreaFilled(false);
+        btnFicha4.setOpaque(true);
+        btnFicha4.setText("jButton4");
+        jPanel3.add(btnFicha4);
 
-        jButton5.setText("jButton5");
-        jPanel3.add(jButton5);
+        btnFicha5.setContentAreaFilled(false);
+        btnFicha5.setOpaque(true);
+        btnFicha5.setText("jButton5");
+        jPanel3.add(btnFicha5);
 
-        jButton6.setText("jButton6");
-        jPanel3.add(jButton6);
+        btnFicha6.setContentAreaFilled(false);
+        btnFicha6.setOpaque(true);
+        btnFicha6.setText("jButton6");
+        jPanel3.add(btnFicha6);
 
-        jButton7.setText("jButton7");
-        jPanel3.add(jButton7);
+        btnFicha7.setContentAreaFilled(false);
+        btnFicha7.setOpaque(true);
+        btnFicha7.setText("jButton7");
+        jPanel3.add(btnFicha7);
 
-        jButton10.setText("Nuevas Fichas");
-        jPanel3.add(jButton10);
+        btnCambiar.setContentAreaFilled(false);
+        btnCambiar.setOpaque(true);
+        btnCambiar.setBackground(new java.awt.Color(39, 170, 240));
+        btnCambiar.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnCambiar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCambiar.setText("<html>Nuevas<br>fichas</html>");
+        jPanel3.add(btnCambiar);
 
-        jButton8.setText("Pasar turno");
-        jButton8.setPreferredSize(new java.awt.Dimension(119, 60));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 119, 268, 532));
 
-        jButton9.setText("Aceptar");
-        jButton9.setMinimumSize(new java.awt.Dimension(55, 25));
-        jButton9.setPreferredSize(new java.awt.Dimension(119, 60));
+        btnPasar.setContentAreaFilled(false);
+        btnPasar.setOpaque(true);
+        btnPasar.setBackground(new java.awt.Color(39, 170, 240));
+        btnPasar.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnPasar.setForeground(new java.awt.Color(255, 255, 255));
+        btnPasar.setText("<html>Pasar<br>turno</html>");
+        btnPasar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnPasar.setPreferredSize(new java.awt.Dimension(119, 60));
+        getContentPane().add(btnPasar, new org.netbeans.lib.awtextra.AbsoluteConstraints(895, 669, 134, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 8, Short.MAX_VALUE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        btnAceptar.setContentAreaFilled(false);
+        btnAceptar.setOpaque(true);
+        btnAceptar.setBackground(new java.awt.Color(39, 170, 240));
+        btnAceptar.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnAceptar.setForeground(new java.awt.Color(255, 255, 255));
+        btnAceptar.setText("Aceptar");
+        btnAceptar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnAceptar.setMinimumSize(new java.awt.Dimension(55, 25));
+        btnAceptar.setPreferredSize(new java.awt.Dimension(119, 60));
+        getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 669, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -2018,6 +2031,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnA7;
     private javax.swing.JButton btnA8;
     private javax.swing.JButton btnA9;
+    private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnB1;
     private javax.swing.JButton btnB10;
     private javax.swing.JButton btnB11;
@@ -2048,6 +2062,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnC7;
     private javax.swing.JButton btnC8;
     private javax.swing.JButton btnC9;
+    private javax.swing.JButton btnCambiar;
     private javax.swing.JButton btnD1;
     private javax.swing.JButton btnD10;
     private javax.swing.JButton btnD11;
@@ -2093,6 +2108,13 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnF7;
     private javax.swing.JButton btnF8;
     private javax.swing.JButton btnF9;
+    private javax.swing.JButton btnFicha1;
+    private javax.swing.JButton btnFicha2;
+    private javax.swing.JButton btnFicha3;
+    private javax.swing.JButton btnFicha4;
+    private javax.swing.JButton btnFicha5;
+    private javax.swing.JButton btnFicha6;
+    private javax.swing.JButton btnFicha7;
     private javax.swing.JButton btnG1;
     private javax.swing.JButton btnG10;
     private javax.swing.JButton btnG11;
@@ -2228,16 +2250,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private javax.swing.JButton btnO7;
     private javax.swing.JButton btnO8;
     private javax.swing.JButton btnO9;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btnPasar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

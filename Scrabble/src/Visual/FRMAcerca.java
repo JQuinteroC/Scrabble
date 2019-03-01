@@ -7,6 +7,7 @@ package Visual;
 
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.JButton;
 
 /**
  *
@@ -20,6 +21,7 @@ public class FRMAcerca extends javax.swing.JFrame {
     public FRMAcerca() {
         initComponents();
         super.setLocationRelativeTo(null);
+        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
     }
 
     /**
@@ -37,7 +39,24 @@ public class FRMAcerca extends javax.swing.JFrame {
         setIconImage(getIconImage());
         setResizable(false);
 
+        btnAtras.setContentAreaFilled(false);
+        btnAtras.setOpaque(true);
+        btnAtras.setBackground(new java.awt.Color(39, 170, 240));
+        btnAtras.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
+        btnAtras.setForeground(new java.awt.Color(255, 255, 255));
         btnAtras.setText("Atras");
+        btnAtras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
+        btnAtras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAtrasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAtrasMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAtrasMousePressed(evt);
+            }
+        });
         btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasActionPerformed(evt);
@@ -73,6 +92,20 @@ public class FRMAcerca extends javax.swing.JFrame {
 
         return retValue;
     }
+    
+    // Eventos visuales de botones
+    public void mouseEntrante(JButton boton){
+        boton.setBackground(new java.awt.Color(61, 179, 229));
+    }
+    
+    public void mouseSaliente(JButton boton){
+        //boton.setBackground(new java.awt.Color(39,170,240));
+        boton.setBackground(new java.awt.Color(39,170,240));
+    }
+    
+    public void mousePulsado(JButton boton){
+        boton.setBackground(new java.awt.Color(30, 156, 209));
+    }
     // </editor-fold>  
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
@@ -81,6 +114,18 @@ public class FRMAcerca extends javax.swing.JFrame {
         menu.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAtrasActionPerformed
+
+    private void btnAtrasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMouseEntered
+        mouseEntrante(btnAtras);
+    }//GEN-LAST:event_btnAtrasMouseEntered
+
+    private void btnAtrasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMouseExited
+        mouseSaliente(btnAtras);
+    }//GEN-LAST:event_btnAtrasMouseExited
+
+    private void btnAtrasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMousePressed
+        mousePulsado(btnAtras);
+    }//GEN-LAST:event_btnAtrasMousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
