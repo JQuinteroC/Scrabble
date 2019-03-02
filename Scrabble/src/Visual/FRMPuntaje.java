@@ -36,6 +36,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconImage());
         setResizable(false);
 
         btnAtras.setContentAreaFilled(false);
@@ -90,7 +91,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
     @Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().
-                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
+                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble.png"));
 
         return retValue;
     }

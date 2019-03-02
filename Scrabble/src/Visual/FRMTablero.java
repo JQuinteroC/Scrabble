@@ -8,6 +8,7 @@ package Visual;
 import Logica.*;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.JButton;
 
 /**
  *
@@ -1972,6 +1973,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnCambiar.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
         btnCambiar.setForeground(new java.awt.Color(255, 255, 255));
         btnCambiar.setText("<html>Nuevas<br>fichas</html>");
+        btnCambiar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnCambiarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnCambiarMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnCambiarMousePressed(evt);
+            }
+        });
         jPanel3.add(btnCambiar);
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 119, 268, 532));
@@ -1984,6 +1996,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnPasar.setText("<html>Pasar<br>turno</html>");
         btnPasar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
         btnPasar.setPreferredSize(new java.awt.Dimension(119, 60));
+        btnPasar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnPasarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnPasarMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnPasarMousePressed(evt);
+            }
+        });
         getContentPane().add(btnPasar, new org.netbeans.lib.awtextra.AbsoluteConstraints(895, 669, 134, -1));
 
         btnAceptar.setContentAreaFilled(false);
@@ -1995,6 +2018,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnAceptar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
         btnAceptar.setMinimumSize(new java.awt.Dimension(55, 25));
         btnAceptar.setPreferredSize(new java.awt.Dimension(119, 60));
+        btnAceptar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAceptarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAceptarMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAceptarMousePressed(evt);
+            }
+        });
         getContentPane().add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 669, -1, -1));
 
         pack();
@@ -2005,15 +2039,65 @@ public class FRMTablero extends javax.swing.JFrame {
     @Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().
-                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
+                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble.png"));
 
         return retValue;
+    }
+    
+    // Eventos visuales de botones
+    public void mouseEntrante(JButton boton){
+        boton.setBackground(new java.awt.Color(61, 179, 229));
+    }
+    
+    public void mouseSaliente(JButton boton){
+        //boton.setBackground(new java.awt.Color(39,170,240));
+        boton.setBackground(new java.awt.Color(39,170,240));
+    }
+    
+    public void mousePulsado(JButton boton){
+        boton.setBackground(new java.awt.Color(30, 156, 209));
     }
     // </editor-fold>   
     
     private void btnC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnC3ActionPerformed
+
+    private void btnCambiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMouseEntered
+        mouseEntrante(btnCambiar);
+    }//GEN-LAST:event_btnCambiarMouseEntered
+
+    private void btnCambiarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMouseExited
+        mouseSaliente(btnCambiar);
+    }//GEN-LAST:event_btnCambiarMouseExited
+
+    private void btnCambiarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMousePressed
+        mousePulsado(btnCambiar);
+    }//GEN-LAST:event_btnCambiarMousePressed
+
+    private void btnPasarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMouseEntered
+        mouseEntrante(btnPasar);
+    }//GEN-LAST:event_btnPasarMouseEntered
+
+    private void btnPasarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMouseExited
+        mouseSaliente(btnPasar);
+    }//GEN-LAST:event_btnPasarMouseExited
+
+    private void btnPasarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMousePressed
+        mousePulsado(btnPasar);
+    }//GEN-LAST:event_btnPasarMousePressed
+
+    private void btnAceptarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMouseEntered
+        mouseEntrante(btnAceptar);
+    }//GEN-LAST:event_btnAceptarMouseEntered
+
+    private void btnAceptarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMouseExited
+        mouseSaliente(btnAceptar);
+    }//GEN-LAST:event_btnAceptarMouseExited
+
+    private void btnAceptarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMousePressed
+        mousePulsado(btnAceptar);
+    }//GEN-LAST:event_btnAceptarMousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA1;

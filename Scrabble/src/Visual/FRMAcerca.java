@@ -88,7 +88,7 @@ public class FRMAcerca extends javax.swing.JFrame {
     @Override
     public Image getIconImage() {
         Image retValue = Toolkit.getDefaultToolkit().
-                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble1.png"));
+                getImage(ClassLoader.getSystemResource("recursos/icon_Scrabble.png"));
 
         return retValue;
     }
