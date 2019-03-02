@@ -18,15 +18,17 @@ public class Jugador {
     private int puntaje;
     //fichas que tiene el jugador actualmente
     private ArrayList<Ficha> fichasDis = new ArrayList<>();
+    //historial de jugadas
     private ArrayList<Palabra> jugadas = new ArrayList<>();
 
     public Jugador() {
     }
 
-    
     public Jugador(String nombre, int puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
+        fichasDis = new ArrayList<>();
+        jugadas = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -44,30 +46,30 @@ public class Jugador {
     public void setPuntaje(int puntaje) {
         this.puntaje = puntaje;
     }
-    
+
     //metodo agregar jugada
-    public void agregarJugada(Palabra palabra){
+    public void agregarJugada(Palabra palabra) {
         jugadas.add(palabra);
     }
-    
+
     //metodo agregar fichas
-    public void agregarFic(Ficha ficha){
+    public void agregarFic(Ficha ficha) {
         fichasDis.add(ficha);
     }
-    
-    //metodo eliminar una ficha especifica
-    public void eliminarFic(Ficha ficha){
-        for(int i = 0; i < fichasDis.size(); i++){
-            if(fichasDis.get(i).equals(ficha)){
-                fichasDis.remove(i);
-            }
+
+    //metodo eliminar todas las fichas
+    public Ficha eliminarFicha() {
+        if (!fichasDis.isEmpty()) {
+            return fichasDis.remove(0);
+        } else {
+            System.out.println("No hay Fichas");
+            return null;
         }
     }
-    //metodo eliminar todas las fichas
-    public void eliminarTod(){
-        fichasDis.clear();
+
+    @Override
+    public String toString() {
+        return "Jugador:\n\t" + nombre + "\n\t" + puntaje + "\n\t" + fichasDis + "\n\t" + jugadas;
     }
-    
-    
 
 }

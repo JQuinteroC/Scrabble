@@ -14,7 +14,7 @@ public class Ficha {
     //Atributos de clase 
     private String letra; //Simbolo sobre la ficha
     private int valor;
-    private int estado; //Estado actual de la ficha -> { 0: En blsa, 1: En mano, 2: En tablero}
+    private int estado; //Estado actual de la ficha -> { 0: En bolsa, 1: En mano, 2: En tablero}
     private Casilla casillaAct;
 
     public Ficha(String letra, int valor) {
@@ -57,11 +57,16 @@ public class Ficha {
 
     @Override
     public boolean equals(Object obj) {
-        if(this != obj)
+        if (this != obj) {
             return ((Ficha) obj).letra.equals(this.letra);
-        else
+        } else {
             return true;
+        }
     }
 
-    
+    @Override
+    public String toString() {
+        return "[" + letra + "," + valor + ']';
+    }
+
 }

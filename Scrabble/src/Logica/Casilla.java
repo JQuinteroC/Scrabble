@@ -5,8 +5,6 @@
  */
 package Logica;
 
-import javax.swing.JButton;
-
 /**
  *
  * @author Estudiantes
@@ -23,6 +21,7 @@ public class Casilla {
     private boolean triplePun;
     private boolean salida;
     private boolean ocupado;
+    private Ficha ficha;
 
     public Casilla(int x, int y) {
         this.x = x;
@@ -34,8 +33,6 @@ public class Casilla {
         this.salida = false;
         this.ocupado = false;
     }
-    
-    
 
     public Casilla(int x, int y, boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean salida, boolean ocupado) {
         this.x = x;
@@ -47,7 +44,7 @@ public class Casilla {
         this.salida = salida;
         this.ocupado = ocupado;
     }
-    
+
     public int getX() {
         return x;
     }
@@ -103,4 +100,40 @@ public class Casilla {
     public void setOcupado(boolean ocupado) {
         this.ocupado = ocupado;
     }
+
+    public boolean isSalida() {
+        return salida;
+    }
+
+    public void setSalida(boolean salida) {
+        this.salida = salida;
+    }
+
+    public Ficha getFicha() {
+        return ficha;
+    }
+
+    public void setFicha(Ficha ficha) {
+        this.ficha = ficha;
+    }
+
+    @Override
+    public String toString() {
+        String valor;
+        if (isSalida()) {
+            valor = "**";
+        } else if (isDoblePun()) {
+            valor = "2L";
+        } else if (isDoblePal()) {
+            valor = "2P";
+        } else if (isTriplePal()) {
+            valor = "3P";
+        } else if (isTriplePun()) {
+            valor = "3L";
+        } else {
+            valor = "--";
+        }
+        return "[" + valor + ']';
+    }
+
 }

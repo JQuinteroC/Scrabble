@@ -27,9 +27,14 @@ public class ScrabbleIni {
             java.util.logging.Logger.getLogger(interfaz.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        
-        Tablero tablero = new Tablero(15);
-        tablero.getTablero()[0][0].setDoblePal(true);
+
+        Bolsa bolsa = new Bolsa();
+        bolsa.revolverFic();
+        System.out.println(bolsa);
+        System.out.println(bolsa.retirarFic());
+
+        Tablero tab = new Tablero(15);
+        System.out.println(tab);
 
         interfaz.setVisible(true);
 
@@ -37,7 +42,6 @@ public class ScrabbleIni {
         java.awt.EventQueue.invokeLater(() -> {
             interfaz.setVisible(true);
         });
-        
-        
+
     }
 }
