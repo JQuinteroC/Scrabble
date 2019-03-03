@@ -327,7 +327,18 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA1.setOpaque(true);
         btnA1.setBackground(new java.awt.Color(254, 69, 69));
         btnA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnA1.setEnabled(false);
+        btnA1.setEnabled(true);
+        btnA1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA1MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA1MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA1);
 
         btnA2.setContentAreaFilled(false);
@@ -335,6 +346,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA2.setBackground(new java.awt.Color(255, 255, 255));
         btnA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA2.setEnabled(false);
+        btnA2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA2MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA2);
 
         btnA3.setContentAreaFilled(false);
@@ -342,6 +364,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA3.setBackground(new java.awt.Color(255, 255, 255));
         btnA3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA3.setEnabled(false);
+        btnA3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA3MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA3MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA3);
 
         btnA4.setContentAreaFilled(false);
@@ -349,6 +382,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA4.setBackground(new java.awt.Color(218, 219, 252));
         btnA4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA4.setEnabled(false);
+        btnA4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA4MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA4MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA4);
 
         btnA5.setContentAreaFilled(false);
@@ -356,6 +400,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA5.setBackground(new java.awt.Color(255, 255, 255));
         btnA5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA5.setEnabled(false);
+        btnA5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA5MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA5MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA5);
 
         btnA6.setContentAreaFilled(false);
@@ -363,6 +418,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA6.setBackground(new java.awt.Color(255, 255, 255));
         btnA6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA6.setEnabled(false);
+        btnA6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA6MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA6MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA6);
 
         btnA7.setContentAreaFilled(false);
@@ -370,6 +436,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA7.setBackground(new java.awt.Color(255, 255, 255));
         btnA7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA7.setEnabled(false);
+        btnA7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA7MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA7MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA7);
 
         btnA8.setContentAreaFilled(false);
@@ -377,6 +454,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA8.setBackground(new java.awt.Color(254, 69, 69));
         btnA8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA8.setEnabled(false);
+        btnA8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA8MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA8MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA8);
 
         btnA9.setContentAreaFilled(false);
@@ -384,6 +472,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA9.setBackground(new java.awt.Color(255, 255, 255));
         btnA9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA9.setEnabled(false);
+        btnA9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA9MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA9MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA9);
 
         btnA10.setContentAreaFilled(false);
@@ -391,6 +490,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA10.setBackground(new java.awt.Color(255, 255, 255));
         btnA10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA10.setEnabled(false);
+        btnA10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA10MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA10MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA10);
 
         btnA11.setContentAreaFilled(false);
@@ -398,6 +508,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA11.setBackground(new java.awt.Color(255, 255, 255));
         btnA11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA11.setEnabled(false);
+        btnA11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA11MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA11MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA11);
 
         btnA12.setContentAreaFilled(false);
@@ -405,6 +526,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA12.setBackground(new java.awt.Color(218, 219, 252));
         btnA12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA12.setEnabled(false);
+        btnA12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA12MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA12MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA12);
 
         btnA13.setContentAreaFilled(false);
@@ -412,6 +544,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA13.setBackground(new java.awt.Color(255, 255, 255));
         btnA13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA13.setEnabled(false);
+        btnA13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA13MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA13MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA13);
 
         btnA14.setContentAreaFilled(false);
@@ -419,6 +562,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA14.setBackground(new java.awt.Color(255, 255, 255));
         btnA14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA14.setEnabled(false);
+        btnA14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA14MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA14MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA14);
 
         btnA15.setContentAreaFilled(false);
@@ -426,6 +580,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA15.setBackground(new java.awt.Color(254, 69, 69));
         btnA15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnA15.setEnabled(false);
+        btnA15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnA15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnA15MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnA15MousePressed(evt);
+            }
+        });
         jPanel2.add(btnA15);
 
         btnB1.setContentAreaFilled(false);
@@ -1178,6 +1343,11 @@ public class FRMTablero extends javax.swing.JFrame {
         btnI1.setBackground(new java.awt.Color(255, 255, 255));
         btnI1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnI1.setEnabled(false);
+        btnI1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnI1MouseEntered(evt);
+            }
+        });
         jPanel2.add(btnI1);
 
         btnI2.setContentAreaFilled(false);
@@ -2413,6 +2583,343 @@ public class FRMTablero extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_btnH8MousePressed
+
+    private void btnA1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA1MousePressed
+        if (btnA1.isEnabled()) {
+            if (btnA1.getPressedIcon() == null || !btnA1.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA1.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    
+    }//GEN-LAST:event_btnA1MousePressed
+
+    private void btnA1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA1MouseEntered
+        if (btnA1.isEnabled() && fichaSel != null) {
+            btnA1.setIcon(fichaSel.getImagenPeq());
+        }                                   
+    }//GEN-LAST:event_btnA1MouseEntered
+
+    private void btnA1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA1MouseExited
+        if (btnA1.isEnabled() && fichaSel != null) {
+            btnA1.setIcon(btnA1.getPressedIcon());
+        }
+                                 
+
+    }//GEN-LAST:event_btnA1MouseExited
+
+    private void btnA2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA2MouseEntered
+        if (btnA2.isEnabled() && fichaSel != null) {
+            btnA2.setIcon(fichaSel.getImagenPeq());
+        }                                      
+    }//GEN-LAST:event_btnA2MouseEntered
+
+    private void btnA2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA2MouseExited
+           if (btnA2.isEnabled() && fichaSel != null) {
+            btnA2.setIcon(btnA2.getPressedIcon());
+        }                                   
+    }//GEN-LAST:event_btnA2MouseExited
+
+    private void btnA2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA2MousePressed
+         if (btnA2.isEnabled()) {
+            if (btnA2.getPressedIcon() == null || !btnA2.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA2.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    
+    }//GEN-LAST:event_btnA2MousePressed
+
+    private void btnA3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA3MouseEntered
+    if (btnA3.isEnabled() && fichaSel != null) {
+            btnA3.setIcon(fichaSel.getImagenPeq());
+        }
+      
+    }//GEN-LAST:event_btnA3MouseEntered
+
+    private void btnA3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA3MouseExited
+        if (btnA3.isEnabled() && fichaSel != null) {
+            btnA3.setIcon(btnA3.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA3MouseExited
+
+    private void btnA3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA3MousePressed
+        if (btnA3.isEnabled()) {
+            if (btnA3.getPressedIcon() == null || !btnA3.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA3.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }    
+    }//GEN-LAST:event_btnA3MousePressed
+
+    private void btnA4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA4MouseEntered
+        if (btnA4.isEnabled() && fichaSel != null) {
+            btnA4.setIcon(fichaSel.getImagenPeq());
+        }
+    
+    }//GEN-LAST:event_btnA4MouseEntered
+
+    private void btnA4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA4MouseExited
+        if (btnA4.isEnabled() && fichaSel != null) {
+            btnA4.setIcon(btnA4.getPressedIcon());
+        }
+    
+    }//GEN-LAST:event_btnA4MouseExited
+
+    private void btnA4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA4MousePressed
+        if (btnA4.isEnabled()) {
+            if (btnA4.getPressedIcon() == null || !btnA4.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA4.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    
+    }//GEN-LAST:event_btnA4MousePressed
+
+    private void btnA5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA5MouseEntered
+        if (btnA5.isEnabled() && fichaSel != null) {
+            btnA5.setIcon(fichaSel.getImagenPeq());
+        }
+ 
+    }//GEN-LAST:event_btnA5MouseEntered
+
+    private void btnA5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA5MouseExited
+        if (btnA5.isEnabled() && fichaSel != null) {
+            btnA5.setIcon(btnA5.getPressedIcon());
+        }
+
+    }//GEN-LAST:event_btnA5MouseExited
+
+    private void btnA5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA5MousePressed
+        if (btnA5.isEnabled()) {
+            if (btnA5.getPressedIcon() == null || !btnA5.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA5.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    
+    }//GEN-LAST:event_btnA5MousePressed
+
+    private void btnA6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA6MouseEntered
+        if (btnA6.isEnabled() && fichaSel != null) {
+            btnA6.setIcon(fichaSel.getImagenPeq());
+        }
+    
+    }//GEN-LAST:event_btnA6MouseEntered
+
+    private void btnA6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA6MouseExited
+        if (btnA6.isEnabled() && fichaSel != null) {
+            btnA6.setIcon(btnA6.getPressedIcon());
+        }
+
+    }//GEN-LAST:event_btnA6MouseExited
+
+    private void btnA6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA6MousePressed
+        if (btnA6.isEnabled()) {
+            if (btnA6.getPressedIcon() == null || !btnA6.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA6.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA6MousePressed
+
+    private void btnA7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA7MouseEntered
+        if (btnA7.isEnabled() && fichaSel != null) {
+            btnA7.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA7MouseEntered
+
+    private void btnA7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA7MouseExited
+        if (btnA7.isEnabled() && fichaSel != null) {
+            btnA7.setIcon(btnA7.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA7MouseExited
+
+    private void btnA7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA7MousePressed
+        if (btnA7.isEnabled()) {
+            if (btnA7.getPressedIcon() == null || !btnA7.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA7.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA7MousePressed
+
+    private void btnA8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA8MouseEntered
+        if (btnA8.isEnabled() && fichaSel != null) {
+            btnA8.setIcon(fichaSel.getImagenPeq());
+        }
+
+    }//GEN-LAST:event_btnA8MouseEntered
+
+    private void btnA8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA8MouseExited
+        if (btnA8.isEnabled() && fichaSel != null) {
+            btnA8.setIcon(btnA7.getPressedIcon());
+        }
+
+    }//GEN-LAST:event_btnA8MouseExited
+
+    private void btnA8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA8MousePressed
+        if (btnA8.isEnabled()) {
+            if (btnA8.getPressedIcon() == null || !btnA8.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA8.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA8MousePressed
+
+    private void btnA9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA9MouseEntered
+        if (btnA9.isEnabled() && fichaSel != null) {
+            btnA9.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA9MouseEntered
+
+    private void btnA9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA9MouseExited
+        if (btnA9.isEnabled() && fichaSel != null) {
+            btnA9.setIcon(btnA9.getPressedIcon());
+        }
+
+    }//GEN-LAST:event_btnA9MouseExited
+
+    private void btnA9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA9MousePressed
+        if (btnA9.isEnabled()) {
+            if (btnA9.getPressedIcon() == null || !btnA9.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA9.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }    
+    }//GEN-LAST:event_btnA9MousePressed
+
+    private void btnA10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA10MouseEntered
+       if (btnA10.isEnabled() && fichaSel != null) {
+            btnA10.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA10MouseEntered
+
+    private void btnA10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA10MouseExited
+        if (btnA10.isEnabled() && fichaSel != null) {
+            btnA10.setIcon(btnA10.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA10MouseExited
+
+    private void btnA10MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA10MousePressed
+        if (btnA10.isEnabled()) {
+            if (btnA10.getPressedIcon() == null || !btnA10.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA10.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA10MousePressed
+
+    private void btnA11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA11MouseEntered
+        if (btnA11.isEnabled() && fichaSel != null) {
+            btnA11.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA11MouseEntered
+
+    private void btnA11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA11MouseExited
+        if (btnA11.isEnabled() && fichaSel != null) {
+            btnA11.setIcon(btnA7.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA11MouseExited
+
+    private void btnA11MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA11MousePressed
+        if (btnA11.isEnabled()) {
+            if (btnA11.getPressedIcon() == null || !btnA11.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA11.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA11MousePressed
+
+    private void btnA12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA12MouseEntered
+        if (btnA12.isEnabled() && fichaSel != null) {
+            btnA12.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA12MouseEntered
+
+    private void btnA12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA12MouseExited
+        if (btnA12.isEnabled() && fichaSel != null) {
+            btnA12.setIcon(btnA12.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA12MouseExited
+
+    private void btnA12MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA12MousePressed
+        if (btnA12.isEnabled()) {
+            if (btnA12.getPressedIcon() == null || !btnA12.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA12.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA12MousePressed
+
+    private void btnA13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA13MouseEntered
+        if (btnA13.isEnabled() && fichaSel != null) {
+            btnA13.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA13MouseEntered
+
+    private void btnA13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA13MouseExited
+       if (btnA13.isEnabled() && fichaSel != null) {
+            btnA13.setIcon(btnA13.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA13MouseExited
+
+    private void btnA13MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA13MousePressed
+        if (btnA13.isEnabled()) {
+            if (btnA13.getPressedIcon() == null || !btnA13.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA13.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA13MousePressed
+
+    private void btnA14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA14MouseEntered
+        if (btnA14.isEnabled() && fichaSel != null) {
+            btnA14.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA14MouseEntered
+
+    private void btnA14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA14MouseExited
+        if (btnA14.isEnabled() && fichaSel != null) {
+            btnA14.setIcon(btnA14.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA14MouseExited
+
+    private void btnA14MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA14MousePressed
+       if (btnA14.isEnabled()) {
+            if (btnA14.getPressedIcon() == null || !btnA14.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA14.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA14MousePressed
+
+    private void btnA15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA15MouseEntered
+        if (btnA15.isEnabled() && fichaSel != null) {
+            btnA15.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnA15MouseEntered
+
+    private void btnA15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA15MouseExited
+        if (btnA15.isEnabled() && fichaSel != null) {
+            btnA15.setIcon(btnA15.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnA15MouseExited
+
+    private void btnA15MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnA15MousePressed
+        if (btnA15.isEnabled()) {
+            if (btnA15.getPressedIcon() == null || !btnA15.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav", 80);
+                btnA15.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnA15MousePressed
+
+    private void btnI1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnI1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnI1MouseEntered
+
+                          
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA1;
