@@ -2144,6 +2144,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnCambiarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMousePressed
         mousePulsado(btnCambiar);
+        
     }//GEN-LAST:event_btnCambiarMousePressed
 
     private void btnPasarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMouseEntered
@@ -2156,6 +2157,13 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnPasarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMousePressed
         mousePulsado(btnPasar);
+        if(turnoJugUno){
+            turnoJugUno = false;    //pasa turno
+            mostrarFic();           // muestra las fichas del jugador
+        }else{
+            turnoJugUno = true;
+            mostrarFic();
+        }
     }//GEN-LAST:event_btnPasarMousePressed
 
     private void btnAceptarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMouseEntered
