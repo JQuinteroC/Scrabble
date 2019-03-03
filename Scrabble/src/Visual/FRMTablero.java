@@ -42,6 +42,9 @@ public class FRMTablero extends javax.swing.JFrame {
     private int numeroTurno;
     private Ficha fichaSel = new Ficha();
     private JButton[][] tableroBot;
+    private String palabra;
+    private int AcumuladoTurno = 0;
+    public boolean lugar = true;
 
     /**
      * Crea el formulario FRMTablero
@@ -2477,13 +2480,15 @@ public class FRMTablero extends javax.swing.JFrame {
                         if (boton.isEnabled()) {
                             if (boton.getPressedIcon() == null || !boton.getPressedIcon().equals(fichaSel.getImagenPeq())) {
                                 reproducirSon("/recursos/sonidoFic.wav", 80);                              
-                                    boton.setPressedIcon(fichaSel.getImagenPeq());
                                     if(fichaSel.getImagenPeq() == null){
                                         bloquearCasi(ii,jj);
                                     }else{
-                                        liberarCasi(ii,jj); //acá se llama a la funcion de liberacion Casillas  
+                                        liberarCasi(ii,jj); //acá se llama a la funcion de liberacion Casillas                                        
+                                        guardaPal(fichaSel.getLetra() , fichaSel.getValor() );
+                                        lugar = true;
                                     }      
                                     fichaSel = new Ficha();
+                                    boton.setPressedIcon(fichaSel.getImagenPeq());
                             }
                         }
                     }
@@ -2510,9 +2515,25 @@ public class FRMTablero extends javax.swing.JFrame {
 
     }
     
+    private void guardaPal(String letra, int valor){
+        try{  
+               if(palabra == null){                    
+                    palabra = letra;
+                }else if (lugar){
+                    palabra += letra;   //acá es palabra + letra
+                }else{
+                    palabra = letra + palabra.substring(0,palabra.length());  //aca letra + palabra
+                } 
+               AcumuladoTurno += valor;
+            
+            System.out.println(palabra);
+        }catch(NullPointerException nu){ /* Es por si toca bordes del tablero */ }
+    }
+    
     private void liberarCasi(int ii, int jj){   // no estan enraizados porque pueden ocurrir varios casos a la vez
         try{        
             if(tableroBot[ii+1][jj].isEnabled()){
+                lugar = false;
                 tableroBot[ii-1][jj].setEnabled(true);
                 tableroBot[ii+1][jj-1].setEnabled(false);
                 tableroBot[ii+1][jj+1].setEnabled(false);
@@ -2523,6 +2544,7 @@ public class FRMTablero extends javax.swing.JFrame {
                 tableroBot[ii-1][jj+1].setEnabled(false);
             }
             if(tableroBot[ii][jj+1].isEnabled()){
+                lugar = false;
                 tableroBot[ii+1][jj+1].setEnabled(false);
                 tableroBot[ii-1][jj+1].setEnabled(false);
                 tableroBot[ii][jj-1].setEnabled(true);
@@ -2530,7 +2552,7 @@ public class FRMTablero extends javax.swing.JFrame {
             if(tableroBot[ii][jj-1].isEnabled()){
                 tableroBot[ii+1][jj-1].setEnabled(false);
                 tableroBot[ii-1][jj-1].setEnabled(false);
-                tableroBot[ii][jj+1].setEnabled(true);
+                tableroBot[ii][jj+1].setEnabled(true);                
             }
             // Este es el unico caso que no se da a la vez que los anteriores (por eso tanto AND)
             //ademas solo se da al inicio del juego cuando solo está habilitado el centro
@@ -2547,18 +2569,18 @@ public class FRMTablero extends javax.swing.JFrame {
     
     private void bloquearCasi(int ii, int jj){
         try{
-        if(tableroBot[ii+1][jj].isEnabled() && tableroBot[ii+1][jj].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii+1][jj].isEnabled() && tableroBot[ii+1][jj].getPressedIcon() == null )
             tableroBot[ii+1][jj].setEnabled(false);
         
-        if(tableroBot[ii-1][jj].isEnabled() && tableroBot[ii-1][jj].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii-1][jj].isEnabled() && tableroBot[ii-1][jj].getPressedIcon() == null)
             tableroBot[ii-1][jj].setEnabled(false);
         
-        if(tableroBot[ii][jj+1].isEnabled() && tableroBot[ii][jj+1].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii][jj+1].isEnabled() && tableroBot[ii][jj+1].getPressedIcon() == null)
             tableroBot[ii][jj+1].setEnabled(false);
         
-        if(tableroBot[ii][jj-1].isEnabled() && tableroBot[ii][jj-1].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii][jj-1].isEnabled() && tableroBot[ii][jj-1].getPressedIcon() == null)
             tableroBot[ii][jj-1].setEnabled(false);
-        }catch(NullPointerException nu){ System.out.println("la cagaste");}
+        }catch(NullPointerException nu){ /*por si son casillas del borde*/}
     }
     public Jugador getJugadorUno() {
         return jugadorUno;
@@ -2641,6 +2663,8 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnAceptarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMousePressed
         mousePulsado(btnAceptar);
+        btnCambiar.setEnabled(true);
+        AcumuladoTurno = 0;
     }//GEN-LAST:event_btnAceptarMousePressed
 
     private void btnFicha1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha1MousePressed
