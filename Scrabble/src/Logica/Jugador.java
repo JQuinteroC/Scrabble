@@ -22,7 +22,7 @@ public class Jugador {
 
     //Atributos de clase
     private String nombre;
-    private int puntaje;
+    private int puntaje=0;
     //fichas que tiene el jugador actualmente
     private ArrayList<Ficha> fichasDis = new ArrayList<>();
     //historial de jugadas
@@ -73,7 +73,7 @@ public class Jugador {
     }
 
     public void setPuntaje(int puntaje) {
-        this.puntaje = puntaje;
+        this.puntaje += puntaje;
     }
 
     /**
