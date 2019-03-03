@@ -21,10 +21,6 @@ import javax.swing.JButton;
  */
 public class FRMUsuarios extends javax.swing.JFrame {
 
-    private Jugador jugadorUno;
-    private Jugador jugadorDos;
-    private Tablero tablero;
-    private Bolsa bolsa;
     /**
      * Creates new form FRMUsuarios
      */
@@ -32,7 +28,12 @@ public class FRMUsuarios extends javax.swing.JFrame {
     Timer t;
     int tamaño = 0;
     boolean iniciarJuego = false;
-    // </editor-fold>  
+    // </editor-fold> 
+    private Jugador jugadorUno;
+    private Jugador jugadorDos;
+    private Tablero tablero;
+    private Bolsa bolsa;
+    private int selecionarTur;
 
     public FRMUsuarios() {
         initComponents();
@@ -281,11 +282,16 @@ public class FRMUsuarios extends javax.swing.JFrame {
             jugadorDos = FRMInicio.getInstance().getJugadorDos();
             bolsa = FRMInicio.getInstance().getBolsa();
             tablero = FRMInicio.getInstance().getTablero();
-
-            jugadorUno.setNombre(txtJugador1.getText());
-            jugadorDos.setNombre(txtJugador2.getText());
+            if (selecionarTur == 1) {
+                jugadorUno.setNombre(txtJugador1.getText());
+                jugadorDos.setNombre(txtJugador2.getText());
+            } else {
+                jugadorUno.setNombre(txtJugador2.getText());
+                jugadorDos.setNombre(txtJugador1.getText());
+            }
             jugadorUno.agregarFal(bolsa);
             jugadorDos.agregarFal(bolsa);
+            System.out.println("\n" + bolsa);
             // Cerrar venta FRM Usuarios
             this.dispose();
 
@@ -295,8 +301,8 @@ public class FRMUsuarios extends javax.swing.JFrame {
         } else {
             btnLimpiar.setEnabled(false);
             // Selección aleatoria del jugador
-            int numero = (int) (Math.random() * 2) + 1;
-            if (numero == 1) {
+            selecionarTur = (int) (Math.random() * 2) + 1;
+            if (selecionarTur == 1) {
                 lblPrimerJugador.setText(txtJugador1.getText());
             } else {
                 lblPrimerJugador.setText(txtJugador2.getText());

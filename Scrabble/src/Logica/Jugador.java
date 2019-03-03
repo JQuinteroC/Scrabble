@@ -27,7 +27,7 @@ public class Jugador {
     public Jugador(String nombre, int puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
-        fichasDis = new ArrayList<>();
+        fichasDis = new ArrayList<>(7);
         jugadas = new ArrayList<>();
     }
 
@@ -91,9 +91,17 @@ public class Jugador {
         }
     }
 
+    //metodo cambiar fichas
+    public void cambiarFic(Bolsa bolsa) {
+        for (int i = 0; i < 7; i++) {
+            bolsa.agregarFic(eliminarFicha(fichasDis.size() - 1));
+        }
+        agregarFal(bolsa);
+    }
+
     @Override
     public String toString() {
-        return "Jugador:\n\t" + nombre + "\n\t" + puntaje + "\n\t" + fichasDis + "\n\t" + jugadas;
+        return "\nJugador:\n\t" + nombre + "\n\t" + puntaje + "\n\t" + fichasDis + "\n\t" + jugadas;
     }
 
 }

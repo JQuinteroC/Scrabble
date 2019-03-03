@@ -8,21 +8,105 @@ package Visual;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.JButton;
+import Logica.Jugador;
+import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Calendar;
 
 /**
  *
  * @author estudiantes
  */
 public class FRMPuntaje extends javax.swing.JFrame {
+    private DataInputStream archivoCargado;
+    private DataOutputStream archivoGuardado;
+   // private Jugador[] Mejores;
+    private ArrayList<Jugador> Mejores;
+    Calendar calendario = Calendar.getInstance();
+   // private String[] Fecha;
+    private ArrayList<String> Fecha;
 
     /**
      * Creates new form FRMPuntaje
      */
     public FRMPuntaje() {
+        
+            guardar("Mejore pero no tanto",999); // Estoy añadiendo un jugador que rompia el record anterior
+                                                // Borrar mas adelante (Solo para pruebas)
+            cargar();
+            ordenar();
+        
         initComponents();
         super.setLocationRelativeTo(null);
         this.getContentPane().setBackground(new java.awt.Color(255,255,255));
+
     }
+    
+    public int cargar() {   
+		try {
+			archivoCargado = new DataInputStream(new FileInputStream(
+					System.getProperty("user.dir")
+							+ "\\src\\recursos\\usuarios.txt"));
+			//Mejores = new Jugador[10];
+                        Mejores = new ArrayList<Jugador>();
+                       // Fecha = new String[10];
+                       Fecha = new ArrayList<String>();
+                        int i = 0;
+                       // for(int j = 0; j < 10 ; j++){   //lo relleno de nada para evitar lang.NullPointerException
+                        //Fecha[j] = " ";
+                        //Mejores[j] = new Jugador(" ",0);
+                      //  }
+			while (true) {                           
+                               
+				String nombre = archivoCargado.readUTF();
+				int puntaje = archivoCargado.readInt();
+				//Fecha[i] = archivoCargado.readUTF();                                
+				//Mejores[i++] = new Jugador(nombre,puntaje);	
+                                Fecha.add(archivoCargado.readUTF());
+                                Mejores.add(new Jugador(nombre,puntaje));
+			}      
+                       
+		} catch (FileNotFoundException fnfe) {
+			return 0;
+		} catch (IOException ioe) { /* Error al escribir */
+		}catch(ArrayIndexOutOfBoundsException Aa){
+                    
+                }
+		return 1;
+	}
+    
+
+    
+    public void guardar(String nombre,int puntaje) {
+		try {
+			archivoGuardado = new DataOutputStream(new FileOutputStream(
+					System.getProperty("user.dir")
+							+ "\\src\\recursos\\usuarios.txt", true));
+                     
+                        Calendar calendario = Calendar.getInstance();   //fecha de hoy
+			// grabando al archivo
+			archivoGuardado.writeUTF(nombre);			
+			archivoGuardado.writeInt(puntaje);
+			archivoGuardado.writeUTF(calendario.get(Calendar.YEAR)+"/"+calendario.get(Calendar.MONTH)+"/"+calendario.get(Calendar.DAY_OF_MONTH));
+                        
+                  
+
+			// Cierra el Archivo
+			archivoGuardado.close();
+		}
+
+		catch (FileNotFoundException fnfe) { /* Archivo no encontrado */
+		} catch (IOException ioe) { /* Error al escribir */
+		}
+	}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -34,6 +118,8 @@ public class FRMPuntaje extends javax.swing.JFrame {
     private void initComponents() {
 
         btnAtras = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImage(getIconImage());
@@ -66,6 +152,40 @@ public class FRMPuntaje extends javax.swing.JFrame {
             }
         });
 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            /* new Object [][] {
+                {"#1", Mejores[0].getNombre(), Mejores[0].getPuntaje(), Fecha[0]},
+                {"#2", Mejores[1].getNombre(), Mejores[1].getPuntaje(), Fecha[1]},
+                {"#3", Mejores[2].getNombre(), Mejores[2].getPuntaje(), Fecha[2]},
+                {"#4", Mejores[3].getNombre(), Mejores[3].getPuntaje(), Fecha[3]},
+                {"#5", Mejores[4].getNombre(), Mejores[4].getPuntaje(), Fecha[4]},
+                {"#6", Mejores[5].getNombre(), Mejores[5].getPuntaje(), Fecha[5]},
+                {"#7", Mejores[6].getNombre(), Mejores[6].getPuntaje(), Fecha[6]},
+                {"#8", Mejores[7].getNombre(), Mejores[7].getPuntaje(), Fecha[7]},
+                {"#9", Mejores[8].getNombre(), Mejores[8].getPuntaje(), Fecha[8]},
+                {"#10", Mejores[9].getNombre(), Mejores[9].getPuntaje(), Fecha[9]},
+            },
+            new String [] {
+                "#", "nombre", "Puntaje", "Fecha"
+            }*/
+            new Object [][] {
+                {"#1", Mejores.get(0).getNombre(), Mejores.get(0).getPuntaje(), Fecha.get(0)},
+                {"#2", Mejores.get(1).getNombre(), Mejores.get(1).getPuntaje(), Fecha.get(1)},
+                {"#3", Mejores.get(2).getNombre(), Mejores.get(2).getPuntaje(), Fecha.get(2)},
+                {"#4", Mejores.get(3).getNombre(), Mejores.get(3).getPuntaje(), Fecha.get(3)},
+                {"#5", Mejores.get(4).getNombre(), Mejores.get(4).getPuntaje(), Fecha.get(4)},
+                {"#6", Mejores.get(5).getNombre(), Mejores.get(5).getPuntaje(), Fecha.get(5)},
+                {"#7", Mejores.get(6).getNombre(), Mejores.get(6).getPuntaje(), Fecha.get(6)},
+                {"#8", Mejores.get(7).getNombre(), Mejores.get(7).getPuntaje(), Fecha.get(7)},
+                {"#9", Mejores.get(8).getNombre(), Mejores.get(8).getPuntaje(), Fecha.get(8)},
+                {"#10", Mejores.get(9).getNombre(), Mejores.get(9).getPuntaje(), Fecha.get(9)},
+            },
+            new String [] {
+                "#", "nombre", "Puntaje", "Fecha"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -73,14 +193,20 @@ public class FRMPuntaje extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(84, 84, 84)
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(697, Short.MAX_VALUE))
+                .addGap(119, 119, 119)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(95, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(447, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(93, 93, 93))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(104, 104, 104)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(126, Short.MAX_VALUE))
         );
 
         pack();
@@ -95,6 +221,43 @@ public class FRMPuntaje extends javax.swing.JFrame {
 
         return retValue;
     }
+    
+    
+    public void ordenar(){
+        Jugador aux = new Jugador(); //Variable auxiliar de tipo jugador
+        String fechaAux;    //auxiliar
+                 
+                /* for(int i = 0;i < Mejores.length; i++){ //Método burbuja para ordenar el arrayList 
+                            for(int j = 0 ; j < Mejores.length; j++ ){
+                                if(Mejores[i].getPuntaje() > Mejores[j].getPuntaje() ){                                    
+                                   aux = Mejores[i];                                  
+                                   Mejores[i] = Mejores[j];
+                                   Mejores[j] = aux;
+                                   // acá ordeno las fechas con respecto a lo anterior
+                                   fechaAux = Fecha[i];                                  
+                                   Fecha[i] = Fecha[j];
+                                   Fecha[j] = fechaAux;
+                                }
+                            }
+                        }*/
+                for(int i = 0; i < Mejores.size(); i++){
+                    for(int j = 0; j < Mejores.size(); j++){
+                        if(Mejores.get(i).getPuntaje() > Mejores.get(j).getPuntaje()){
+                            aux = Mejores.get(i);
+                            Mejores.remove(i);
+                            Mejores.add(i,Mejores.get(j));
+                            Mejores.remove(j);
+                            Mejores.add(j,aux);
+                            fechaAux = Fecha.get(i);
+                            Fecha.remove(i);
+                            Fecha.add(i,Fecha.get(j));
+                            Fecha.remove(j);
+                            Fecha.add(j,fechaAux);
+                        }
+                    }
+                }
+    }
+    
     
     // Eventos visuales de botones
     public void mouseEntrante(JButton boton){
@@ -132,5 +295,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

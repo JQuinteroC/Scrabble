@@ -106,7 +106,7 @@ public class Tablero {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("\n");
         for (Casilla[] tablero1 : tablero) {
             sb.append(Arrays.toString(tablero1));
             sb.append("\n");

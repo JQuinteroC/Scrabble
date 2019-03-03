@@ -6,9 +6,18 @@
 package Visual;
 
 import Logica.*;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JButton;
 
 /**
@@ -21,7 +30,9 @@ public class FRMTablero extends javax.swing.JFrame {
     private Jugador jugadorDos;
     private Tablero tablero;
     private Bolsa bolsa;
-    private static boolean turnoJugUno;
+    private boolean turnoJugUno;
+    private int numeroTurno;
+    private Ficha fichaSel;
 
     /**
      * Creates new form FRMTablero
@@ -39,14 +50,14 @@ public class FRMTablero extends javax.swing.JFrame {
         lblJugador1.setText(jugadorUno.getNombre());
         lblJugador2.setText(jugadorDos.getNombre());
         turnoJugUno = true;
+        btnH8.setEnabled(true);
         mostrarFic();
+        numeroTurno = 1;
+        cambiarColJug();
     }
 
     // <editor-fold defaultstate="collapsed" desc="Variables globales"> 
-    Casilla[] cNormal;
-    Ficha[] fichas;
     // </editor-fold>      
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -1100,6 +1111,17 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH8.setOpaque(true);
         btnH8.setBackground(new java.awt.Color(254, 179, 179));
         btnH8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
+        btnH8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnH8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnH8MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnH8MousePressed(evt);
+            }
+        });
         jPanel2.add(btnH8);
 
         btnH9.setContentAreaFilled(false);
@@ -1950,36 +1972,71 @@ public class FRMTablero extends javax.swing.JFrame {
         btnFicha1.setContentAreaFilled(false);
         btnFicha1.setOpaque(true);
         btnFicha1.setText("jButton1");
+        btnFicha1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha1MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha1);
 
         btnFicha2.setContentAreaFilled(false);
         btnFicha2.setOpaque(true);
         btnFicha2.setText("jButton2");
+        btnFicha2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha2MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha2);
 
         btnFicha3.setContentAreaFilled(false);
         btnFicha3.setOpaque(true);
         btnFicha3.setText("jButton3");
+        btnFicha3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha3MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha3);
 
         btnFicha4.setContentAreaFilled(false);
         btnFicha4.setOpaque(true);
         btnFicha4.setText("jButton4");
+        btnFicha4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha4MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha4);
 
         btnFicha5.setContentAreaFilled(false);
         btnFicha5.setOpaque(true);
         btnFicha5.setText("jButton5");
+        btnFicha5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha5MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha5);
 
         btnFicha6.setContentAreaFilled(false);
         btnFicha6.setOpaque(true);
         btnFicha6.setText("jButton6");
+        btnFicha6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha6MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha6);
 
         btnFicha7.setContentAreaFilled(false);
         btnFicha7.setOpaque(true);
         btnFicha7.setText("jButton7");
+        btnFicha7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnFicha7MousePressed(evt);
+            }
+        });
         jPanel3.add(btnFicha7);
 
         btnCambiar.setContentAreaFilled(false);
@@ -1989,6 +2046,9 @@ public class FRMTablero extends javax.swing.JFrame {
         btnCambiar.setForeground(new java.awt.Color(255, 255, 255));
         btnCambiar.setText("<html>Nuevas<br>fichas</html>");
         btnCambiar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCambiarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCambiarMouseEntered(evt);
             }
@@ -2012,6 +2072,9 @@ public class FRMTablero extends javax.swing.JFrame {
         btnPasar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
         btnPasar.setPreferredSize(new java.awt.Dimension(119, 60));
         btnPasar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPasarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnPasarMouseEntered(evt);
             }
@@ -2073,9 +2136,61 @@ public class FRMTablero extends javax.swing.JFrame {
         boton.setBackground(new java.awt.Color(30, 156, 209));
     }
 
+    //metodo cambiar color jugador actual
+    private void cambiarColJug() {
+        if (turnoJugUno) {
+            lblJugador1.setFont(new java.awt.Font("Dotum", Font.BOLD, 16));
+            lblJugador1.setForeground(Color.blue);
+            lblJugador1.setVisible(true);
+            lblJugador2.setVisible(false);
+        } else {
+            lblJugador2.setFont(new java.awt.Font("Dotum", Font.BOLD, 16));
+            lblJugador2.setForeground(Color.blue);
+            lblJugador1.setVisible(false);
+            lblJugador2.setVisible(true);
+        }
+    }
+
+    //metodo cambiar de turno
+    private void cambiarTur() {
+        turnoJugUno = !turnoJugUno;
+        numeroTurno++;
+        lblTurno.setText("" + numeroTurno);
+    }
+
+    //retorna la imaggen de la ficha seleccionada
+    private Ficha botonSel() {
+        ArrayList<Ficha> fichasAct;
+        if (turnoJugUno) {
+            fichasAct = jugadorUno.getFichasDis();
+        } else {
+            fichasAct = jugadorDos.getFichasDis();
+        }
+        if (btnFicha1.isSelected()) {
+            return fichasAct.get(0);
+        } else if (btnFicha2.isSelected()) {
+            return fichasAct.get(1);
+        } else if (btnFicha3.isSelected()) {
+            return fichasAct.get(2);
+        } else if (btnFicha4.isSelected()) {
+            return fichasAct.get(3);
+        } else if (btnFicha5.isSelected()) {
+            return fichasAct.get(4);
+        } else if (btnFicha6.isSelected()) {
+            return fichasAct.get(5);
+        } else if (btnFicha7.isSelected()) {
+            return fichasAct.get(6);
+        } else {
+            System.out.println("No hay fichas seleccionadas");
+            return null;
+        }
+
+    }
+
+    //meto
     // </editor-fold>   
     //metodo mostrar fichas del jugador
-    public void mostrarFic() {
+    private void mostrarFic() {
         if (turnoJugUno) {
             ArrayList<Ficha> fichasJ1 = jugadorUno.getFichasDis();
             btnFicha1.setIcon(fichasJ1.get(0).getImagenGra());
@@ -2094,6 +2209,20 @@ public class FRMTablero extends javax.swing.JFrame {
             btnFicha5.setIcon(fichasJ1.get(4).getImagenGra());
             btnFicha6.setIcon(fichasJ1.get(5).getImagenGra());
             btnFicha7.setIcon(fichasJ1.get(6).getImagenGra());
+        }
+    }
+
+    //metodo que reproduce sonidos 
+    private void reproducirSon(String ruta) {
+        Clip sonido;
+        try {
+            sonido = AudioSystem.getClip();
+            sonido.open(AudioSystem.getAudioInputStream(getClass().getResource(ruta)));
+            sonido.start();
+            Thread.sleep(sonido.getMicrosecondLength() * 1000);
+            sonido.close();
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException | InterruptedException ex) {
+            Logger.getLogger(FRMTablero.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
@@ -2129,10 +2258,6 @@ public class FRMTablero extends javax.swing.JFrame {
     public void setBolsa(Bolsa bolsa) {
         this.bolsa = bolsa;
     }
-
-    private void btnC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnC3ActionPerformed
 
     private void btnCambiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMouseEntered
         mouseEntrante(btnCambiar);
@@ -2177,6 +2302,116 @@ public class FRMTablero extends javax.swing.JFrame {
     private void btnAceptarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMousePressed
         mousePulsado(btnAceptar);
     }//GEN-LAST:event_btnAceptarMousePressed
+
+    private void btnCambiarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMouseClicked
+        // TODO add your handling code here:
+        if (btnCambiar.isEnabled()) {
+            if (turnoJugUno) {
+                jugadorUno.cambiarFic(bolsa);
+            } else {
+                jugadorDos.cambiarFic(bolsa);
+            }
+            mostrarFic();
+            btnAceptar.setVisible(false);
+            btnCambiar.setVisible(false);
+        }
+    }//GEN-LAST:event_btnCambiarMouseClicked
+
+    private void btnPasarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMouseClicked
+        // TODO add your handling code here:
+        btnAceptar.setVisible(true);
+        btnCambiar.setVisible(true);
+        cambiarTur();
+        cambiarColJug();
+        mostrarFic();
+    }//GEN-LAST:event_btnPasarMouseClicked
+
+    private void btnFicha1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha1MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(0);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(0);
+        }
+    }//GEN-LAST:event_btnFicha1MousePressed
+
+    private void btnFicha2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha2MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(1);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(1);
+        }
+    }//GEN-LAST:event_btnFicha2MousePressed
+
+    private void btnFicha3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha3MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(2);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(2);
+        }
+    }//GEN-LAST:event_btnFicha3MousePressed
+
+    private void btnFicha4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha4MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(3);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(3);
+        }
+    }//GEN-LAST:event_btnFicha4MousePressed
+
+    private void btnFicha5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha5MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(4);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(4);
+        }
+    }//GEN-LAST:event_btnFicha5MousePressed
+
+    private void btnFicha6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha6MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(5);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(5);
+        }
+    }//GEN-LAST:event_btnFicha6MousePressed
+
+    private void btnFicha7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha7MousePressed
+        // TODO add your handling code here:
+        if (turnoJugUno) {
+            fichaSel = jugadorUno.getFichasDis().get(6);
+        } else {
+            fichaSel = jugadorDos.getFichasDis().get(6);
+        }
+    }//GEN-LAST:event_btnFicha7MousePressed
+
+    private void btnH8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnH8MouseEntered
+        // TODO add your handling code here:
+        if (btnH8.isEnabled() && fichaSel != null) {
+            btnH8.setIcon(fichaSel.getImagenPeq());
+        }
+    }//GEN-LAST:event_btnH8MouseEntered
+
+    private void btnH8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnH8MouseExited
+        // TODO add your handling code here:
+        if (btnH8.isEnabled() && fichaSel != null) {
+            btnH8.setIcon(btnH8.getPressedIcon());
+        }
+    }//GEN-LAST:event_btnH8MouseExited
+
+    private void btnH8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnH8MousePressed
+        // TODO add your handling code here:
+        if (btnH8.isEnabled()) {
+            if (btnH8.getPressedIcon() == null || !btnH8.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                reproducirSon("/recursos/sonidoFic.wav");
+                btnH8.setPressedIcon(fichaSel.getImagenPeq());
+            }
+        }
+    }//GEN-LAST:event_btnH8MousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA1;
