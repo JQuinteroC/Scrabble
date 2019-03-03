@@ -2213,16 +2213,17 @@ public class FRMTablero extends javax.swing.JFrame {
     }
 
     //metodo que reproduce sonidos 
-    private void reproducirSon(String ruta) {
+    private void reproducirSon(String ruta, int tiempo) {
         Clip sonido;
         try {
             sonido = AudioSystem.getClip();
             sonido.open(AudioSystem.getAudioInputStream(getClass().getResource(ruta)));
             sonido.start();
-            Thread.sleep(sonido.getMicrosecondLength() * 1000);
+            Thread.sleep(tiempo);
             sonido.close();
         } catch (LineUnavailableException | UnsupportedAudioFileException | IOException | InterruptedException ex) {
             Logger.getLogger(FRMTablero.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
         }
 
     }
@@ -2269,7 +2270,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnCambiarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMousePressed
         mousePulsado(btnCambiar);
-        
+
     }//GEN-LAST:event_btnCambiarMousePressed
 
     private void btnPasarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMouseEntered
@@ -2282,10 +2283,10 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnPasarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMousePressed
         mousePulsado(btnPasar);
-        if(turnoJugUno){
+        if (turnoJugUno) {
             turnoJugUno = false;    //pasa turno
             mostrarFic();           // muestra las fichas del jugador
-        }else{
+        } else {
             turnoJugUno = true;
             mostrarFic();
         }
@@ -2407,7 +2408,7 @@ public class FRMTablero extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (btnH8.isEnabled()) {
             if (btnH8.getPressedIcon() == null || !btnH8.getPressedIcon().equals(fichaSel.getImagenPeq())) {
-                reproducirSon("/recursos/sonidoFic.wav");
+                reproducirSon("/recursos/sonidoFic.wav", 80);
                 btnH8.setPressedIcon(fichaSel.getImagenPeq());
             }
         }
