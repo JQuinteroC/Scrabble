@@ -5,10 +5,12 @@
  * */
 package Visual;
 
+import Logica.Bolsa;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import javax.swing.Timer;
 import Logica.Jugador;
+import Logica.Tablero;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.JButton;
@@ -19,13 +21,15 @@ import javax.swing.JButton;
  */
 public class FRMUsuarios extends javax.swing.JFrame {
 
+    private Jugador jugadorUno;
+    private Jugador jugadorDos;
+    private Tablero tablero;
+    private Bolsa bolsa;
     /**
      * Creates new form FRMUsuarios
      */
     // <editor-fold defaultstate="collapsed" desc="Variables globales">
     Timer t;
-    static Jugador j1 = new Jugador();  // se crearon jugadores a los que no puedo acceder desde el tablero.
-    static Jugador j2 = new Jugador();  // esa es la razon del static declarado
     int tamaño = 0;
     boolean iniciarJuego = false;
     // </editor-fold>  
@@ -239,24 +243,63 @@ public class FRMUsuarios extends javax.swing.JFrame {
         txtJugador1.requestFocus();
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
+    public Jugador getJugadorUno() {
+        return jugadorUno;
+    }
+
+    public void setJugadorUno(Jugador jugadorUno) {
+        this.jugadorUno = jugadorUno;
+    }
+
+    public Jugador getJugadorDos() {
+        return jugadorDos;
+    }
+
+    public void setJugadorDos(Jugador jugadorDos) {
+        this.jugadorDos = jugadorDos;
+    }
+
+    public Tablero getTablero() {
+        return tablero;
+    }
+
+    public void setTablero(Tablero tablero) {
+        this.tablero = tablero;
+    }
+
+    public Bolsa getBolsa() {
+        return bolsa;
+    }
+
+    public void setBolsa(Bolsa bolsa) {
+        this.bolsa = bolsa;
+    }
+
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         if (iniciarJuego) {
+            jugadorUno = FRMInicio.getInstance().getJugadorUno();
+            jugadorDos = FRMInicio.getInstance().getJugadorDos();
+            bolsa = FRMInicio.getInstance().getBolsa();
+            tablero = FRMInicio.getInstance().getTablero();
+
+            jugadorUno.setNombre(txtJugador1.getText());
+            jugadorDos.setNombre(txtJugador2.getText());
+            jugadorUno.agregarFal(bolsa);
+            jugadorDos.agregarFal(bolsa);
             // Cerrar venta FRM Usuarios
             this.dispose();
 
             // Abrir venta FRM Menu
-            FRMTablero tablero = new FRMTablero();
-            tablero.setVisible(true);
+            FRMTablero tableroGUI = new FRMTablero(jugadorUno, jugadorDos, tablero, bolsa);
+            tableroGUI.setVisible(true);
         } else {
             btnLimpiar.setEnabled(false);
             // Selección aleatoria del jugador
             int numero = (int) (Math.random() * 2) + 1;
             if (numero == 1) {
                 lblPrimerJugador.setText(txtJugador1.getText());
-                j1 = new Jugador(txtJugador1.getText(), 0);
             } else {
                 lblPrimerJugador.setText(txtJugador2.getText());
-                j1 = new Jugador(txtJugador2.getText(), 0);
             }
 
             t = new Timer(1, (ActionEvent e) -> {
@@ -314,14 +357,11 @@ public class FRMUsuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void btnAtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMouseClicked
-        if (j1 == null) {
-            // Cerrar venta FRM Usuarios
-            this.dispose();
 
-            // Abrir venta FRM Menu
-            FRMenu menu = new FRMenu();
-            menu.setVisible(true);
-        }
+        this.dispose();
+        // Abrir venta FRM Menu
+        FRMenu menu = new FRMenu();
+        menu.setVisible(true);
     }//GEN-LAST:event_btnAtrasMouseClicked
 
     private void btnLimpiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLimpiarMouseEntered

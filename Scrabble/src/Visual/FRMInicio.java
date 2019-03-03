@@ -5,6 +5,9 @@
  * */
 package Visual;
 
+import Logica.Bolsa;
+import Logica.Jugador;
+import Logica.Tablero;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.JButton;
@@ -14,24 +17,37 @@ import javax.swing.JButton;
  * @author estudiantes
  */
 public class FRMInicio extends javax.swing.JFrame {
-    
+
     private static FRMInicio GUI;
+    private Jugador jugadorUno;
+    private Jugador jugadorDos;
+    private Tablero tablero;
+    private Bolsa bolsa;
 
     /**
      * Creates new form FRMInicio
      */
     private FRMInicio() {
-        
         initComponents();
         super.setLocationRelativeTo(null);
-        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     }
-    
+
+    public FRMInicio(Jugador jugadorUno, Jugador jugadorDos, Tablero tablero, Bolsa bolsa) {
+        this.jugadorUno = jugadorUno;
+        this.jugadorDos = jugadorDos;
+        this.tablero = tablero;
+        this.bolsa = bolsa;
+        initComponents();
+        super.setLocationRelativeTo(null);
+        this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
+    }
+
     public static FRMInicio getInstance() {
         if (GUI == null) {
             GUI = new FRMInicio();
         }
-        
+
         return GUI;
     }
 
@@ -145,18 +161,18 @@ public class FRMInicio extends javax.swing.JFrame {
 
         return retValue;
     }
-    
+
     // Eventos visuales de botones
-    public void mouseEntrante(JButton boton){
+    public void mouseEntrante(JButton boton) {
         boton.setBackground(new java.awt.Color(61, 179, 229));
     }
-    
-    public void mouseSaliente(JButton boton){
+
+    public void mouseSaliente(JButton boton) {
         //boton.setBackground(new java.awt.Color(39,170,240));
-        boton.setBackground(new java.awt.Color(39,170,240));
+        boton.setBackground(new java.awt.Color(39, 170, 240));
     }
-    
-    public void mousePulsado(JButton boton){
+
+    public void mousePulsado(JButton boton) {
         boton.setBackground(new java.awt.Color(30, 156, 209));
     }
     // </editor-fold>  
@@ -167,7 +183,39 @@ public class FRMInicio extends javax.swing.JFrame {
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnContinuarActionPerformed
-    
+
+    public Jugador getJugadorUno() {
+        return jugadorUno;
+    }
+
+    public void setJugadorUno(Jugador jugadorUno) {
+        this.jugadorUno = jugadorUno;
+    }
+
+    public Jugador getJugadorDos() {
+        return jugadorDos;
+    }
+
+    public void setJugadorDos(Jugador jugadorDos) {
+        this.jugadorDos = jugadorDos;
+    }
+
+    public Tablero getTablero() {
+        return tablero;
+    }
+
+    public void setTablero(Tablero tablero) {
+        this.tablero = tablero;
+    }
+
+    public Bolsa getBolsa() {
+        return bolsa;
+    }
+
+    public void setBolsa(Bolsa bolsa) {
+        this.bolsa = bolsa;
+    }
+
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         // TODO add your handling code here:
         System.exit(0);

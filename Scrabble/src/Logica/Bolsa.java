@@ -8,6 +8,7 @@ package Logica;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -25,8 +26,8 @@ public class Bolsa {
     }
 
     //metodo agregar ficha nueva
-    public void agregarFic(String letra, int valor) {
-        bolsa.add(new Ficha(letra, valor));
+    public void agregarFic(String letra, int valor, ImageIcon imagenA, ImageIcon imagenB) {
+        bolsa.add(new Ficha(letra, valor, imagenA, imagenB));
     }
 
     //metodo agregar ficha existente en  una posicion aleatoria
@@ -55,80 +56,81 @@ public class Bolsa {
 
         for (int i = 0; i < 12; i++) {
             //letra A
-            agregarFic("A", 1);
+            agregarFic("E", 1, new ImageIcon(getClass().getResource("/recursos/A.png")), new ImageIcon(getClass().getResource("/recursos/AGran.png")));
             //letra E
-            agregarFic("E", 1);
+            agregarFic("E", 1, new ImageIcon(getClass().getResource("/recursos/E.png")), new ImageIcon(getClass().getResource("/recursos/EGran.png")));
         }
 
         for (int i = 0; i < 9; i++) {
             //letra O
-            agregarFic("O", 1);
+            agregarFic("O", 1, new ImageIcon(getClass().getResource("/recursos/O.png")), new ImageIcon(getClass().getResource("/recursos/OGran.png")));
         }
 
         for (int i = 0; i < 6; i++) {
             //Letra I
-            agregarFic("I", 1);
+            agregarFic("I", 1, new ImageIcon(getClass().getResource("/recursos/I.png")), new ImageIcon(getClass().getResource("/recursos/IGran.png")));
             //Letra S
-            agregarFic("S", 1);
+            agregarFic("S", 1, new ImageIcon(getClass().getResource("/recursos/S.png")), new ImageIcon(getClass().getResource("/recursos/SGran.png")));
         }
 
         for (int i = 0; i < 5; i++) {
             //Letra N
-            agregarFic("N", 1);
+            agregarFic("N", 1, new ImageIcon(getClass().getResource("/recursos/N.png")), new ImageIcon(getClass().getResource("/recursos/NGran.png")));
             //Letra R
-            agregarFic("R", 1);
+            agregarFic("R", 1, new ImageIcon(getClass().getResource("/recursos/R.png")), new ImageIcon(getClass().getResource("/recursos/RGran.png")));
             //Letra U
-            agregarFic("U", 1);
+            agregarFic("U", 1, new ImageIcon(getClass().getResource("/recursos/U.png")), new ImageIcon(getClass().getResource("/recursos/UGran.png")));
             //Letra D
-            agregarFic("D", 2);
+            agregarFic("D", 2, new ImageIcon(getClass().getResource("/recursos/D.png")), new ImageIcon(getClass().getResource("/recursos/DGran.png")));
         }
 
         for (int i = 0; i < 4; i++) {
             //Letra L
-            agregarFic("L", 1);
+            agregarFic("L", 1, new ImageIcon(getClass().getResource("/recursos/L.png")), new ImageIcon(getClass().getResource("/recursos/LGran.png")));
             //Letra T
-            agregarFic("T", 1);
+            agregarFic("T", 1, new ImageIcon(getClass().getResource("/recursos/T.png")), new ImageIcon(getClass().getResource("/recursos/TGran.png")));
             //Letra C
-            agregarFic("C", 3);
+            agregarFic("C", 3, new ImageIcon(getClass().getResource("/recursos/C.png")), new ImageIcon(getClass().getResource("/recursos/CGran.png")));
         }
 
         for (int i = 0; i < 2; i++) {
             //Letra G
-            agregarFic("G", 2);
+            agregarFic("G", 2, new ImageIcon(getClass().getResource("/recursos/G.png")), new ImageIcon(getClass().getResource("/recursos/GGran.png")));
             //Letra B
-            agregarFic("B", 3);
+            agregarFic("B", 3, new ImageIcon(getClass().getResource("/recursos/B.png")), new ImageIcon(getClass().getResource("/recursos/BGran.png")));
             //Letra M
-            agregarFic("M", 3);
+            agregarFic("M", 3, new ImageIcon(getClass().getResource("/recursos/M.png")), new ImageIcon(getClass().getResource("/recursos/MGran.png")));
             //Letra P
-            agregarFic("P", 3);
+            agregarFic("P", 3, new ImageIcon(getClass().getResource("/recursos/P.png")), new ImageIcon(getClass().getResource("/recursos/PGran.png")));
             //Letra H
-            agregarFic("H", 4);
+            agregarFic("H", 4, new ImageIcon(getClass().getResource("/recursos/H.png")), new ImageIcon(getClass().getResource("/recursos/HGran.png")));
             //Letra BLANCO
-            agregarFic("BLANCO", 0);
+            agregarFic("BLANCO", 0, new ImageIcon(getClass().getResource("/recursos/BLANCO.png")), new ImageIcon(getClass().getResource("/recursos/BLANCOGran.png")));
         }
 
         //Letra F
-        agregarFic("F", 4);
+        agregarFic("F", 4, new ImageIcon(getClass().getResource("/recursos/F.png")), new ImageIcon(getClass().getResource("/recursos/FGran.png")));
         //Letra V
-        agregarFic("V", 4);
+        agregarFic("V", 4, new ImageIcon(getClass().getResource("/recursos/V.png")), new ImageIcon(getClass().getResource("/recursos/VGran.png")));
         //Letra Y
-        agregarFic("Y", 4);
+        agregarFic("Y", 4, new ImageIcon(getClass().getResource("/recursos/Y.png")), new ImageIcon(getClass().getResource("/recursos/YGran.png")));
         //Letra CH
-        agregarFic("CH", 5);
+        agregarFic("CH", 5, new ImageIcon(getClass().getResource("/recursos/CH.png")), new ImageIcon(getClass().getResource("/recursos/CHGran.png")));
         //Letra Q
-        agregarFic("Q", 5);
+        agregarFic("Q", 5, new ImageIcon(getClass().getResource("/recursos/Q.png")), new ImageIcon(getClass().getResource("/recursos/QGran.png")));
         //Letra J
-        agregarFic("J", 8);
+        agregarFic("J", 8, new ImageIcon(getClass().getResource("/recursos/J.png")), new ImageIcon(getClass().getResource("/recursos/JGran.png")));
         //Letra LL
-        agregarFic("LL", 8);
+        agregarFic("LL", 8, new ImageIcon(getClass().getResource("/recursos/LL.png")), new ImageIcon(getClass().getResource("/recursos/LLGran.png")));
         //Letra Ñ
-        agregarFic("Ñ", 8);
+        agregarFic("Ñ", 8, new ImageIcon(getClass().getResource("/recursos/Ñ.png")), new ImageIcon(getClass().getResource("/recursos/ÑGran.png")));
         //Letra RR
-        agregarFic("RR", 8);
+        agregarFic("RR", 8, new ImageIcon(getClass().getResource("/recursos/RR.png")), new ImageIcon(getClass().getResource("/recursos/RRGran.png")));
         //Letra X
-        agregarFic("X", 8);
+        agregarFic("X", 8, new ImageIcon(getClass().getResource("/recursos/X.png")), new ImageIcon(getClass().getResource("/recursos/XGran.png")));
         //Letra Z
-        agregarFic("Z", 10);
+        agregarFic("Z", 10, new ImageIcon(getClass().getResource("/recursos/Z.png")), new ImageIcon(getClass().getResource("/recursos/ZGran.png")));
+
     }
 
     public ArrayList<Ficha> getBolsa() {

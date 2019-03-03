@@ -5,6 +5,8 @@
  */
 package Logica;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
@@ -16,11 +18,15 @@ public class Ficha {
     private int valor;
     private int estado; //Estado actual de la ficha -> { 0: En bolsa, 1: En mano, 2: En tablero}
     private Casilla casillaAct;
+    private ImageIcon imagenPeq;
+    private ImageIcon imagenGra;
 
-    public Ficha(String letra, int valor) {
+    public Ficha(String letra, int valor, ImageIcon imagenA, ImageIcon imagenB) {
         this.letra = letra;
         this.valor = valor;
         this.estado = 0;
+        this.imagenPeq = imagenA;
+        this.imagenGra = imagenB;
     }
 
     public String getLetra() {
@@ -53,6 +59,22 @@ public class Ficha {
 
     public void setCasillaAct(Casilla casillaAct) {
         this.casillaAct = casillaAct;
+    }
+
+    public ImageIcon getImagenPeq() {
+        return imagenPeq;
+    }
+
+    public void setImagenPeq(ImageIcon imagenPeq) {
+        this.imagenPeq = imagenPeq;
+    }
+
+    public ImageIcon getImagenGra() {
+        return imagenGra;
+    }
+
+    public void setImagenGra(ImageIcon imagenGra) {
+        this.imagenGra = imagenGra;
     }
 
     @Override

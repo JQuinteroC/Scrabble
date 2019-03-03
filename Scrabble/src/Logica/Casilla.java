@@ -14,7 +14,6 @@ public class Casilla {
     //posicion de la casilla en el tablero
     private int x;
     private int y;
-    //Indica el tipo de casilla para calcular el valor de la jugada supertipo casilla normal
     private boolean doblePal;
     private boolean doblePun;
     private boolean triplePal;

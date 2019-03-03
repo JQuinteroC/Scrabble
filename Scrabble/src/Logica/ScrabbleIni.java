@@ -14,6 +14,11 @@ import Visual.FRMInicio;
 public class ScrabbleIni {
 
     public static void main(String[] args) {
+        Jugador jugadorUno = new Jugador("J1", 0);
+        Jugador jugadorDos = new Jugador("J2", 0);
+        Bolsa bolsa = new Bolsa();
+        Tablero tab = new Tablero(15);
+
         FRMInicio interfaz = FRMInicio.getInstance();
 
         try {
@@ -28,14 +33,13 @@ public class ScrabbleIni {
         }
         //</editor-fold>
 
-        Bolsa bolsa = new Bolsa();
         bolsa.revolverFic();
         System.out.println(bolsa);
-        System.out.println(bolsa.retirarFic());
-
-        Tablero tab = new Tablero(15);
         System.out.println(tab);
-
+        interfaz.setJugadorDos(jugadorDos);
+        interfaz.setJugadorUno(jugadorUno);
+        interfaz.setTablero(tab);
+        interfaz.setBolsa(bolsa);
         interfaz.setVisible(true);
 
         /* Create and display the form */

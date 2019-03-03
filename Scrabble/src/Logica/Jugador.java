@@ -31,6 +31,22 @@ public class Jugador {
         jugadas = new ArrayList<>();
     }
 
+    public ArrayList<Ficha> getFichasDis() {
+        return fichasDis;
+    }
+
+    public void setFichasDis(ArrayList<Ficha> fichasDis) {
+        this.fichasDis = fichasDis;
+    }
+
+    public ArrayList<Palabra> getJugadas() {
+        return jugadas;
+    }
+
+    public void setJugadas(ArrayList<Palabra> jugadas) {
+        this.jugadas = jugadas;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -57,10 +73,18 @@ public class Jugador {
         fichasDis.add(ficha);
     }
 
-    //metodo eliminar todas las fichas
-    public Ficha eliminarFicha() {
+    //metodo agregar fichas faltantes desde la bolsa
+    public void agregarFal(Bolsa bolsa) {
+        int fichasAct = fichasDis.size();
+        for (int i = 0; i < 7 - fichasAct; i++) {
+            agregarFic(bolsa.retirarFic());
+        }
+    }
+
+    //metodo eliminar ficha especifica
+    public Ficha eliminarFicha(int indice) {
         if (!fichasDis.isEmpty()) {
-            return fichasDis.remove(0);
+            return fichasDis.remove(indice);
         } else {
             System.out.println("No hay Fichas");
             return null;
