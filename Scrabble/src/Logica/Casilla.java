@@ -1,27 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/** Scrabble Games
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
+ * */
 package Logica;
 
 /**
- *
- * @author Estudiantes
+ * Clase que representa a una casilla del tablero
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Logica.Tablero
  */
 public class Casilla {
 
     //posicion de la casilla en el tablero
     private int x;
     private int y;
+    //tipo de casilla
     private boolean doblePal;
     private boolean doblePun;
     private boolean triplePal;
     private boolean triplePun;
+    
     private boolean salida;
     private boolean ocupado;
+    //ficha que esta en la casilla
     private Ficha ficha;
 
+    /**
+     * Constructor parametrizado de una casilla normal
+     * @param x posición en X
+     * @param y posicion en Y
+     */
     public Casilla(int x, int y) {
         this.x = x;
         this.y = y;
@@ -33,6 +45,17 @@ public class Casilla {
         this.ocupado = false;
     }
 
+    /**
+     * Constructor parametrizado de una casilla especial (doble palabra, doble letra, triple palabra, tripleletra)
+     * @param x posición en X
+     * @param y posición en Y
+     * @param doblePal indica si la casilla es doble palabra
+     * @param doblePun indica si la casilla es doble letra
+     * @param triplePal indica si la casilla es triple palabra
+     * @param triplePun indica si la casilla es triple letra
+     * @param salida -------------------------
+     * @param ocupado  indica si la casilla esta ocupada
+     */
     public Casilla(int x, int y, boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean salida, boolean ocupado) {
         this.x = x;
         this.y = y;

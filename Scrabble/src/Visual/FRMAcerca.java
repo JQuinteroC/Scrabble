@@ -1,7 +1,7 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Visual;
 
@@ -10,8 +10,13 @@ import java.awt.Toolkit;
 import javax.swing.JButton;
 
 /**
+ * Ventana donde hay información del juego
  *
- * @author estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Visual.FRMenu
  */
 public class FRMAcerca extends javax.swing.JFrame {
 
@@ -21,7 +26,7 @@ public class FRMAcerca extends javax.swing.JFrame {
     public FRMAcerca() {
         initComponents();
         super.setLocationRelativeTo(null);
-        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     }
 
     /**
@@ -92,24 +97,22 @@ public class FRMAcerca extends javax.swing.JFrame {
 
         return retValue;
     }
-    
+
     // Eventos visuales de botones
-    public void mouseEntrante(JButton boton){
+    public void mouseEntrante(JButton boton) {
         boton.setBackground(new java.awt.Color(61, 179, 229));
     }
-    
-    public void mouseSaliente(JButton boton){
-        //boton.setBackground(new java.awt.Color(39,170,240));
-        boton.setBackground(new java.awt.Color(39,170,240));
+
+    public void mouseSaliente(JButton boton) {
+        boton.setBackground(new java.awt.Color(39, 170, 240));
     }
-    
-    public void mousePulsado(JButton boton){
+
+    public void mousePulsado(JButton boton) {
         boton.setBackground(new java.awt.Color(30, 156, 209));
     }
     // </editor-fold>  
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
-        // TODO add your handling code here:
         FRMenu menu = new FRMenu();
         menu.setVisible(true);
         this.dispose();

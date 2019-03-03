@@ -1,15 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/** Scrabble Games
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
+ * */
 package Logica;
 
 import javax.swing.ImageIcon;
 
 /**
+ * Clase que representa a una ficha
  *
- * @author Estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Logica.Casilla
  */
 public class Ficha {
 
@@ -21,6 +26,14 @@ public class Ficha {
     private ImageIcon imagenPeq;
     private ImageIcon imagenGra;
 
+    /**
+     * Constructo parametrizado de la clase
+     *
+     * @param letra
+     * @param valor
+     * @param imagenA ruta de acceso a la imagen pequeña
+     * @param imagenB ruta de acceso a la imagen grande
+     */
     public Ficha(String letra, int valor, ImageIcon imagenA, ImageIcon imagenB) {
         this.letra = letra;
         this.valor = valor;

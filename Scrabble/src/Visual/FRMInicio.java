@@ -1,7 +1,7 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Visual;
 
@@ -13,8 +13,16 @@ import java.awt.Toolkit;
 import javax.swing.JButton;
 
 /**
+ * Ventana de inicio
  *
- * @author estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Visual.FRMenu
+ * @see Logica.Jugador
+ * @see Logica.Tablero
+ * @see Logica.Bolsa
  */
 public class FRMInicio extends javax.swing.JFrame {
 
@@ -33,6 +41,14 @@ public class FRMInicio extends javax.swing.JFrame {
         this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     }
 
+    /**
+     * Crea la ventana FRMInicio
+     *
+     * @param jugadorUno
+     * @param jugadorDos
+     * @param tablero
+     * @param bolsa
+     */
     public FRMInicio(Jugador jugadorUno, Jugador jugadorDos, Tablero tablero, Bolsa bolsa) {
         this.jugadorUno = jugadorUno;
         this.jugadorDos = jugadorDos;
@@ -43,11 +59,15 @@ public class FRMInicio extends javax.swing.JFrame {
         this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     }
 
+    /**
+     * Metodo para acceder al formulario FMRInicio desde otras clases
+     *
+     * @return formulario FRMInicio
+     */
     public static FRMInicio getInstance() {
         if (GUI == null) {
             GUI = new FRMInicio();
         }
-
         return GUI;
     }
 
@@ -178,7 +198,6 @@ public class FRMInicio extends javax.swing.JFrame {
     // </editor-fold>  
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
-        // TODO add your handling code here:
         FRMenu menu = new FRMenu();
         menu.setVisible(true);
         this.setVisible(false);
@@ -217,7 +236,6 @@ public class FRMInicio extends javax.swing.JFrame {
     }
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 

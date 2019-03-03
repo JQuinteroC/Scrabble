@@ -1,15 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/** Scrabble Games
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
+ * */
 package Logica;
 
 import java.util.ArrayList;
 
 /**
+ * Clase que representa a un jugador
  *
- * @author Estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Logica.Ficha
+ * @see Logica.Palabra
+ * @see Logica.Bolsa
  */
 public class Jugador {
 
@@ -24,6 +31,12 @@ public class Jugador {
     public Jugador() {
     }
 
+    /**
+     * Constructor parametrizado
+     *
+     * @param nombre Nombre del jugador
+     * @param puntaje Puntaje que lleva el jugador
+     */
     public Jugador(String nombre, int puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
@@ -63,17 +76,31 @@ public class Jugador {
         this.puntaje = puntaje;
     }
 
-    //metodo agregar jugada
+    /**
+     * metodo agregar jugada
+     *
+     * @param palabra Palabra formada en durante la jugada
+     */
     public void agregarJugada(Palabra palabra) {
         jugadas.add(palabra);
     }
 
-    //metodo agregar fichas
+    /**
+     * metodo agregar una ficha disponible para el jugador
+     *
+     * @param ficha
+     */
     public void agregarFic(Ficha ficha) {
         fichasDis.add(ficha);
     }
 
-    //metodo agregar fichas faltantes desde la bolsa
+    /**
+     * metodo agregar fichas faltantes desde la bolsa
+     *
+     * @param bolsa Bolsa con las fichas disponibles en el juego
+     * @see #agregarFic(Logica.Ficha)
+     * @see Logica.Bolsa
+     */
     public void agregarFal(Bolsa bolsa) {
         int fichasAct = fichasDis.size();
         for (int i = 0; i < 7 - fichasAct; i++) {
@@ -81,7 +108,12 @@ public class Jugador {
         }
     }
 
-    //metodo eliminar ficha especifica
+    /**
+     * metodo eliminar ficha especifica
+     *
+     * @param indice
+     * @return Objeto Ficha eliminado
+     */
     public Ficha eliminarFicha(int indice) {
         if (!fichasDis.isEmpty()) {
             return fichasDis.remove(indice);
@@ -91,7 +123,13 @@ public class Jugador {
         }
     }
 
-    //metodo cambiar fichas
+    /**
+     * metodo cambiar fichas
+     *
+     * @param bolsa
+     * @see Logica.Bolsa
+     * @see #eliminarFicha(int)
+     */
     public void cambiarFic(Bolsa bolsa) {
         for (int i = 0; i < 7; i++) {
             bolsa.agregarFic(eliminarFicha(fichasDis.size() - 1));

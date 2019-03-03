@@ -1,7 +1,7 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Logica;
 
@@ -11,37 +11,58 @@ import java.util.Random;
 import javax.swing.ImageIcon;
 
 /**
- *
- * @author Estudiantes
+ * Clase donde se guardaran todas las fichas disponles durante el juego
+ * 
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
  */
 public class Bolsa {
 
     //contenedor de fichas
     private ArrayList<Ficha> bolsa;
 
-    //constructor e inicializacion de las fichas
+    /**
+     *  Constructor e inicialización de las fichas
+     */
     public Bolsa() {
         bolsa = new ArrayList<>();
         inicializarBol();
     }
 
-    //metodo agregar ficha nueva
+    /**
+     * metodo agregar ficha nueva
+     * @param letra 
+     * @param valor puntaje que tiene la letra
+     * @param imagenA ruta de acceso a la imagen pequeña
+     * @param imagenB ruta de acceso a la imagen grande
+     */
     public void agregarFic(String letra, int valor, ImageIcon imagenA, ImageIcon imagenB) {
         bolsa.add(new Ficha(letra, valor, imagenA, imagenB));
     }
 
-    //metodo agregar ficha existente en  una posicion aleatoria
+    /**
+     * metodo agregar ficha existente en una posicion aleatoria
+     * @param ficha Objeto de tipo ficha
+     * @see Logica.Ficha
+     */
     public void agregarFic(Ficha ficha) {
         int indice = (new Random()).nextInt(bolsa.size());
         bolsa.add(indice, ficha);
     }
 
-    //metodo revolver fichas
+    /**
+     *metodo revolver fichas
+     */
     public void revolverFic() {
         Collections.shuffle(bolsa);
     }
 
-    //retirar ficha final
+    /**
+     * retirar ficha final
+     * @return El objeto ficha que salio de la bolsa
+     */
     public Ficha retirarFic() {
         if (!bolsa.isEmpty()) {
             return bolsa.remove(bolsa.size() - 1);
@@ -51,12 +72,14 @@ public class Bolsa {
         }
     }
 
-    //metodo inicializar bolsa con total de fichas
+    /**
+     * metodo inicializar bolsa con total de fichas
+     */
     private void inicializarBol() {
 
         for (int i = 0; i < 12; i++) {
             //letra A
-            agregarFic("E", 1, new ImageIcon(getClass().getResource("/recursos/A.png")), new ImageIcon(getClass().getResource("/recursos/AGran.png")));
+            agregarFic("A", 1, new ImageIcon(getClass().getResource("/recursos/A.png")), new ImageIcon(getClass().getResource("/recursos/AGran.png")));
             //letra E
             agregarFic("E", 1, new ImageIcon(getClass().getResource("/recursos/E.png")), new ImageIcon(getClass().getResource("/recursos/EGran.png")));
         }
