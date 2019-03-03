@@ -32,7 +32,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private Bolsa bolsa;
     private boolean turnoJugUno;
     private int numeroTurno;
-    private Ficha fichaSel;
+    private Ficha fichaSel = new Ficha();
     private JButton[][] tableroBot;
 
     /**
@@ -331,7 +331,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnA1.setOpaque(true);
         btnA1.setBackground(new java.awt.Color(254, 69, 69));
         btnA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnA1.setEnabled(true);
+        btnA1.setEnabled(false);
         jPanel2.add(btnA1);
 
         btnA2.setContentAreaFilled(false);
@@ -1224,6 +1224,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnI8.setOpaque(true);
         btnI8.setBackground(new java.awt.Color(255, 255, 255));
         btnI8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnI8.setEnabled(false);
         jPanel2.add(btnI8);
 
         btnI9.setContentAreaFilled(false);
@@ -2437,6 +2438,8 @@ public class FRMTablero extends javax.swing.JFrame {
         for (int i = 0; i < 15; i++) {
             for (int j = 0; j < 15; j++) {
                 final JButton boton = tableroBot[i][j];
+                final int ii = i;   //variables final representativas del for (diferente clase)
+                final int jj = j;
                 tableroBot[i][j].addMouseListener(new java.awt.event.MouseAdapter() {
 
                     @Override
@@ -2457,8 +2460,14 @@ public class FRMTablero extends javax.swing.JFrame {
                     public void mousePressed(java.awt.event.MouseEvent evt) {
                         if (boton.isEnabled()) {
                             if (boton.getPressedIcon() == null || !boton.getPressedIcon().equals(fichaSel.getImagenPeq())) {
-                                reproducirSon("/recursos/sonidoFic.wav", 80);
-                                boton.setPressedIcon(fichaSel.getImagenPeq());
+                                reproducirSon("/recursos/sonidoFic.wav", 80);                              
+                                    boton.setPressedIcon(fichaSel.getImagenPeq());
+                                    if(fichaSel.getImagenPeq() == null){
+                                        bloquearCasi(ii,jj);
+                                    }else{
+                                        liberarCasi(ii,jj); //acá se llama a la funcion de liberacion Casillas  
+                                    }      
+                                    fichaSel = new Ficha();
                             }
                         }
                     }
@@ -2484,7 +2493,57 @@ public class FRMTablero extends javax.swing.JFrame {
         }
 
     }
-
+    
+    private void liberarCasi(int ii, int jj){   // no estan enraizados porque pueden ocurrir varios casos a la vez
+        try{        
+            if(tableroBot[ii+1][jj].isEnabled()){
+                tableroBot[ii-1][jj].setEnabled(true);
+                tableroBot[ii+1][jj-1].setEnabled(false);
+                tableroBot[ii+1][jj+1].setEnabled(false);
+            }
+            if(tableroBot[ii-1][jj].isEnabled()){
+                tableroBot[ii+1][jj].setEnabled(true);
+                tableroBot[ii-1][jj-1].setEnabled(false);
+                tableroBot[ii-1][jj+1].setEnabled(false);
+            }
+            if(tableroBot[ii][jj+1].isEnabled()){
+                tableroBot[ii+1][jj+1].setEnabled(false);
+                tableroBot[ii-1][jj+1].setEnabled(false);
+                tableroBot[ii][jj-1].setEnabled(true);
+            }
+            if(tableroBot[ii][jj-1].isEnabled()){
+                tableroBot[ii+1][jj-1].setEnabled(false);
+                tableroBot[ii-1][jj-1].setEnabled(false);
+                tableroBot[ii][jj+1].setEnabled(true);
+            }
+            // Este es el unico caso que no se da a la vez que los anteriores (por eso tanto AND)
+            //ademas solo se da al inicio del juego cuando solo está habilitado el centro
+            if(!tableroBot[ii+1][jj].isEnabled()&&!tableroBot[ii-1][jj].isEnabled()&&
+                    !tableroBot[ii][jj+1].isEnabled()&&!tableroBot[ii][jj-1].isEnabled()){
+                tableroBot[ii+1][jj].setEnabled(true);
+                tableroBot[ii-1][jj].setEnabled(true);
+                tableroBot[ii][jj+1].setEnabled(true);
+                tableroBot[ii][jj-1].setEnabled(true);
+            }
+            btnCambiar.setEnabled(false);
+        }catch(NullPointerException nu){/* Es por si toca bordes del tablero */}
+    }
+    
+    private void bloquearCasi(int ii, int jj){
+        try{
+        if(tableroBot[ii+1][jj].isEnabled() && tableroBot[ii+1][jj].getPressedIcon().equals(fichaSel.getImagenPeq()))
+            tableroBot[ii+1][jj].setEnabled(false);
+        
+        if(tableroBot[ii-1][jj].isEnabled() && tableroBot[ii-1][jj].getPressedIcon().equals(fichaSel.getImagenPeq()))
+            tableroBot[ii-1][jj].setEnabled(false);
+        
+        if(tableroBot[ii][jj+1].isEnabled() && tableroBot[ii][jj+1].getPressedIcon().equals(fichaSel.getImagenPeq()))
+            tableroBot[ii][jj+1].setEnabled(false);
+        
+        if(tableroBot[ii][jj-1].isEnabled() && tableroBot[ii][jj-1].getPressedIcon().equals(fichaSel.getImagenPeq()))
+            tableroBot[ii][jj-1].setEnabled(false);
+        }catch(NullPointerException nu){ System.out.println("la cagaste");}
+    }
     public Jugador getJugadorUno() {
         return jugadorUno;
     }
