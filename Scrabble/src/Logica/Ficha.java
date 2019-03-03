@@ -20,7 +20,10 @@ public class Ficha {
     private Casilla casillaAct;
     private ImageIcon imagenPeq;
     private ImageIcon imagenGra;
-
+    
+    public Ficha(){
+        
+    }
     public Ficha(String letra, int valor, ImageIcon imagenA, ImageIcon imagenB) {
         this.letra = letra;
         this.valor = valor;

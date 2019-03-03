@@ -56,7 +56,7 @@ public class Bolsa {
 
         for (int i = 0; i < 12; i++) {
             //letra A
-            agregarFic("E", 1, new ImageIcon(getClass().getResource("/recursos/A.png")), new ImageIcon(getClass().getResource("/recursos/AGran.png")));
+            agregarFic("A", 1, new ImageIcon(getClass().getResource("/recursos/A.png")), new ImageIcon(getClass().getResource("/recursos/AGran.png")));
             //letra E
             agregarFic("E", 1, new ImageIcon(getClass().getResource("/recursos/E.png")), new ImageIcon(getClass().getResource("/recursos/EGran.png")));
         }

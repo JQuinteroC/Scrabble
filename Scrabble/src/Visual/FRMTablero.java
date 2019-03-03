@@ -34,6 +34,8 @@ public class FRMTablero extends javax.swing.JFrame {
     private int numeroTurno;
     private Ficha fichaSel = new Ficha();
     private JButton[][] tableroBot;
+    private String[] palabra = new String[7];
+    private int ContadorGlobal = 0;
 
     /**
      * Creates new form FRMTablero
@@ -2467,6 +2469,7 @@ public class FRMTablero extends javax.swing.JFrame {
                                         bloquearCasi(ii,jj);
                                     }else{
                                         liberarCasi(ii,jj); //acá se llama a la funcion de liberacion Casillas  
+                                        guardaPal(fichaSel.getLetra(),fichaSel.getValor());
                                     }      
                                     fichaSel = new Ficha();
                             }
@@ -2493,6 +2496,19 @@ public class FRMTablero extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
+    }
+    
+    private void guardaPal(String letra, int valor){
+        try{
+            palabra[0+ContadorGlobal] = letra;
+            ContadorGlobal++;
+            for(int i = 0; i < 7; i++){
+                if(palabra[i] != null)
+                    System.out.print(palabra[i]);
+                else
+                    palabra[i] = "";
+            }
+        }catch(NullPointerException nu){ /* Es por si toca bordes del tablero */ }
     }
     
     private void liberarCasi(int ii, int jj){   // no estan enraizados porque pueden ocurrir varios casos a la vez
@@ -2532,18 +2548,18 @@ public class FRMTablero extends javax.swing.JFrame {
     
     private void bloquearCasi(int ii, int jj){
         try{
-        if(tableroBot[ii+1][jj].isEnabled() && tableroBot[ii+1][jj].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii+1][jj].isEnabled() && tableroBot[ii+1][jj].getPressedIcon() == null )
             tableroBot[ii+1][jj].setEnabled(false);
         
-        if(tableroBot[ii-1][jj].isEnabled() && tableroBot[ii-1][jj].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii-1][jj].isEnabled() && tableroBot[ii-1][jj].getPressedIcon() == null)
             tableroBot[ii-1][jj].setEnabled(false);
         
-        if(tableroBot[ii][jj+1].isEnabled() && tableroBot[ii][jj+1].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii][jj+1].isEnabled() && tableroBot[ii][jj+1].getPressedIcon() == null)
             tableroBot[ii][jj+1].setEnabled(false);
         
-        if(tableroBot[ii][jj-1].isEnabled() && tableroBot[ii][jj-1].getPressedIcon().equals(fichaSel.getImagenPeq()))
+        if(tableroBot[ii][jj-1].isEnabled() && tableroBot[ii][jj-1].getPressedIcon() == null)
             tableroBot[ii][jj-1].setEnabled(false);
-        }catch(NullPointerException nu){ System.out.println("la cagaste");}
+        }catch(NullPointerException nu){ /*por si son casillas del borde*/}
     }
     public Jugador getJugadorUno() {
         return jugadorUno;
