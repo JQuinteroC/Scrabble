@@ -2043,6 +2043,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnCambiar.setFont(new java.awt.Font("Dotum", 1, 20)); // NOI18N
         btnCambiar.setForeground(new java.awt.Color(255, 255, 255));
         btnCambiar.setText("<html>Nuevas<br>fichas</html>");
+        btnCambiar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(26, 138, 186), 2, true));
         btnCambiar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCambiarMouseEntered(evt);
