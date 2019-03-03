@@ -1820,6 +1820,22 @@
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH5.setContentAreaFilled(false);&#xa;btnH5.setOpaque(true);"/>
           </AuxValues>
         </Component>
+        <Component class="javax.swing.JButton" name="btnH6">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH6.setContentAreaFilled(false);&#xa;btnH6.setOpaque(true);"/>
+          </AuxValues>
+        </Component>
         <Component class="javax.swing.JButton" name="btnH7">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1849,6 +1865,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnH8MouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnH8MouseExited"/>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnH8MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH8.setContentAreaFilled(false);&#xa;btnH8.setOpaque(true);"/>
           </AuxValues>
@@ -2059,22 +2080,6 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnI6.setContentAreaFilled(false);&#xa;btnI6.setOpaque(true);"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnH6">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder/>
-              </Border>
-            </Property>
-            <Property name="enabled" type="boolean" value="false"/>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnH6.setContentAreaFilled(false);&#xa;btnH6.setOpaque(true);"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnI7">
@@ -3795,6 +3800,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton1"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha1MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha1.setContentAreaFilled(false);&#xa;btnFicha1.setOpaque(true);"/>
           </AuxValues>
@@ -3803,6 +3811,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton2"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha2MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha2.setContentAreaFilled(false);&#xa;btnFicha2.setOpaque(true);"/>
           </AuxValues>
@@ -3811,6 +3822,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton3"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha3MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha3.setContentAreaFilled(false);&#xa;btnFicha3.setOpaque(true);"/>
           </AuxValues>
@@ -3819,6 +3833,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton4"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha4MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha4.setContentAreaFilled(false);&#xa;btnFicha4.setOpaque(true);"/>
           </AuxValues>
@@ -3827,6 +3844,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton5"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha5MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha5.setContentAreaFilled(false);&#xa;btnFicha5.setOpaque(true);"/>
           </AuxValues>
@@ -3835,6 +3855,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton6"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha6MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha6.setContentAreaFilled(false);&#xa;btnFicha6.setOpaque(true);"/>
           </AuxValues>
@@ -3843,6 +3866,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton7"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha7MousePressed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnFicha7.setContentAreaFilled(false);&#xa;btnFicha7.setOpaque(true);"/>
           </AuxValues>
