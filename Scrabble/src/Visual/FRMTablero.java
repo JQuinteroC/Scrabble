@@ -28,11 +28,12 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private Jugador jugadorUno;
     private Jugador jugadorDos;
-    private Tablero tablero;
+    private Tablero tableroCas;
     private Bolsa bolsa;
     private boolean turnoJugUno;
     private int numeroTurno;
     private Ficha fichaSel;
+    private JButton[][] tableroBot;
 
     /**
      * Creates new form FRMTablero
@@ -40,8 +41,9 @@ public class FRMTablero extends javax.swing.JFrame {
     public FRMTablero(Jugador jugadorUno, Jugador jugadorDos, Tablero tablero, Bolsa bolsa) {
         this.jugadorUno = jugadorUno;
         this.jugadorDos = jugadorDos;
-        this.tablero = tablero;
+        this.tableroCas = tablero;
         this.bolsa = bolsa;
+        tableroBot = new JButton[15][15];
         initComponents();
         super.setLocationRelativeTo(null);
         this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
@@ -53,6 +55,8 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH8.setEnabled(true);
         mostrarFic();
         numeroTurno = 1;
+        enlazarBot();
+        agregarLisTab();
         cambiarColJug();
     }
 
@@ -1111,17 +1115,6 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH8.setOpaque(true);
         btnH8.setBackground(new java.awt.Color(254, 179, 179));
         btnH8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 102, 0)));
-        btnH8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnH8MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnH8MouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnH8MousePressed(evt);
-            }
-        });
         jPanel2.add(btnH8);
 
         btnH9.setContentAreaFilled(false);
@@ -1226,7 +1219,6 @@ public class FRMTablero extends javax.swing.JFrame {
         btnI8.setOpaque(true);
         btnI8.setBackground(new java.awt.Color(255, 255, 255));
         btnI8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnI8.setEnabled(false);
         jPanel2.add(btnI8);
 
         btnI9.setContentAreaFilled(false);
@@ -2206,6 +2198,270 @@ public class FRMTablero extends javax.swing.JFrame {
         }
     }
 
+    //metodo relacionar tablero de botones y botones
+    private void enlazarBot() {
+        tableroBot[0][0] = btnA1;
+        tableroBot[0][9] = btnA10;
+        tableroBot[0][10] = btnA11;
+        tableroBot[0][11] = btnA12;
+        tableroBot[0][12] = btnA13;
+        tableroBot[0][13] = btnA14;
+        tableroBot[0][14] = btnA15;
+        tableroBot[0][1] = btnA2;
+        tableroBot[0][2] = btnA3;
+        tableroBot[0][3] = btnA4;
+        tableroBot[0][4] = btnA5;
+        tableroBot[0][5] = btnA6;
+        tableroBot[0][6] = btnA7;
+        tableroBot[0][7] = btnA8;
+        tableroBot[0][8] = btnA9;
+        tableroBot[1][0] = btnB1;
+        tableroBot[1][9] = btnB10;
+        tableroBot[1][10] = btnB11;
+        tableroBot[1][11] = btnB12;
+        tableroBot[1][12] = btnB13;
+        tableroBot[1][13] = btnB14;
+        tableroBot[1][14] = btnB15;
+        tableroBot[1][1] = btnB2;
+        tableroBot[1][2] = btnB3;
+        tableroBot[1][3] = btnB4;
+        tableroBot[1][4] = btnB5;
+        tableroBot[1][5] = btnB6;
+        tableroBot[1][6] = btnB7;
+        tableroBot[1][7] = btnB8;
+        tableroBot[1][8] = btnB9;
+        tableroBot[2][0] = btnC1;
+        tableroBot[2][9] = btnC10;
+        tableroBot[2][10] = btnC11;
+        tableroBot[2][11] = btnC12;
+        tableroBot[2][12] = btnC13;
+        tableroBot[2][13] = btnC14;
+        tableroBot[2][14] = btnC15;
+        tableroBot[2][1] = btnC2;
+        tableroBot[2][2] = btnC3;
+        tableroBot[2][3] = btnC4;
+        tableroBot[2][4] = btnC5;
+        tableroBot[2][5] = btnC6;
+        tableroBot[2][6] = btnC7;
+        tableroBot[2][7] = btnC8;
+        tableroBot[2][8] = btnC9;
+        tableroBot[3][0] = btnD1;
+        tableroBot[3][9] = btnD10;
+        tableroBot[3][10] = btnD11;
+        tableroBot[3][11] = btnD12;
+        tableroBot[3][12] = btnD13;
+        tableroBot[3][13] = btnD14;
+        tableroBot[3][14] = btnD15;
+        tableroBot[3][1] = btnD2;
+        tableroBot[3][2] = btnD3;
+        tableroBot[3][3] = btnD4;
+        tableroBot[3][4] = btnD5;
+        tableroBot[3][5] = btnD6;
+        tableroBot[3][6] = btnD7;
+        tableroBot[3][7] = btnD8;
+        tableroBot[3][8] = btnD9;
+        tableroBot[4][0] = btnE1;
+        tableroBot[4][9] = btnE10;
+        tableroBot[4][10] = btnE11;
+        tableroBot[4][11] = btnE12;
+        tableroBot[4][12] = btnE13;
+        tableroBot[4][13] = btnE14;
+        tableroBot[4][14] = btnE15;
+        tableroBot[4][1] = btnE2;
+        tableroBot[4][2] = btnE3;
+        tableroBot[4][3] = btnE4;
+        tableroBot[4][4] = btnE5;
+        tableroBot[4][5] = btnE6;
+        tableroBot[4][6] = btnE7;
+        tableroBot[4][7] = btnE8;
+        tableroBot[4][8] = btnE9;
+        tableroBot[5][0] = btnF1;
+        tableroBot[5][9] = btnF10;
+        tableroBot[5][10] = btnF11;
+        tableroBot[5][11] = btnF12;
+        tableroBot[5][12] = btnF13;
+        tableroBot[5][13] = btnF14;
+        tableroBot[5][14] = btnF15;
+        tableroBot[5][1] = btnF2;
+        tableroBot[5][2] = btnF3;
+        tableroBot[5][3] = btnF4;
+        tableroBot[5][4] = btnF5;
+        tableroBot[5][5] = btnF6;
+        tableroBot[5][6] = btnF7;
+        tableroBot[5][7] = btnF8;
+        tableroBot[5][8] = btnF9;
+        tableroBot[6][0] = btnG1;
+        tableroBot[6][9] = btnG10;
+        tableroBot[6][10] = btnG11;
+        tableroBot[6][11] = btnG12;
+        tableroBot[6][12] = btnG13;
+        tableroBot[6][13] = btnG14;
+        tableroBot[6][14] = btnG15;
+        tableroBot[6][1] = btnG2;
+        tableroBot[6][2] = btnG3;
+        tableroBot[6][3] = btnG4;
+        tableroBot[6][4] = btnG5;
+        tableroBot[6][5] = btnG6;
+        tableroBot[6][6] = btnG7;
+        tableroBot[6][7] = btnG8;
+        tableroBot[6][8] = btnG9;
+        tableroBot[7][0] = btnH1;
+        tableroBot[7][9] = btnH10;
+        tableroBot[7][10] = btnH11;
+        tableroBot[7][11] = btnH12;
+        tableroBot[7][12] = btnH13;
+        tableroBot[7][13] = btnH14;
+        tableroBot[7][14] = btnH15;
+        tableroBot[7][1] = btnH2;
+        tableroBot[7][2] = btnH3;
+        tableroBot[7][3] = btnH4;
+        tableroBot[7][4] = btnH5;
+        tableroBot[7][5] = btnH6;
+        tableroBot[7][6] = btnH7;
+        tableroBot[7][7] = btnH8;
+        tableroBot[7][8] = btnH9;
+        tableroBot[8][0] = btnI1;
+        tableroBot[8][9] = btnI10;
+        tableroBot[8][10] = btnI11;
+        tableroBot[8][11] = btnI12;
+        tableroBot[8][12] = btnI13;
+        tableroBot[8][13] = btnI14;
+        tableroBot[8][14] = btnI15;
+        tableroBot[8][1] = btnI2;
+        tableroBot[8][2] = btnI3;
+        tableroBot[8][3] = btnI4;
+        tableroBot[8][4] = btnI5;
+        tableroBot[8][5] = btnI6;
+        tableroBot[8][6] = btnI7;
+        tableroBot[8][7] = btnI8;
+        tableroBot[8][8] = btnI9;
+        tableroBot[9][0] = btnJ1;
+        tableroBot[9][9] = btnJ10;
+        tableroBot[9][10] = btnJ11;
+        tableroBot[9][11] = btnJ12;
+        tableroBot[9][12] = btnJ13;
+        tableroBot[9][13] = btnJ14;
+        tableroBot[9][14] = btnJ15;
+        tableroBot[9][1] = btnJ2;
+        tableroBot[9][2] = btnJ3;
+        tableroBot[9][3] = btnJ4;
+        tableroBot[9][4] = btnJ5;
+        tableroBot[9][5] = btnJ6;
+        tableroBot[9][6] = btnJ7;
+        tableroBot[9][7] = btnJ8;
+        tableroBot[9][8] = btnJ9;
+        tableroBot[10][0] = btnK1;
+        tableroBot[10][9] = btnK10;
+        tableroBot[10][10] = btnK11;
+        tableroBot[10][11] = btnK12;
+        tableroBot[10][12] = btnK13;
+        tableroBot[10][13] = btnK14;
+        tableroBot[10][14] = btnK15;
+        tableroBot[10][1] = btnK2;
+        tableroBot[10][2] = btnK3;
+        tableroBot[10][3] = btnK4;
+        tableroBot[10][4] = btnK5;
+        tableroBot[10][5] = btnK6;
+        tableroBot[10][6] = btnK7;
+        tableroBot[10][7] = btnK8;
+        tableroBot[10][8] = btnK9;
+        tableroBot[11][0] = btnL1;
+        tableroBot[11][9] = btnL10;
+        tableroBot[11][10] = btnL11;
+        tableroBot[11][11] = btnL12;
+        tableroBot[11][12] = btnL13;
+        tableroBot[11][13] = btnL14;
+        tableroBot[11][14] = btnL15;
+        tableroBot[11][1] = btnL2;
+        tableroBot[11][2] = btnL3;
+        tableroBot[11][3] = btnL4;
+        tableroBot[11][4] = btnL5;
+        tableroBot[11][5] = btnL6;
+        tableroBot[11][6] = btnL7;
+        tableroBot[11][7] = btnL8;
+        tableroBot[11][8] = btnL9;
+        tableroBot[12][0] = btnM1;
+        tableroBot[12][9] = btnM10;
+        tableroBot[12][10] = btnM11;
+        tableroBot[12][11] = btnM12;
+        tableroBot[12][12] = btnM13;
+        tableroBot[12][13] = btnM14;
+        tableroBot[12][14] = btnM15;
+        tableroBot[12][1] = btnM2;
+        tableroBot[12][2] = btnM3;
+        tableroBot[12][3] = btnM4;
+        tableroBot[12][4] = btnM5;
+        tableroBot[12][5] = btnM6;
+        tableroBot[12][6] = btnM7;
+        tableroBot[12][7] = btnM8;
+        tableroBot[12][8] = btnM9;
+        tableroBot[13][0] = btnN1;
+        tableroBot[13][9] = btnN10;
+        tableroBot[13][10] = btnN11;
+        tableroBot[13][11] = btnN12;
+        tableroBot[13][12] = btnN13;
+        tableroBot[13][13] = btnN14;
+        tableroBot[13][14] = btnN15;
+        tableroBot[13][1] = btnN2;
+        tableroBot[13][2] = btnN3;
+        tableroBot[13][3] = btnN4;
+        tableroBot[13][4] = btnN5;
+        tableroBot[13][5] = btnN6;
+        tableroBot[13][6] = btnN7;
+        tableroBot[13][7] = btnN8;
+        tableroBot[13][8] = btnN9;
+        tableroBot[14][0] = btnO1;
+        tableroBot[14][9] = btnO10;
+        tableroBot[14][10] = btnO11;
+        tableroBot[14][11] = btnO12;
+        tableroBot[14][12] = btnO13;
+        tableroBot[14][13] = btnO14;
+        tableroBot[14][14] = btnO15;
+        tableroBot[14][1] = btnO2;
+        tableroBot[14][2] = btnO3;
+        tableroBot[14][3] = btnO4;
+        tableroBot[14][4] = btnO5;
+        tableroBot[14][5] = btnO6;
+        tableroBot[14][6] = btnO7;
+        tableroBot[14][7] = btnO8;
+        tableroBot[14][8] = btnO9;
+    }
+
+    //metodo para agregar listeners a todos los botones
+    private void agregarLisTab() {
+        for (int i = 0; i < 15; i++) {
+            for (int j = 0; j < 15; j++) {
+                final JButton boton = tableroBot[i][j];
+                tableroBot[i][j].addMouseListener(new java.awt.event.MouseAdapter() {
+
+                    @Override
+                    public void mouseEntered(java.awt.event.MouseEvent evt) {
+                        if (boton.isEnabled() && fichaSel != null) {
+                            boton.setIcon(fichaSel.getImagenPeq());
+                        }
+                    }
+
+                    @Override
+                    public void mouseExited(java.awt.event.MouseEvent evt) {
+                        if (boton.isEnabled() && fichaSel != null) {
+                            boton.setIcon(boton.getPressedIcon());
+                        }
+                    }
+
+                    @Override
+                    public void mousePressed(java.awt.event.MouseEvent evt) {
+                        if (boton.isEnabled()) {
+                            if (boton.getPressedIcon() == null || !boton.getPressedIcon().equals(fichaSel.getImagenPeq())) {
+                                reproducirSon("/recursos/sonidoFic.wav", 80);
+                                boton.setPressedIcon(fichaSel.getImagenPeq());
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    }
+
     //metodo que reproduce sonidos 
     private void reproducirSon(String ruta, int tiempo) {
         Clip sonido;
@@ -2215,8 +2471,10 @@ public class FRMTablero extends javax.swing.JFrame {
             sonido.start();
             Thread.sleep(tiempo);
             sonido.close();
+
         } catch (LineUnavailableException | UnsupportedAudioFileException | IOException | InterruptedException ex) {
-            Logger.getLogger(FRMTablero.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FRMTablero.class
+                    .getName()).log(Level.SEVERE, null, ex);
             ex.printStackTrace();
         }
 
@@ -2238,12 +2496,12 @@ public class FRMTablero extends javax.swing.JFrame {
         this.jugadorDos = jugadorDos;
     }
 
-    public Tablero getTablero() {
-        return tablero;
+    public Tablero getTableroCas() {
+        return tableroCas;
     }
 
     public void setTablero(Tablero tablero) {
-        this.tablero = tablero;
+        this.tableroCas = tablero;
     }
 
     public Bolsa getBolsa() {
@@ -2367,30 +2625,6 @@ public class FRMTablero extends javax.swing.JFrame {
             fichaSel = jugadorDos.getFichasDis().get(6);
         }
     }//GEN-LAST:event_btnFicha7MousePressed
-
-    private void btnH8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnH8MouseEntered
-        // TODO add your handling code here:
-        if (btnH8.isEnabled() && fichaSel != null) {
-            btnH8.setIcon(fichaSel.getImagenPeq());
-        }
-    }//GEN-LAST:event_btnH8MouseEntered
-
-    private void btnH8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnH8MouseExited
-        // TODO add your handling code here:
-        if (btnH8.isEnabled() && fichaSel != null) {
-            btnH8.setIcon(btnH8.getPressedIcon());
-        }
-    }//GEN-LAST:event_btnH8MouseExited
-
-    private void btnH8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnH8MousePressed
-        // TODO add your handling code here:
-        if (btnH8.isEnabled()) {
-            if (btnH8.getPressedIcon() == null || !btnH8.getPressedIcon().equals(fichaSel.getImagenPeq())) {
-                reproducirSon("/recursos/sonidoFic.wav", 80);
-                btnH8.setPressedIcon(fichaSel.getImagenPeq());
-            }
-        }
-    }//GEN-LAST:event_btnH8MousePressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA1;
