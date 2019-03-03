@@ -22,15 +22,13 @@ import javax.swing.JButton;
  * @author  <a href="https://github.com/jgruizba">Johnatan</a>
  * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
  * @version 1.0
+ * @see Visual.FRMenu
  * @see Logica.Jugador
  * @see Logica.Tablero
  * @see Logica.Bolsa
  */
 public class FRMUsuarios extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FRMUsuarios
-     */
     // <editor-fold defaultstate="collapsed" desc="Variables globales">
     Timer t;
     int tamaño = 0;
@@ -42,6 +40,9 @@ public class FRMUsuarios extends javax.swing.JFrame {
     private int selecionarTur;
     // </editor-fold> 
 
+    /**
+     * Creates new form FRMUsuarios
+     */
     public FRMUsuarios() {
         initComponents();
         super.setLocationRelativeTo(null);
