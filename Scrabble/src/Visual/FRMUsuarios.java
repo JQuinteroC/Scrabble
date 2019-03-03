@@ -286,6 +286,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
             jugadorDos.setNombre(txtJugador2.getText());
             jugadorUno.agregarFal(bolsa);
             jugadorDos.agregarFal(bolsa);
+            System.out.println("\n" + bolsa);
             // Cerrar venta FRM Usuarios
             this.dispose();
 

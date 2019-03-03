@@ -6,6 +6,8 @@
 package Visual;
 
 import Logica.*;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.util.ArrayList;
@@ -22,6 +24,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private Tablero tablero;
     private Bolsa bolsa;
     private static boolean turnoJugUno;
+    private int numeroTurno;
 
     /**
      * Creates new form FRMTablero
@@ -39,7 +42,10 @@ public class FRMTablero extends javax.swing.JFrame {
         lblJugador1.setText(jugadorUno.getNombre());
         lblJugador2.setText(jugadorDos.getNombre());
         turnoJugUno = true;
+        btnH8.setEnabled(true);
         mostrarFic();
+        numeroTurno = 1;
+        cambiarColJug();
     }
 
     // <editor-fold defaultstate="collapsed" desc="Variables globales"> 
@@ -167,7 +173,6 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH3 = new javax.swing.JButton();
         btnH4 = new javax.swing.JButton();
         btnH5 = new javax.swing.JButton();
-        btnH6 = new javax.swing.JButton();
         btnH7 = new javax.swing.JButton();
         btnH8 = new javax.swing.JButton();
         btnH9 = new javax.swing.JButton();
@@ -183,6 +188,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnI4 = new javax.swing.JButton();
         btnI5 = new javax.swing.JButton();
         btnI6 = new javax.swing.JButton();
+        btnH6 = new javax.swing.JButton();
         btnI7 = new javax.swing.JButton();
         btnI8 = new javax.swing.JButton();
         btnI9 = new javax.swing.JButton();
@@ -1082,13 +1088,6 @@ public class FRMTablero extends javax.swing.JFrame {
         btnH5.setEnabled(false);
         jPanel2.add(btnH5);
 
-        btnH6.setContentAreaFilled(false);
-        btnH6.setOpaque(true);
-        btnH6.setBackground(new java.awt.Color(255, 255, 255));
-        btnH6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnH6.setEnabled(false);
-        jPanel2.add(btnH6);
-
         btnH7.setContentAreaFilled(false);
         btnH7.setOpaque(true);
         btnH7.setBackground(new java.awt.Color(255, 255, 255));
@@ -1192,6 +1191,13 @@ public class FRMTablero extends javax.swing.JFrame {
         btnI6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnI6.setEnabled(false);
         jPanel2.add(btnI6);
+
+        btnH6.setContentAreaFilled(false);
+        btnH6.setOpaque(true);
+        btnH6.setBackground(new java.awt.Color(255, 255, 255));
+        btnH6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnH6.setEnabled(false);
+        jPanel2.add(btnH6);
 
         btnI7.setContentAreaFilled(false);
         btnI7.setOpaque(true);
@@ -1989,6 +1995,9 @@ public class FRMTablero extends javax.swing.JFrame {
         btnCambiar.setForeground(new java.awt.Color(255, 255, 255));
         btnCambiar.setText("<html>Nuevas<br>fichas</html>");
         btnCambiar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCambiarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCambiarMouseEntered(evt);
             }
@@ -2012,6 +2021,9 @@ public class FRMTablero extends javax.swing.JFrame {
         btnPasar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(26, 138, 186), 2));
         btnPasar.setPreferredSize(new java.awt.Dimension(119, 60));
         btnPasar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPasarMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnPasarMouseEntered(evt);
             }
@@ -2073,9 +2085,32 @@ public class FRMTablero extends javax.swing.JFrame {
         boton.setBackground(new java.awt.Color(30, 156, 209));
     }
 
+    //metodo cambiar color jugador actual
+    private void cambiarColJug() {
+        if (turnoJugUno) {
+            lblJugador1.setFont(new java.awt.Font("Dotum", Font.BOLD, 16));
+            lblJugador1.setForeground(Color.blue);
+            lblJugador1.setVisible(true);
+            lblJugador2.setVisible(false);
+        } else {
+            lblJugador2.setFont(new java.awt.Font("Dotum", Font.BOLD, 16));
+            lblJugador2.setForeground(Color.blue);
+            lblJugador1.setVisible(false);
+            lblJugador2.setVisible(true);
+        }
+    }
+
+    //metodo cambiar de turno
+    private void cambiarTur() {
+        turnoJugUno = !turnoJugUno;
+        numeroTurno++;
+        lblTurno.setText("" + numeroTurno);
+    }
+
+    //meto
     // </editor-fold>   
     //metodo mostrar fichas del jugador
-    public void mostrarFic() {
+    private void mostrarFic() {
         if (turnoJugUno) {
             ArrayList<Ficha> fichasJ1 = jugadorUno.getFichasDis();
             btnFicha1.setIcon(fichasJ1.get(0).getImagenGra());
@@ -2095,7 +2130,6 @@ public class FRMTablero extends javax.swing.JFrame {
             btnFicha6.setIcon(fichasJ1.get(5).getImagenGra());
             btnFicha7.setIcon(fichasJ1.get(6).getImagenGra());
         }
-
     }
 
     public Jugador getJugadorUno() {
@@ -2129,10 +2163,6 @@ public class FRMTablero extends javax.swing.JFrame {
     public void setBolsa(Bolsa bolsa) {
         this.bolsa = bolsa;
     }
-
-    private void btnC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnC3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnC3ActionPerformed
 
     private void btnCambiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMouseEntered
         mouseEntrante(btnCambiar);
@@ -2169,6 +2199,29 @@ public class FRMTablero extends javax.swing.JFrame {
     private void btnAceptarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceptarMousePressed
         mousePulsado(btnAceptar);
     }//GEN-LAST:event_btnAceptarMousePressed
+
+    private void btnCambiarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMouseClicked
+        // TODO add your handling code here:
+        if (btnCambiar.isEnabled()) {
+            if (turnoJugUno) {
+                jugadorUno.cambiarFic(bolsa);
+            } else {
+                jugadorDos.cambiarFic(bolsa);
+            }
+            mostrarFic();
+            btnAceptar.setVisible(false);
+            btnCambiar.setVisible(false);
+        }
+    }//GEN-LAST:event_btnCambiarMouseClicked
+
+    private void btnPasarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMouseClicked
+        // TODO add your handling code here:
+        btnAceptar.setVisible(true);
+        btnCambiar.setVisible(true);
+        cambiarTur();
+        cambiarColJug();
+        mostrarFic();
+    }//GEN-LAST:event_btnPasarMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA1;
