@@ -1,26 +1,39 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Logica;
 
 import java.util.Arrays;
 
 /**
+ * Clase donde esta la información del tablero
  *
- * @author Johnatan
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Logica.Casilla
  */
 public class Tablero {
 
     private final Casilla tablero[][];
 
+    /**
+     * Constructor parametrizado del tablero
+     * @param dimension 
+     */
     public Tablero(int dimension) {
         tablero = new Casilla[dimension][dimension];
         llenarTab();
         agregarPre();
     }
 
+    /**
+     * Genera el tablero con cada casilla
+     * @see Logica.Casilla
+     */
     private void llenarTab() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
@@ -33,7 +46,9 @@ public class Tablero {
         return tablero;
     }
 
-    //metodo agregar premios de casilla
+    /**
+     *metodo agregar premios de las casillas especiales
+     */
     private void agregarPre() {
         //casillas triple palabra
         tablero[0][0].setTriplePal(true);

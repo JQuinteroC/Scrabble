@@ -1,7 +1,7 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Visual;
 
@@ -21,8 +21,16 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JButton;
 
 /**
+ * Ventana del tablero de juego
  *
- * @author estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Logica.Jugador
+ * @see Logica.Tablero
+ * @see Logica.Bolsa
+ * @see Logica.Ficha
  */
 public class FRMTablero extends javax.swing.JFrame {
 
@@ -38,7 +46,14 @@ public class FRMTablero extends javax.swing.JFrame {
     private int ContadorGlobal = 0;
 
     /**
-     * Creates new form FRMTablero
+     * Crea el formulario FRMTablero
+     * @param jugadorUno
+     * @param jugadorDos
+     * @param tablero
+     * @param bolsa 
+     * @see Logica.Jugador
+     * @see Logica.Tablero
+     * @see Logica.Bolsa
      */
     public FRMTablero(Jugador jugadorUno, Jugador jugadorDos, Tablero tablero, Bolsa bolsa) {
         this.jugadorUno = jugadorUno;
@@ -2645,7 +2660,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAceptarMousePressed
 
     private void btnFicha1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha1MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(0);
         } else {
@@ -2654,7 +2668,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFicha1MousePressed
 
     private void btnFicha2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha2MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(1);
         } else {
@@ -2663,7 +2676,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFicha2MousePressed
 
     private void btnFicha3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha3MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(2);
         } else {
@@ -2672,7 +2684,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFicha3MousePressed
 
     private void btnFicha4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha4MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(3);
         } else {
@@ -2681,7 +2692,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFicha4MousePressed
 
     private void btnFicha5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha5MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(4);
         } else {
@@ -2690,7 +2700,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFicha5MousePressed
 
     private void btnFicha6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha6MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(5);
         } else {
@@ -2699,7 +2708,6 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFicha6MousePressed
 
     private void btnFicha7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha7MousePressed
-        // TODO add your handling code here:
         if (turnoJugUno) {
             fichaSel = jugadorUno.getFichasDis().get(6);
         } else {

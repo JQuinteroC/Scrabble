@@ -1,7 +1,7 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Visual;
 
@@ -20,97 +20,104 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
+ * Ventana de puntajes de partidas anteriores
  *
- * @author estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Visual.FRMenu
+ * @see Logica.Jugador
  */
 public class FRMPuntaje extends javax.swing.JFrame {
+
     private DataInputStream archivoCargado;
     private DataOutputStream archivoGuardado;
-   // private Jugador[] Mejores;
+    // private Jugador[] Mejores;
     private ArrayList<Jugador> Mejores;
-   // Calendar calendario = Calendar.getInstance();
+    // Calendar calendario = Calendar.getInstance();
     java.util.Date calendario = new Date();
-   // private String[] Fecha;
+    // private String[] Fecha;
     private ArrayList<String> Fecha;
 
     /**
      * Creates new form FRMPuntaje
+     *
+     * @see #cargar()
+     * @see #ordenar()
      */
     public FRMPuntaje() {
-        
-           // guardar("Extra",2000); // Estoy añadiendo un jugador que rompia el record anterior
-                                                // Borrar mas adelante (Solo para pruebas)
-            cargar();
-            ordenar();
-        
+
+        // guardar("Extra",2000); // Estoy añadiendo un jugador que rompia el record anterior
+        // Borrar mas adelante (Solo para pruebas)
+        cargar();
+        ordenar();
+
         initComponents();
         super.setLocationRelativeTo(null);
-        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
-
+        this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     }
-    
-    public int cargar() {   
-		try {
-			archivoCargado = new DataInputStream(new FileInputStream(
-					System.getProperty("user.dir")
-							+ "\\src\\recursos\\usuarios.txt"));
-			//Mejores = new Jugador[10];
-                        Mejores = new ArrayList<Jugador>();
-                       // Fecha = new String[10];
-                       Fecha = new ArrayList<String>();
-                        int i = 0;
-                       // for(int j = 0; j < 10 ; j++){   //lo relleno de nada para evitar lang.NullPointerException
-                        //Fecha[j] = " ";
-                        //Mejores[j] = new Jugador(" ",0);
-                      //  }
-                        for(int j = 0; j < 10; j++){
-                            Fecha.add(j," ");
-                            Mejores.add(j, new Jugador(" ", 0));
-                        }
-			while (true) {                           
-                               
-				String nombre = archivoCargado.readUTF();
-				int puntaje = archivoCargado.readInt();
-				//Fecha[i] = archivoCargado.readUTF();                                
-				//Mejores[i++] = new Jugador(nombre,puntaje);	
-                                Fecha.add(archivoCargado.readUTF());
-                                Mejores.add(new Jugador(nombre,puntaje));
-			}      
-                       
-		} catch (FileNotFoundException fnfe) {
-			return 0;
-		} catch (IOException ioe) { /* Error al escribir */
-		}catch(ArrayIndexOutOfBoundsException Aa){
-                    
-                }
-		return 1;
-	}
-    
 
-    
-    public void guardar(String nombre,int puntaje) {
-		try {
-			archivoGuardado = new DataOutputStream(new FileOutputStream(
-					System.getProperty("user.dir")
-							+ "\\src\\recursos\\usuarios.txt", true));
-                     
-                       // Calendar calendario = Calendar.getInstance();   //fecha de hoy
-                        calendario = new Date();
-			// grabando al archivo            
-			archivoGuardado.writeUTF(nombre);			
-			archivoGuardado.writeInt(puntaje);
-			//archivoGuardado.writeUTF(calendario.get(Calendar.YEAR)+"/"+calendario.get(Calendar.MONTH+1)+"/"+calendario.get(Calendar.DAY_OF_MONTH));
-                        archivoGuardado.writeUTF(String.valueOf(calendario));
-                  
+    public int cargar() {
+        try {
+            archivoCargado = new DataInputStream(new FileInputStream(
+                    System.getProperty("user.dir")
+                    + "\\src\\recursos\\usuarios.txt"));
+            //Mejores = new Jugador[10];
+            Mejores = new ArrayList<Jugador>();
+            // Fecha = new String[10];
+            Fecha = new ArrayList<String>();
+            int i = 0;
+            // for(int j = 0; j < 10 ; j++){   //lo relleno de nada para evitar lang.NullPointerException
+            //Fecha[j] = " ";
+            //Mejores[j] = new Jugador(" ",0);
+            //  }
+            for (int j = 0; j < 10; j++) {
+                Fecha.add(j, " ");
+                Mejores.add(j, new Jugador(" ", 0));
+            }
+            while (true) {
 
-			// Cierra el Archivo
-			archivoGuardado.close();
-		}
+                String nombre = archivoCargado.readUTF();
+                int puntaje = archivoCargado.readInt();
+                //Fecha[i] = archivoCargado.readUTF();                                
+                //Mejores[i++] = new Jugador(nombre,puntaje);	
+                Fecha.add(archivoCargado.readUTF());
+                Mejores.add(new Jugador(nombre, puntaje));
+            }
 
-		catch (FileNotFoundException fnfe) { /* Archivo no encontrado */
-		} catch (IOException ioe) { /* Error al escribir */
-		}
-	}
+        } catch (FileNotFoundException fnfe) {
+            return 0;
+        } catch (IOException ioe) {
+            /* Error al escribir */
+        } catch (ArrayIndexOutOfBoundsException Aa) {
+
+        }
+        return 1;
+    }
+
+    public void guardar(String nombre, int puntaje) {
+        try {
+            archivoGuardado = new DataOutputStream(new FileOutputStream(
+                    System.getProperty("user.dir")
+                    + "\\src\\recursos\\usuarios.txt", true));
+
+            // Calendar calendario = Calendar.getInstance();   //fecha de hoy
+            calendario = new Date();
+            // grabando al archivo            
+            archivoGuardado.writeUTF(nombre);
+            archivoGuardado.writeInt(puntaje);
+            //archivoGuardado.writeUTF(calendario.get(Calendar.YEAR)+"/"+calendario.get(Calendar.MONTH+1)+"/"+calendario.get(Calendar.DAY_OF_MONTH));
+            archivoGuardado.writeUTF(String.valueOf(calendario));
+
+            // Cierra el Archivo
+            archivoGuardado.close();
+        } catch (FileNotFoundException fnfe) {
+            /* Archivo no encontrado */
+        } catch (IOException ioe) {
+            /* Error al escribir */
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -224,13 +231,12 @@ public class FRMPuntaje extends javax.swing.JFrame {
 
         return retValue;
     }
-    
-    
-    public void ordenar(){
+
+    public void ordenar() {
         Jugador aux = new Jugador(); //Variable auxiliar de tipo jugador
         String fechaAux;    //auxiliar
-                 
-                /* for(int i = 0;i < Mejores.length; i++){ //Método burbuja para ordenar el arrayList 
+
+        /* for(int i = 0;i < Mejores.length; i++){ //Método burbuja para ordenar el arrayList 
                             for(int j = 0 ; j < Mejores.length; j++ ){
                                 if(Mejores[i].getPuntaje() > Mejores[j].getPuntaje() ){                                    
                                    aux = Mejores[i];                                  
@@ -243,36 +249,35 @@ public class FRMPuntaje extends javax.swing.JFrame {
                                 }
                             }
                         }*/
-                for(int i = 0; i < Mejores.size(); i++){
-                    for(int j = 0; j < Mejores.size(); j++){
-                        if(Mejores.get(i).getPuntaje() > Mejores.get(j).getPuntaje()){
-                            aux = Mejores.get(i);
-                            Mejores.remove(i);
-                            Mejores.add(i,Mejores.get(j));
-                            Mejores.remove(j);
-                            Mejores.add(j,aux);
-                            fechaAux = Fecha.get(i);
-                            Fecha.remove(i);
-                            Fecha.add(i,Fecha.get(j));
-                            Fecha.remove(j);
-                            Fecha.add(j,fechaAux);
-                        }
-                    }
+        for (int i = 0; i < Mejores.size(); i++) {
+            for (int j = 0; j < Mejores.size(); j++) {
+                if (Mejores.get(i).getPuntaje() > Mejores.get(j).getPuntaje()) {
+                    aux = Mejores.get(i);
+                    Mejores.remove(i);
+                    Mejores.add(i, Mejores.get(j));
+                    Mejores.remove(j);
+                    Mejores.add(j, aux);
+                    fechaAux = Fecha.get(i);
+                    Fecha.remove(i);
+                    Fecha.add(i, Fecha.get(j));
+                    Fecha.remove(j);
+                    Fecha.add(j, fechaAux);
                 }
+            }
+        }
     }
-    
-    
+
     // Eventos visuales de botones
-    public void mouseEntrante(JButton boton){
+    public void mouseEntrante(JButton boton) {
         boton.setBackground(new java.awt.Color(61, 179, 229));
     }
-    
-    public void mouseSaliente(JButton boton){
+
+    public void mouseSaliente(JButton boton) {
         //boton.setBackground(new java.awt.Color(39,170,240));
-        boton.setBackground(new java.awt.Color(39,170,240));
+        boton.setBackground(new java.awt.Color(39, 170, 240));
     }
-    
-    public void mousePulsado(JButton boton){
+
+    public void mousePulsado(JButton boton) {
         boton.setBackground(new java.awt.Color(30, 156, 209));
     }
     // </editor-fold>  

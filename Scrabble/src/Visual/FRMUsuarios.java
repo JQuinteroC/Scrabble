@@ -1,7 +1,7 @@
 /** Scrabble Games
- * AUTORS: 	Juan David Tique Triana 	             -	20181020046
- *	Johnatan GuillermoRuiz Bautista     -	20181020034
- *	Jos� Luis Quintero Ca�izalez           - 	20181020061
+ * Autores: Juan David Tique Triana         - 20181020046
+ *          Johnatan GuillermoRuiz Bautista - 20181020034
+ *          Jose Luis Quintero Ca�izalez    - 20181020061
  * */
 package Visual;
 
@@ -16,8 +16,15 @@ import java.awt.Toolkit;
 import javax.swing.JButton;
 
 /**
+ * Ventana de usuarios
  *
- * @author estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Logica.Jugador
+ * @see Logica.Tablero
+ * @see Logica.Bolsa
  */
 public class FRMUsuarios extends javax.swing.JFrame {
 
@@ -28,12 +35,12 @@ public class FRMUsuarios extends javax.swing.JFrame {
     Timer t;
     int tamaño = 0;
     boolean iniciarJuego = false;
-    // </editor-fold> 
     private Jugador jugadorUno;
     private Jugador jugadorDos;
     private Tablero tablero;
     private Bolsa bolsa;
     private int selecionarTur;
+    // </editor-fold> 
 
     public FRMUsuarios() {
         initComponents();
