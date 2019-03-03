@@ -10,16 +10,14 @@ import java.awt.Toolkit;
 import javax.swing.JButton;
 import Logica.Jugador;
 import java.util.ArrayList;
-import java.io.BufferedWriter;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  *
@@ -30,7 +28,8 @@ public class FRMPuntaje extends javax.swing.JFrame {
     private DataOutputStream archivoGuardado;
    // private Jugador[] Mejores;
     private ArrayList<Jugador> Mejores;
-    Calendar calendario = Calendar.getInstance();
+   // Calendar calendario = Calendar.getInstance();
+    java.util.Date calendario = new Date();
    // private String[] Fecha;
     private ArrayList<String> Fecha;
 
@@ -39,7 +38,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
      */
     public FRMPuntaje() {
         
-            guardar("Mejore pero no tanto",999); // Estoy añadiendo un jugador que rompia el record anterior
+           // guardar("Extra",2000); // Estoy añadiendo un jugador que rompia el record anterior
                                                 // Borrar mas adelante (Solo para pruebas)
             cargar();
             ordenar();
@@ -64,6 +63,10 @@ public class FRMPuntaje extends javax.swing.JFrame {
                         //Fecha[j] = " ";
                         //Mejores[j] = new Jugador(" ",0);
                       //  }
+                        for(int j = 0; j < 10; j++){
+                            Fecha.add(j," ");
+                            Mejores.add(j, new Jugador(" ", 0));
+                        }
 			while (true) {                           
                                
 				String nombre = archivoCargado.readUTF();
@@ -91,12 +94,13 @@ public class FRMPuntaje extends javax.swing.JFrame {
 					System.getProperty("user.dir")
 							+ "\\src\\recursos\\usuarios.txt", true));
                      
-                        Calendar calendario = Calendar.getInstance();   //fecha de hoy
-			// grabando al archivo
+                       // Calendar calendario = Calendar.getInstance();   //fecha de hoy
+                        calendario = new Date();
+			// grabando al archivo            
 			archivoGuardado.writeUTF(nombre);			
 			archivoGuardado.writeInt(puntaje);
-			archivoGuardado.writeUTF(calendario.get(Calendar.YEAR)+"/"+calendario.get(Calendar.MONTH)+"/"+calendario.get(Calendar.DAY_OF_MONTH));
-                        
+			//archivoGuardado.writeUTF(calendario.get(Calendar.YEAR)+"/"+calendario.get(Calendar.MONTH+1)+"/"+calendario.get(Calendar.DAY_OF_MONTH));
+                        archivoGuardado.writeUTF(String.valueOf(calendario));
                   
 
 			// Cierra el Archivo
@@ -184,6 +188,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
                 "#", "nombre", "Puntaje", "Fecha"
             }
         ));
+        jTable1.setRowHeight(40);
         jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -193,20 +198,18 @@ public class FRMPuntaje extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(84, 84, 84)
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(119, 119, 119)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(67, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(93, 93, 93))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(104, 104, 104)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(126, Short.MAX_VALUE))
         );
 
         pack();
