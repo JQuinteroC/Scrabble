@@ -2628,7 +2628,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha1.setContentAreaFilled(false);
         btnFicha1.setOpaque(true);
-        btnFicha1.setText("jButton1");
+        btnFicha1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha1MousePressed(evt);
@@ -2638,7 +2638,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha2.setContentAreaFilled(false);
         btnFicha2.setOpaque(true);
-        btnFicha2.setText("jButton2");
+        btnFicha2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha2MousePressed(evt);
@@ -2648,7 +2648,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha3.setContentAreaFilled(false);
         btnFicha3.setOpaque(true);
-        btnFicha3.setText("jButton3");
+        btnFicha3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha3MousePressed(evt);
@@ -2658,7 +2658,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha4.setContentAreaFilled(false);
         btnFicha4.setOpaque(true);
-        btnFicha4.setText("jButton4");
+        btnFicha4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha4MousePressed(evt);
@@ -2668,7 +2668,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha5.setContentAreaFilled(false);
         btnFicha5.setOpaque(true);
-        btnFicha5.setText("jButton5");
+        btnFicha5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha5MousePressed(evt);
@@ -2678,7 +2678,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha6.setContentAreaFilled(false);
         btnFicha6.setOpaque(true);
-        btnFicha6.setText("jButton6");
+        btnFicha6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha6MousePressed(evt);
@@ -2688,7 +2688,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
         btnFicha7.setContentAreaFilled(false);
         btnFicha7.setOpaque(true);
-        btnFicha7.setText("jButton7");
+        btnFicha7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnFicha7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnFicha7MousePressed(evt);

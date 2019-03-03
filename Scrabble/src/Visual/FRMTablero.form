@@ -4097,7 +4097,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnFicha1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha1MousePressed"/>
@@ -4108,7 +4108,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnFicha2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton2"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha2MousePressed"/>
@@ -4119,7 +4119,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnFicha3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton3"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha3MousePressed"/>
@@ -4130,7 +4130,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnFicha4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton4"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha4MousePressed"/>
@@ -4141,7 +4141,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnFicha5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton5"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha5MousePressed"/>
@@ -4152,7 +4152,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnFicha6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton6"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha6MousePressed"/>
@@ -4163,7 +4163,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnFicha7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton7"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFicha7MousePressed"/>
