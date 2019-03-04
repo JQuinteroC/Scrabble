@@ -14,10 +14,6 @@ package Logica;
  * @see Logica.Tablero
  */
 public class Casilla {
-
-    //posicion de la casilla en el tablero
-    private int x;
-    private int y;
     //tipo de casilla
     private boolean doblePal;
     private boolean doblePun;
@@ -31,12 +27,8 @@ public class Casilla {
 
     /**
      * Constructor parametrizado de una casilla normal
-     * @param x posición en X
-     * @param y posicion en Y
      */
-    public Casilla(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Casilla() {
         this.doblePal = false;
         this.doblePun = false;
         this.triplePal = false;
@@ -47,8 +39,6 @@ public class Casilla {
 
     /**
      * Constructor parametrizado de una casilla especial (doble palabra, doble letra, triple palabra, tripleletra)
-     * @param x posición en X
-     * @param y posición en Y
      * @param doblePal indica si la casilla es doble palabra
      * @param doblePun indica si la casilla es doble letra
      * @param triplePal indica si la casilla es triple palabra
@@ -56,31 +46,13 @@ public class Casilla {
      * @param salida -------------------------
      * @param ocupado  indica si la casilla esta ocupada
      */
-    public Casilla(int x, int y, boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean salida, boolean ocupado) {
-        this.x = x;
-        this.y = y;
+    public Casilla(boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean salida, boolean ocupado) {
         this.doblePal = doblePal;
         this.doblePun = doblePun;
         this.triplePal = triplePal;
         this.triplePun = triplePun;
         this.salida = salida;
         this.ocupado = ocupado;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
     }
 
     public boolean isDoblePal() {
@@ -139,6 +111,7 @@ public class Casilla {
         this.ficha = ficha;
     }
 
+    
     @Override
     public String toString() {
         String valor;

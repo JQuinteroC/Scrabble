@@ -37,7 +37,7 @@ public class Tablero {
     private void llenarTab() {
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
-                tablero[i][j] = new Casilla(i, j);
+                tablero[i][j] = new Casilla();
             }
         }
     }
@@ -45,7 +45,15 @@ public class Tablero {
     public Casilla[][] getTablero() {
         return tablero;
     }
+    
+    public void setCasilla(int i, int j, Ficha ficha){
+        tablero[i][j].setFicha(ficha);
+        tablero[i][j].setOcupado(true);
+    }
 
+    public Casilla getCasilla(int i, int j){
+        return tablero[i][j];
+    }
     /**
      *metodo agregar premios de las casillas especiales
      */

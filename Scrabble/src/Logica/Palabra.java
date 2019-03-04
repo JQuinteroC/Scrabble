@@ -50,7 +50,7 @@ public class Palabra {
         int multiplicador = 1;
         for (Ficha ficha : palabra) {
             int valorFicha = ficha.getValor();
-            if (!ficha.getCasillaAct().isOcupado()) {
+            if (ficha.getCasillaAct().isOcupado()) {
                 if (ficha.getCasillaAct().isDoblePun()) {
                     valorFicha *= 2;
                 } else if (ficha.getCasillaAct().isTriplePun()) {

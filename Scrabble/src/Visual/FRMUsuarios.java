@@ -365,18 +365,15 @@ public class FRMUsuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAtrasMousePressed
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
-        // TODO add your handling code here:
         FRMenu menu = new FRMenu();
         menu.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void btnAtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAtrasMouseClicked
-
-        this.dispose();
-        // Abrir venta FRM Menu
         FRMenu menu = new FRMenu();
         menu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnAtrasMouseClicked
 
     private void btnLimpiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLimpiarMouseEntered
