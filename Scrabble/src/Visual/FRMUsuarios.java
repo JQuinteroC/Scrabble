@@ -58,15 +58,15 @@ public class FRMUsuarios extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        lblPrimerJugador = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        pnlPrimerJug = new javax.swing.JPanel();
+        lblPrimerJug = new javax.swing.JLabel();
+        lblJugador1 = new javax.swing.JLabel();
+        lblJugador2 = new javax.swing.JLabel();
         txtJugador1 = new javax.swing.JTextField();
         txtJugador2 = new javax.swing.JTextField();
         btnJugar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        lblEncabezado = new javax.swing.JLabel();
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -76,38 +76,38 @@ public class FRMUsuarios extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        pnlPrimerJug.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        lblPrimerJugador.setFont(new java.awt.Font("Dotum", 0, 1)); // NOI18N
-        lblPrimerJugador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblPrimerJugador.setText("asas");
+        lblPrimerJug.setFont(new java.awt.Font("Dotum", 0, 1)); // NOI18N
+        lblPrimerJug.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPrimerJug.setText("asas");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlPrimerJugLayout = new javax.swing.GroupLayout(pnlPrimerJug);
+        pnlPrimerJug.setLayout(pnlPrimerJugLayout);
+        pnlPrimerJugLayout.setHorizontalGroup(
+            pnlPrimerJugLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPrimerJugLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblPrimerJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
+                .addComponent(lblPrimerJug, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pnlPrimerJugLayout.setVerticalGroup(
+            pnlPrimerJugLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPrimerJugLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblPrimerJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
+                .addComponent(lblPrimerJug, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 132, 837, 330));
+        getContentPane().add(pnlPrimerJug, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 132, 837, 330));
 
-        jLabel1.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
-        jLabel1.setText("Jugador 1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 81, -1, -1));
+        lblJugador1.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
+        lblJugador1.setText("Jugador 1");
+        getContentPane().add(lblJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 81, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
-        jLabel2.setText("Jugador 2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 81, -1, -1));
+        lblJugador2.setFont(new java.awt.Font("Dotum", 0, 13)); // NOI18N
+        lblJugador2.setText("Jugador 2");
+        getContentPane().add(lblJugador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 81, -1, -1));
 
         txtJugador1.setFont(new java.awt.Font("Dotum", 0, 14)); // NOI18N
         txtJugador1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -177,10 +177,10 @@ public class FRMUsuarios extends javax.swing.JFrame {
         });
         getContentPane().add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 470, 120, 60));
 
-        jLabel4.setFont(new java.awt.Font("Dotum", 1, 18)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("NUEVA PARTIDA");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 0, 940, 70));
+        lblEncabezado.setFont(new java.awt.Font("Dotum", 1, 36)); // NOI18N
+        lblEncabezado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEncabezado.setText("NUEVA PARTIDA");
+        getContentPane().add(lblEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 0, 940, 70));
 
         btnAtras.setContentAreaFilled(false);
         btnAtras.setOpaque(true);
@@ -242,8 +242,8 @@ public class FRMUsuarios extends javax.swing.JFrame {
         txtJugador1.setText("");
         txtJugador2.setText("");
 
-        Font auxFont = lblPrimerJugador.getFont();
-        lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), 1));
+        Font auxFont = lblPrimerJug.getFont();
+        lblPrimerJug.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), 1));
 
         iniciarJuego = false;
         btnJugar.setEnabled(false);
@@ -311,17 +311,17 @@ public class FRMUsuarios extends javax.swing.JFrame {
             // Selección aleatoria del jugador
             selecionarTur = (int) (Math.random() * 2) + 1;
             if (selecionarTur == 1) {
-                lblPrimerJugador.setText(txtJugador1.getText());
+                lblPrimerJug.setText(txtJugador1.getText());
             } else {
-                lblPrimerJugador.setText(txtJugador2.getText());
+                lblPrimerJug.setText(txtJugador2.getText());
             }
 
             t = new Timer(1, (ActionEvent e) -> {
                 if (tamaño < 100) {
                     // Recojo la fuente que se esta utilizando actualmente.
-                    Font auxFont = lblPrimerJugador.getFont();
+                    Font auxFont = lblPrimerJug.getFont();
                     //Aplico la fuente actual, y al final se define el tamaño del texto
-                    lblPrimerJugador.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), tamaño));
+                    lblPrimerJug.setFont(new Font(auxFont.getFontName(), auxFont.getStyle(), tamaño));
 
                     tamaño = tamaño + 4;
                 } else if (tamaño >= 100 && tamaño < 800) {
@@ -418,11 +418,11 @@ public class FRMUsuarios extends javax.swing.JFrame {
     private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnJugar;
     private javax.swing.JButton btnLimpiar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblPrimerJugador;
+    private javax.swing.JLabel lblEncabezado;
+    private javax.swing.JLabel lblJugador1;
+    private javax.swing.JLabel lblJugador2;
+    private javax.swing.JLabel lblPrimerJug;
+    private javax.swing.JPanel pnlPrimerJug;
     private javax.swing.JTextField txtJugador1;
     private javax.swing.JTextField txtJugador2;
     // End of variables declaration//GEN-END:variables
