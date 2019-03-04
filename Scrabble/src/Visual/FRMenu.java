@@ -10,8 +10,18 @@ import java.awt.Toolkit;
 import javax.swing.JButton;
 
 /**
+ * Ventana de menu
  *
- * @author estudiantes
+ * @author <a href="https://github.com/Cuanse">Cuanse</a>
+ * @author  <a href="https://github.com/jgruizba">Johnatan</a>
+ * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
+ * @version 1.0
+ * @see Visual.FRMInicio
+ * @see Visual.FRMAcerca
+ * @see Visual.FRMPuntaje
+ * @see Visual.FRMTablero
+ * @see Visual.FRMUsuarios
+ * @see Visual.FRMenu
  */
 public class FRMenu extends javax.swing.JFrame {
 
@@ -21,7 +31,7 @@ public class FRMenu extends javax.swing.JFrame {
     public FRMenu() {
         initComponents();
         super.setLocationRelativeTo(null);
-        this.getContentPane().setBackground(new java.awt.Color(255,255,255));
+        this.getContentPane().setBackground(new java.awt.Color(255, 255, 255));
     }
 
     /**
@@ -180,18 +190,18 @@ public class FRMenu extends javax.swing.JFrame {
 
         return retValue;
     }
-    
+
     // Eventos visuales de botones
-    public void mouseEntrante(JButton boton){
+    public void mouseEntrante(JButton boton) {
         boton.setBackground(new java.awt.Color(61, 179, 229));
     }
-    
-    public void mouseSaliente(JButton boton){
+
+    public void mouseSaliente(JButton boton) {
         //boton.setBackground(new java.awt.Color(39,170,240));
-        boton.setBackground(new java.awt.Color(39,170,240));
+        boton.setBackground(new java.awt.Color(39, 170, 240));
     }
-    
-    public void mousePulsado(JButton boton){
+
+    public void mousePulsado(JButton boton) {
         boton.setBackground(new java.awt.Color(30, 156, 209));
     }
     // </editor-fold>  

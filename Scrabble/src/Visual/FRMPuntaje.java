@@ -129,8 +129,8 @@ public class FRMPuntaje extends javax.swing.JFrame {
     private void initComponents() {
 
         btnAtras = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        scpPuntajes = new javax.swing.JScrollPane();
+        tblPuntajes = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImage(getIconImage());
@@ -163,7 +163,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblPuntajes.setModel(new javax.swing.table.DefaultTableModel(
             /* new Object [][] {
                 {"#1", Mejores[0].getNombre(), Mejores[0].getPuntaje(), Fecha[0]},
                 {"#2", Mejores[1].getNombre(), Mejores[1].getPuntaje(), Fecha[1]},
@@ -195,8 +195,8 @@ public class FRMPuntaje extends javax.swing.JFrame {
                 "#", "nombre", "Puntaje", "Fecha"
             }
         ));
-        jTable1.setRowHeight(40);
-        jScrollPane1.setViewportView(jTable1);
+        tblPuntajes.setRowHeight(40);
+        scpPuntajes.setViewportView(tblPuntajes);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -206,7 +206,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
                 .addGap(84, 84, 84)
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(scpPuntajes, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -214,7 +214,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(67, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scpPuntajes, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(93, 93, 93))
         );
@@ -303,7 +303,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane scpPuntajes;
+    private javax.swing.JTable tblPuntajes;
     // End of variables declaration//GEN-END:variables
 }

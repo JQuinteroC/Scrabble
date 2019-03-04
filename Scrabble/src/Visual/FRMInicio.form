@@ -45,7 +45,7 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel1" max="32767" attributes="0"/>
+              <Component id="lblTitulo" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -54,7 +54,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" pref="299" max="-2" attributes="0"/>
+              <Component id="lblTitulo" min="-2" pref="299" max="-2" attributes="0"/>
               <EmptySpace pref="40" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnContinuar" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
@@ -123,7 +123,7 @@
         <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnSalir.setContentAreaFilled(false);&#xa;btnSalir.setOpaque(true);"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lblTitulo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dotum" size="100" style="1"/>
