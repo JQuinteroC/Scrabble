@@ -44,6 +44,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private JButton[][] tableroBot;
     private String palabra;
     private int AcumuladoTurno = 0;
+    private int[][] coordenadasAux = new int[7][2]; //en [][0] guarda i y en [][1] guarda j
     public boolean lugar = true;
 
     /**
@@ -70,6 +71,9 @@ public class FRMTablero extends javax.swing.JFrame {
         lblJugador1.setText(jugadorUno.getNombre());
         lblJugador2.setText(jugadorDos.getNombre());
         turnoJugUno = true;
+        for(int i = 0; i < 7; i++){
+        coordenadasAux[i][0] = -1;
+        }
         btnH8.setEnabled(true);
         mostrarFic();
         numeroTurno = 1;
@@ -2479,16 +2483,17 @@ public class FRMTablero extends javax.swing.JFrame {
                     public void mousePressed(java.awt.event.MouseEvent evt) {
                         if (boton.isEnabled()) {
                             if (boton.getPressedIcon() == null || !boton.getPressedIcon().equals(fichaSel.getImagenPeq())) {
-                                reproducirSon("/recursos/sonidoFic.wav", 80);                              
+                                reproducirSon("/recursos/sonidoFic.wav", 80); 
+                                boton.setPressedIcon(fichaSel.getImagenPeq());
                                     if(fichaSel.getImagenPeq() == null){
                                         bloquearCasi(ii,jj);
                                     }else{
                                         liberarCasi(ii,jj); //acá se llama a la funcion de liberacion Casillas                                        
-                                        guardaPal(fichaSel.getLetra() , fichaSel.getValor() );
+                                        guardaPal(fichaSel.getLetra() , fichaSel.getValor(), ii, jj);
                                         lugar = true;
                                     }      
                                     fichaSel = new Ficha();
-                                    boton.setPressedIcon(fichaSel.getImagenPeq());
+                                    
                             }
                         }
                     }
@@ -2515,7 +2520,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
     }
     
-    private void guardaPal(String letra, int valor){
+    private void guardaPal(String letra, int valor,int ii,int jj){
         try{  
                if(palabra == null){                    
                     palabra = letra;
@@ -2524,6 +2529,12 @@ public class FRMTablero extends javax.swing.JFrame {
                 }else{
                     palabra = letra + palabra.substring(0,palabra.length());  //aca letra + palabra
                 } 
+               for(int i = 0; i < 7 ; i++){ //guardo las coordenadas 
+                   if(coordenadasAux[i][0] == -1){
+                        coordenadasAux[i][0] = ii;
+                        coordenadasAux[i][1] = jj;
+                   }
+               }
                AcumuladoTurno += valor;
             
             System.out.println(palabra);
@@ -2580,6 +2591,14 @@ public class FRMTablero extends javax.swing.JFrame {
         
         if(tableroBot[ii][jj-1].isEnabled() && tableroBot[ii][jj-1].getPressedIcon() == null)
             tableroBot[ii][jj-1].setEnabled(false);
+        //condicion inicial inversa
+        if(tableroBot[ii+1][jj].isEnabled()&&tableroBot[ii-1][jj].isEnabled()&&
+                tableroBot[ii][jj+1].isEnabled()&&tableroBot[ii][jj-1].isEnabled()){
+                tableroBot[ii+1][jj].setEnabled(false);
+                tableroBot[ii-1][jj].setEnabled(false);
+                tableroBot[ii][jj+1].setEnabled(false);
+                tableroBot[ii][jj-1].setEnabled(false);
+            }
         }catch(NullPointerException nu){ /*por si son casillas del borde*/}
     }
     public Jugador getJugadorUno() {
@@ -2624,7 +2643,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnCambiarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarMousePressed
         mousePulsado(btnCambiar);
-        if (btnCambiar.isEnabled()) {
+        if (btnCambiar.getText().equals("Cambiar Fichas")) {
             if (turnoJugUno) {
                 jugadorUno.cambiarFic(bolsa);
             } else {
@@ -2633,6 +2652,22 @@ public class FRMTablero extends javax.swing.JFrame {
             mostrarFic();
             btnAceptar.setVisible(false);
             btnCambiar.setVisible(false);
+        }else{
+            // la idea de esto es deshacerse de toda la palabra que escribió previamente el jugador
+            fichaSel = new Ficha();
+            for(int i = 0; i < 7 ; i++){
+                tableroBot[0][0].setPressedIcon(fichaSel.getImagenPeq());
+            }
+            AcumuladoTurno = 0;
+            palabra = null;
+            // fichas reestablecidas
+            btnFicha1.setEnabled(true);
+            btnFicha2.setEnabled(true);
+            btnFicha3.setEnabled(true);
+            btnFicha4.setEnabled(true);
+            btnFicha5.setEnabled(true);
+            btnFicha6.setEnabled(true);
+            btnFicha7.setEnabled(true);
         }
     }//GEN-LAST:event_btnCambiarMousePressed
 
@@ -2647,7 +2682,7 @@ public class FRMTablero extends javax.swing.JFrame {
     private void btnPasarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPasarMousePressed
         mousePulsado(btnPasar);
         btnAceptar.setVisible(true);
-        btnCambiar.setVisible(true);
+        btnCambiar.setText("Cambiar Fichas");
         cambiarTur();
         cambiarColJug();
         mostrarFic();
@@ -2673,6 +2708,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(0);
         }
+        btnFicha1.setEnabled(false);
     }//GEN-LAST:event_btnFicha1MousePressed
 
     private void btnFicha2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha2MousePressed
@@ -2681,6 +2717,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(1);
         }
+        btnFicha2.setEnabled(false);
     }//GEN-LAST:event_btnFicha2MousePressed
 
     private void btnFicha3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha3MousePressed
@@ -2689,6 +2726,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(2);
         }
+        btnFicha3.setEnabled(false);
     }//GEN-LAST:event_btnFicha3MousePressed
 
     private void btnFicha4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha4MousePressed
@@ -2697,6 +2735,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(3);
         }
+        btnFicha4.setEnabled(false);
     }//GEN-LAST:event_btnFicha4MousePressed
 
     private void btnFicha5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha5MousePressed
@@ -2705,6 +2744,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(4);
         }
+        btnFicha5.setEnabled(false);
     }//GEN-LAST:event_btnFicha5MousePressed
 
     private void btnFicha6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha6MousePressed
@@ -2713,6 +2753,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(5);
         }
+        btnFicha6.setEnabled(false);
     }//GEN-LAST:event_btnFicha6MousePressed
 
     private void btnFicha7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFicha7MousePressed
@@ -2721,6 +2762,7 @@ public class FRMTablero extends javax.swing.JFrame {
         } else {
             fichaSel = jugadorDos.getFichasDis().get(6);
         }
+        btnFicha7.setEnabled(false);
     }//GEN-LAST:event_btnFicha7MousePressed
 
     
