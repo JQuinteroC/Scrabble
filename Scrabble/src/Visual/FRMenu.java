@@ -49,6 +49,7 @@ public class FRMenu extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menu");
         setIconImage(getIconImage());
         setResizable(false);
 

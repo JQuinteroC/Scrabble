@@ -70,6 +70,7 @@ public class FRMUsuarios extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Nueva partida");
         setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(943, 567));
         setPreferredSize(new java.awt.Dimension(943, 567));

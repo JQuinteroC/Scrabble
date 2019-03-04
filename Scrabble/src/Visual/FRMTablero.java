@@ -334,6 +334,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnAceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Tablero");
         setIconImage(getIconImage());
         setMinimumSize(new java.awt.Dimension(1044, 774));
         setResizable(false);

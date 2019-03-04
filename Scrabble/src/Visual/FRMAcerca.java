@@ -39,9 +39,14 @@ public class FRMAcerca extends javax.swing.JFrame {
     private void initComponents() {
 
         btnAtras = new javax.swing.JButton();
+        lblEncabezado = new javax.swing.JLabel();
+        scpPuntajes = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Acerca de");
         setIconImage(getIconImage());
+        setPreferredSize(new java.awt.Dimension(861, 616));
         setResizable(false);
 
         btnAtras.setContentAreaFilled(false);
@@ -68,21 +73,40 @@ public class FRMAcerca extends javax.swing.JFrame {
             }
         });
 
+        lblEncabezado.setFont(new java.awt.Font("Dotum", 1, 36)); // NOI18N
+        lblEncabezado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEncabezado.setText("ACERCA DE");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Dosis", 0, 13)); // NOI18N
+        jTextArea1.setRows(5);
+        scpPuntajes.setViewportView(jTextArea1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(94, 94, 94)
+                .addContainerGap()
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(705, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(scpPuntajes, javax.swing.GroupLayout.PREFERRED_SIZE, 769, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblEncabezado, javax.swing.GroupLayout.PREFERRED_SIZE, 940, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(490, Short.MAX_VALUE)
-                .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(116, 116, 116))
+                .addComponent(lblEncabezado, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 460, Short.MAX_VALUE)
+                        .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(scpPuntajes))
+                .addContainerGap())
         );
 
         pack();
@@ -132,5 +156,8 @@ public class FRMAcerca extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel lblEncabezado;
+    private javax.swing.JScrollPane scpPuntajes;
     // End of variables declaration//GEN-END:variables
 }

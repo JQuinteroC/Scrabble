@@ -131,9 +131,12 @@ public class FRMPuntaje extends javax.swing.JFrame {
         btnAtras = new javax.swing.JButton();
         scpPuntajes = new javax.swing.JScrollPane();
         tblPuntajes = new javax.swing.JTable();
+        lblEncabezado = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Mejores puntajes");
         setIconImage(getIconImage());
+        setPreferredSize(new java.awt.Dimension(861, 616));
         setResizable(false);
 
         btnAtras.setContentAreaFilled(false);
@@ -163,6 +166,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
             }
         });
 
+        tblPuntajes.setFont(new java.awt.Font("Dosis", 0, 13)); // NOI18N
         tblPuntajes.setModel(new javax.swing.table.DefaultTableModel(
             /* new Object [][] {
                 {"#1", Mejores[0].getNombre(), Mejores[0].getPuntaje(), Fecha[0]},
@@ -198,25 +202,33 @@ public class FRMPuntaje extends javax.swing.JFrame {
         tblPuntajes.setRowHeight(40);
         scpPuntajes.setViewportView(tblPuntajes);
 
+        lblEncabezado.setFont(new java.awt.Font("Dotum", 1, 36)); // NOI18N
+        lblEncabezado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEncabezado.setText("MEJORES PUNTAJES");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(84, 84, 84)
+                .addContainerGap()
                 .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(scpPuntajes, javax.swing.GroupLayout.PREFERRED_SIZE, 649, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addComponent(scpPuntajes, javax.swing.GroupLayout.DEFAULT_SIZE, 779, Short.MAX_VALUE)
+                .addContainerGap())
+            .addComponent(lblEncabezado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(67, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(scpPuntajes, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(93, 93, 93))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblEncabezado, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 438, Short.MAX_VALUE)
+                        .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(scpPuntajes))
+                .addContainerGap())
         );
 
         pack();
@@ -303,6 +315,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JLabel lblEncabezado;
     private javax.swing.JScrollPane scpPuntajes;
     private javax.swing.JTable tblPuntajes;
     // End of variables declaration//GEN-END:variables
