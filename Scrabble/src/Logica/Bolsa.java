@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 
 /**
  * Clase donde se guardaran todas las fichas disponles durante el juego
- * 
+ *
  * @author <a href="https://github.com/Cuanse">Cuanse</a>
  * @author  <a href="https://github.com/jgruizba">Johnatan</a>
  * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
@@ -24,7 +24,7 @@ public class Bolsa {
     private ArrayList<Ficha> bolsa;
 
     /**
-     *  Constructor e inicialización de las fichas
+     * Constructor e inicialización de las fichas
      */
     public Bolsa() {
         bolsa = new ArrayList<>();
@@ -33,7 +33,8 @@ public class Bolsa {
 
     /**
      * metodo agregar ficha nueva
-     * @param letra 
+     *
+     * @param letra
      * @param valor puntaje que tiene la letra
      * @param imagenA ruta de acceso a la imagen pequeña
      * @param imagenB ruta de acceso a la imagen grande
@@ -44,6 +45,7 @@ public class Bolsa {
 
     /**
      * metodo agregar ficha existente en una posicion aleatoria
+     *
      * @param ficha Objeto de tipo ficha
      * @see Logica.Ficha
      */
@@ -53,7 +55,7 @@ public class Bolsa {
     }
 
     /**
-     *metodo revolver fichas
+     * metodo revolver fichas
      */
     public void revolverFic() {
         Collections.shuffle(bolsa);
@@ -61,6 +63,7 @@ public class Bolsa {
 
     /**
      * retirar ficha final
+     *
      * @return El objeto ficha que salio de la bolsa
      */
     public Ficha retirarFic() {

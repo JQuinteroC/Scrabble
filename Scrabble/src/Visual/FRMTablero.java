@@ -51,10 +51,11 @@ public class FRMTablero extends javax.swing.JFrame {
 
     /**
      * Crea el formulario FRMTablero
+     *
      * @param jugadorUno
      * @param jugadorDos
      * @param tablero
-     * @param bolsa 
+     * @param bolsa
      * @see Logica.Jugador
      * @see Logica.Tablero
      * @see Logica.Bolsa
@@ -73,8 +74,8 @@ public class FRMTablero extends javax.swing.JFrame {
         lblJugador1.setText(jugadorUno.getNombre());
         lblJugador2.setText(jugadorDos.getNombre());
         turnoJugUno = true;
-        for(int i = 0; i < 7; i++){
-        coordenadasAux[i][0] = -1;
+        for (int i = 0; i < 7; i++) {
+            coordenadasAux[i][0] = -1;
         }
         btnH8.setEnabled(true);
         mostrarFic();
@@ -2187,13 +2188,13 @@ public class FRMTablero extends javax.swing.JFrame {
     }
 
     private void calcularPun() {
-        try{
-        ArrayList<Ficha> ficham = new ArrayList<>();
+        try {
+            ArrayList<Ficha> ficham = new ArrayList<>();
             if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
                 for (int i = 0; i < posicionPal.size(); i++) {
                     int x = posicionPal.get(0)[0];
                     int y = posicionPal.get(i)[1];
-                    ficham.add( tableroCas.getCasilla(x, y).getFicha());
+                    ficham.add(tableroCas.getCasilla(x, y).getFicha());
                     ficham.get(i).setCasillaAct(tableroCas.getCasilla(x, y));
                     palabra.agregarFic(ficham.get(i));
                     tableroBot[x][y].setEnabled(false);
@@ -2202,51 +2203,53 @@ public class FRMTablero extends javax.swing.JFrame {
                 for (int i = 0; i < posicionPal.size(); i++) {
                     int x = posicionPal.get(i)[0];
                     int y = posicionPal.get(0)[1];
-                    ficham.add( tableroCas.getCasilla(x, y).getFicha());
+                    ficham.add(tableroCas.getCasilla(x, y).getFicha());
                     ficham.get(i).setCasillaAct(tableroCas.getCasilla(x, y));
                     palabra.agregarFic(ficham.get(i));
                     tableroBot[x][y].setEnabled(false);
                 }
             }
-        }catch(IndexOutOfBoundsException in){/*Situacion en que no se complete la palabra con todas las posiciones*/}
-            palabra.calcularPun();
-            if(turnoJugUno){
-                jugadorUno.agregarJugada(palabra); 
-                jugadorUno.setPuntaje(palabra.getPuntaje());
-                System.out.println("Puntaje 1: " + jugadorUno.getPuntaje());
-            }else{
-                jugadorDos.agregarJugada(palabra); 
-                jugadorDos.setPuntaje(palabra.getPuntaje()); 
-                System.out.println("Puntaje 1: " + jugadorDos.getPuntaje());
-            }
-        
+        } catch (IndexOutOfBoundsException in) {/*Situacion en que no se complete la palabra con todas las posiciones*/
+        }
+        palabra.calcularPun();
+        if (turnoJugUno) {
+            jugadorUno.agregarJugada(palabra);
+            jugadorUno.setPuntaje(palabra.getPuntaje());
+            System.out.println("Puntaje 1: " + jugadorUno.getPuntaje());
+        } else {
+            jugadorDos.agregarJugada(palabra);
+            jugadorDos.setPuntaje(palabra.getPuntaje());
+            System.out.println("Puntaje 1: " + jugadorDos.getPuntaje());
+        }
+
     }
-    
+
     //Borra la ficha del tablero
     private void quitarFicTab() {
         letrasPal.clear();
         fichaSel = new Ficha();
-        try{
-        if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
-            for (int i = 0; i < posicionPal.size(); i++) {
-                int x =posicionPal.get(0)[0];
-                int y = posicionPal.get(i)[1];
-                tableroCas.getCasilla(x,y).setFicha(null);
-                tableroBot[x][y].setPressedIcon(fichaSel.getImagenPeq());
-                tableroBot[x][y].setEnabled(false);
+        try {
+            if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
+                for (int i = 0; i < posicionPal.size(); i++) {
+                    int x = posicionPal.get(0)[0];
+                    int y = posicionPal.get(i)[1];
+                    tableroCas.getCasilla(x, y).setFicha(null);
+                    tableroBot[x][y].setPressedIcon(fichaSel.getImagenPeq());
+                    tableroBot[x][y].setEnabled(false);
+                }
+            } else if (posicionPal.get(0)[1].intValue() == posicionPal.get(1)[1].intValue()) {
+                for (int i = 0; i < posicionPal.size(); i++) {
+                    int x = posicionPal.get(i)[0];
+                    int y = posicionPal.get(0)[1];
+                    tableroCas.getCasilla(x, y).setFicha(null);
+                    tableroBot[x][y].setPressedIcon(fichaSel.getImagenPeq());
+                    tableroBot[x][y].setEnabled(false);
+                }
             }
-        } else if (posicionPal.get(0)[1].intValue() == posicionPal.get(1)[1].intValue()) {
-            for (int i = 0; i < posicionPal.size(); i++) {
-                 int x =posicionPal.get(i)[0];
-                int y = posicionPal.get(0)[1];
-                tableroCas.getCasilla(x,y).setFicha(null);
-                tableroBot[x][y].setPressedIcon(fichaSel.getImagenPeq());
-                tableroBot[x][y].setEnabled(false);
-            }
+        } catch (IndexOutOfBoundsException in) {/*Situacion en que no se complete la palabra con todas las posiciones*/
         }
-        }catch(IndexOutOfBoundsException in){/*Situacion en que no se complete la palabra con todas las posiciones*/}
         posicionPal.clear();
-        if(numeroTurno == 1){
+        if (numeroTurno == 1) {
             for (int i = 0; i < 15; i++) {
                 tableroBot[7][i].setEnabled(false);
                 tableroBot[i][7].setEnabled(false);
@@ -2256,7 +2259,7 @@ public class FRMTablero extends javax.swing.JFrame {
             tableroBot[7][7].setEnabled(true);
         }
     }
-  
+
     //metodo mostrar fichas del jugador
     private void mostrarFic() {
         btnFicha1.setEnabled(true);
@@ -2519,25 +2522,24 @@ public class FRMTablero extends javax.swing.JFrame {
     //Poner ficha en el tablero
     private void ponerFic(JButton boton, int ii, int jj, boolean quitarLet) {
         reproducirSon("/recursos/sonidoFic.wav", 80);
-        
+
         boton.setPressedIcon(fichaSel.getImagenPeq());
-        tableroCas.setCasilla(ii, jj, fichaSel);   
-       if(posicionPal.size() < 2){
-           habilitarCas(true,true, true);
-       } else if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
+        tableroCas.setCasilla(ii, jj, fichaSel);
+        if (posicionPal.size() < 2) {
+            habilitarCas(true, true, true);
+        } else if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
             habilitarCas(false, true, true);
         } else if (posicionPal.get(0)[1].intValue() == posicionPal.get(1)[1].intValue()) {
             habilitarCas(true, false, true);
         }
 
-
-            if (!quitarLet) {
+        if (!quitarLet) {
             Integer[] posicion = new Integer[2];
             posicion[0] = ii;
             posicion[1] = jj;
             posicionPal.add(posicion);
         }
-        
+
         guardaPal(ii, jj);
         fichaSel = new Ficha();
     }
@@ -2668,40 +2670,41 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void habilitarCas(int ii, int jj) {
         try {
-            if(tableroBot[ii+1][jj].isEnabled()){
-                tableroBot[ii-1][jj].setEnabled(true);
-                tableroBot[ii+1][jj-1].setEnabled(false);
-                tableroBot[ii+1][jj+1].setEnabled(false);
+            if (tableroBot[ii + 1][jj].isEnabled()) {
+                tableroBot[ii - 1][jj].setEnabled(true);
+                tableroBot[ii + 1][jj - 1].setEnabled(false);
+                tableroBot[ii + 1][jj + 1].setEnabled(false);
             }
-            if(tableroBot[ii-1][jj].isEnabled()){
-                tableroBot[ii+1][jj].setEnabled(true);
-                tableroBot[ii-1][jj-1].setEnabled(false);
-                tableroBot[ii-1][jj+1].setEnabled(false);
+            if (tableroBot[ii - 1][jj].isEnabled()) {
+                tableroBot[ii + 1][jj].setEnabled(true);
+                tableroBot[ii - 1][jj - 1].setEnabled(false);
+                tableroBot[ii - 1][jj + 1].setEnabled(false);
             }
-            if(tableroBot[ii][jj+1].isEnabled()){
-                tableroBot[ii+1][jj+1].setEnabled(false);
-                tableroBot[ii-1][jj+1].setEnabled(false);
-                tableroBot[ii][jj-1].setEnabled(true);
+            if (tableroBot[ii][jj + 1].isEnabled()) {
+                tableroBot[ii + 1][jj + 1].setEnabled(false);
+                tableroBot[ii - 1][jj + 1].setEnabled(false);
+                tableroBot[ii][jj - 1].setEnabled(true);
             }
-            if(tableroBot[ii][jj-1].isEnabled()){
-                tableroBot[ii+1][jj-1].setEnabled(false);
-                tableroBot[ii-1][jj-1].setEnabled(false);
-                tableroBot[ii][jj+1].setEnabled(true);                
+            if (tableroBot[ii][jj - 1].isEnabled()) {
+                tableroBot[ii + 1][jj - 1].setEnabled(false);
+                tableroBot[ii - 1][jj - 1].setEnabled(false);
+                tableroBot[ii][jj + 1].setEnabled(true);
             }
             // Este es el unico caso que no se da a la vez que los anteriores (por eso tanto AND)
             //ademas solo se da al inicio del juego cuando solo está habilitado el centro
-            if(!tableroBot[ii+1][jj].isEnabled()&&!tableroBot[ii-1][jj].isEnabled()&&
-                    !tableroBot[ii][jj+1].isEnabled()&&!tableroBot[ii][jj-1].isEnabled()){
-                tableroBot[ii+1][jj].setEnabled(true);
-                tableroBot[ii-1][jj].setEnabled(true);
-                tableroBot[ii][jj+1].setEnabled(true);
-                tableroBot[ii][jj-1].setEnabled(true);
+            if (!tableroBot[ii + 1][jj].isEnabled() && !tableroBot[ii - 1][jj].isEnabled()
+                    && !tableroBot[ii][jj + 1].isEnabled() && !tableroBot[ii][jj - 1].isEnabled()) {
+                tableroBot[ii + 1][jj].setEnabled(true);
+                tableroBot[ii - 1][jj].setEnabled(true);
+                tableroBot[ii][jj + 1].setEnabled(true);
+                tableroBot[ii][jj - 1].setEnabled(true);
             }
             btnCambiarFic.setText("<html><center>Remover<br>Fichas</center></html>");
         } catch (NullPointerException nu) {
         }
     }
-   /*   
+
+    /*   
     private void bloquearCasi(int ii, int jj){
         try{
         if(tableroBot[ii+1][jj].isEnabled() && tableroBot[ii+1][jj].getPressedIcon() == null )
@@ -2725,7 +2728,7 @@ public class FRMTablero extends javax.swing.JFrame {
             }
 //        }catch(NullPointerException nu){ /*por si son casillas del borde}
     }
-    */
+     */
     //Se utlizan ambos paramatros por aparte para cuando sean combinados o uno solo
     private void habilitarCas(boolean verticales, boolean horizontales, boolean activa) {
         try {
@@ -2733,7 +2736,7 @@ public class FRMTablero extends javax.swing.JFrame {
                 for (int j = 0; j < 15; j++) {
                     tableroBot[i][j].setEnabled(false);
                     if (tableroCas.getCasilla(i, j).isOcupado()) {
-                        if(activa){
+                        if (activa) {
                             tableroBot[i][j].setEnabled(true);
                         }
                         if (!tableroCas.getCasilla(i + 1, j).isOcupado() && verticales) {
@@ -2755,7 +2758,7 @@ public class FRMTablero extends javax.swing.JFrame {
         }
     }
 // </editor-fold> 
-    
+
     private void btnCambiarFicMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarFicMouseEntered
         if (btnCambiarFic.isEnabled()) {
             mouseEntrante(btnCambiarFic);
@@ -2764,7 +2767,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnCambiarFicMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarFicMouseExited
         if (btnCambiarFic.isEnabled()) {
-                    mouseSaliente(btnCambiarFic);
+            mouseSaliente(btnCambiarFic);
         }
     }//GEN-LAST:event_btnCambiarFicMouseExited
 
@@ -2862,7 +2865,7 @@ public class FRMTablero extends javax.swing.JFrame {
         btnFicha7.setEnabled(false);
     }//GEN-LAST:event_btnFicha7MousePressed
 
-    
+
     private void btnSaltarTurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaltarTurActionPerformed
         quitarFicTab(); // Este metodo no borra la imagen
         cambiarTur();
@@ -2872,39 +2875,39 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void btnHacerJugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHacerJugActionPerformed
         calcularPun();
-        try{
-        if (turnoJugUno) {
-            for (int i = 0; i < 7; i++) {
-                for(int j = 0; j < 7; j++){
-                    
-                    /*System.out.println(" probando " + i+" "+ j);
+        try {
+            if (turnoJugUno) {
+                for (int i = 0; i < 7; i++) {
+                    for (int j = 0; j < 7; j++) {
+
+                        /*System.out.println(" probando " + i+" "+ j);
                     if(letrasPal.get(i).equals( String.valueOf(jugadorUno.getFichasDis().get(j).getLetra()) )){
                          System.out.println("aca se cambia")  ;
                     }
                     System.out.println(letrasPal.get(i));
                     System.out.println(jugadorUno.getFichasDis().get(j).getLetra());*/  // CODIGO TESTEO 
-                    
-                      if(letrasPal.get(i).equals( String.valueOf(jugadorUno.getFichasDis().get(j).getLetra()) )){
-                         jugadorUno.getFichasDis().remove(j);
-                            jugadorUno.getFichasDis().add(j,bolsa.retirarFic());  
+                        if (letrasPal.get(i).equals(String.valueOf(jugadorUno.getFichasDis().get(j).getLetra()))) {
+                            jugadorUno.getFichasDis().remove(j);
+                            jugadorUno.getFichasDis().add(j, bolsa.retirarFic());
                             break;
+                        }
                     }
-                 }
-            }
-            
-        } else {
-            for (int i = 0; i < 7; i++) {
-                for(int j = 0; j < 7; j++){
-                    if(letrasPal.get(i).equals( String.valueOf(jugadorDos.getFichasDis().get(j).getLetra()) )){ 
-                         jugadorDos.getFichasDis().remove(j);   // quito la que ya está en tablero
-                            jugadorDos.getFichasDis().add(j,bolsa.retirarFic());  // la coloco donde la quité
+                }
+
+            } else {
+                for (int i = 0; i < 7; i++) {
+                    for (int j = 0; j < 7; j++) {
+                        if (letrasPal.get(i).equals(String.valueOf(jugadorDos.getFichasDis().get(j).getLetra()))) {
+                            jugadorDos.getFichasDis().remove(j);   // quito la que ya está en tablero
+                            jugadorDos.getFichasDis().add(j, bolsa.retirarFic());  // la coloco donde la quité
                             break; // Evito que cambia TODAS las fichas de la letra tal (solo cambiaré una por una)
+                        }
                     }
-                 }
+                }
             }
+
+        } catch (IndexOutOfBoundsException Si) {/*por si sobrepasa la capacidad del ArrayList*/
         }
-        
-        }catch(IndexOutOfBoundsException Si){/*por si sobrepasa la capacidad del ArrayList*/}
         cambiarTur();
         cambiarColJug();
         mostrarFic();
@@ -2913,7 +2916,7 @@ public class FRMTablero extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHacerJugActionPerformed
 
     private void btnCambiarFicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCambiarFicActionPerformed
-         if (btnCambiarFic.getText().equals("<html><center>Saltar<br>turno</center></html>")) {
+        if (btnCambiarFic.getText().equals("<html><center>Saltar<br>turno</center></html>")) {
             if (turnoJugUno) {
                 jugadorUno.cambiarFic(bolsa);
             } else {
@@ -2921,10 +2924,10 @@ public class FRMTablero extends javax.swing.JFrame {
             }
             mostrarFic();
             btnCambiarFic.setVisible(false);
-        }else{
+        } else {
             // la idea de esto es deshacerse de toda la palabra que escribió previamente el jugador
             fichaSel = new Ficha();
-            for(int i = 0; i < 7 ; i++){
+            for (int i = 0; i < 7; i++) {
                 int j = posicionPal.get(0)[i];
                 tableroBot[0][0].setPressedIcon(fichaSel.getImagenPeq());
             }

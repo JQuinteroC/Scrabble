@@ -18,18 +18,14 @@ import java.util.ArrayList;
  * @see Logica.Palabra
  * @see Logica.Bolsa
  */
-public class Jugador {
+public class Jugador extends Persona {
 
     //Atributos de clase
-    private String nombre;
-    private int puntaje=0;
+    private int puntaje = 0;
     //fichas que tiene el jugador actualmente
     private ArrayList<Ficha> fichasDis = new ArrayList<>();
     //historial de jugadas
     private ArrayList<Palabra> jugadas = new ArrayList<>();
-
-    public Jugador() {
-    }
 
     /**
      * Constructor parametrizado
@@ -38,7 +34,7 @@ public class Jugador {
      * @param puntaje Puntaje que lleva el jugador
      */
     public Jugador(String nombre, int puntaje) {
-        this.nombre = nombre;
+        super(nombre);
         this.puntaje = puntaje;
         fichasDis = new ArrayList<>(7);
         jugadas = new ArrayList<>();

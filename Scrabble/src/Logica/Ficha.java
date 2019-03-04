@@ -25,9 +25,9 @@ public class Ficha {
     private Casilla casillaAct;
     private ImageIcon imagenPeq;
     private ImageIcon imagenGra;
-    
-    public Ficha(){
-        
+
+    public Ficha() {
+
     }
 
     /**

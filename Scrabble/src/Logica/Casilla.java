@@ -7,6 +7,7 @@ package Logica;
 
 /**
  * Clase que representa a una casilla del tablero
+ *
  * @author <a href="https://github.com/Cuanse">Cuanse</a>
  * @author  <a href="https://github.com/jgruizba">Johnatan</a>
  * @author <a href="https://github.com/JQuinteroC">JQuinteroC</a>
@@ -14,12 +15,13 @@ package Logica;
  * @see Logica.Tablero
  */
 public class Casilla {
+
     //tipo de casilla
     private boolean doblePal;
     private boolean doblePun;
     private boolean triplePal;
     private boolean triplePun;
-    
+
     private boolean salida;
     private boolean ocupado;
     //ficha que esta en la casilla
@@ -38,13 +40,15 @@ public class Casilla {
     }
 
     /**
-     * Constructor parametrizado de una casilla especial (doble palabra, doble letra, triple palabra, tripleletra)
+     * Constructor parametrizado de una casilla especial (doble palabra, doble
+     * letra, triple palabra, tripleletra)
+     *
      * @param doblePal indica si la casilla es doble palabra
      * @param doblePun indica si la casilla es doble letra
      * @param triplePal indica si la casilla es triple palabra
      * @param triplePun indica si la casilla es triple letra
      * @param salida -------------------------
-     * @param ocupado  indica si la casilla esta ocupada
+     * @param ocupado indica si la casilla esta ocupada
      */
     public Casilla(boolean doblePal, boolean doblePun, boolean triplePal, boolean triplePun, boolean salida, boolean ocupado) {
         this.doblePal = doblePal;
@@ -111,7 +115,6 @@ public class Casilla {
         this.ficha = ficha;
     }
 
-    
     @Override
     public String toString() {
         String valor;

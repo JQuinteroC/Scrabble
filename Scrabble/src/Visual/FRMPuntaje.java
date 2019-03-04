@@ -245,7 +245,7 @@ public class FRMPuntaje extends javax.swing.JFrame {
     }
 
     public void ordenar() {
-        Jugador aux = new Jugador(); //Variable auxiliar de tipo jugador
+        Jugador aux = new Jugador("J1", 0); //Variable auxiliar de tipo jugador
         String fechaAux;    //auxiliar
 
         /* for(int i = 0;i < Mejores.length; i++){ //Método burbuja para ordenar el arrayList 

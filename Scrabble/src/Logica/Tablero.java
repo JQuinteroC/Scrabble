@@ -22,7 +22,8 @@ public class Tablero {
 
     /**
      * Constructor parametrizado del tablero
-     * @param dimension 
+     *
+     * @param dimension
      */
     public Tablero(int dimension) {
         tablero = new Casilla[dimension][dimension];
@@ -32,6 +33,7 @@ public class Tablero {
 
     /**
      * Genera el tablero con cada casilla
+     *
      * @see Logica.Casilla
      */
     private void llenarTab() {
@@ -45,17 +47,18 @@ public class Tablero {
     public Casilla[][] getTablero() {
         return tablero;
     }
-    
-    public void setCasilla(int i, int j, Ficha ficha){
+
+    public void setCasilla(int i, int j, Ficha ficha) {
         tablero[i][j].setFicha(ficha);
         tablero[i][j].setOcupado(true);
     }
 
-    public Casilla getCasilla(int i, int j){
+    public Casilla getCasilla(int i, int j) {
         return tablero[i][j];
     }
+
     /**
-     *metodo agregar premios de las casillas especiales
+     * metodo agregar premios de las casillas especiales
      */
     private void agregarPre() {
         //casillas triple palabra
