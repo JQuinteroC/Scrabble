@@ -2188,23 +2188,23 @@ public class FRMTablero extends javax.swing.JFrame {
 
     private void calcularPun() {
         try{
-        Ficha ficham = new Ficha();
+        ArrayList<Ficha> ficham = new ArrayList<>();
             if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
                 for (int i = 0; i < posicionPal.size(); i++) {
                     int x = posicionPal.get(0)[0];
                     int y = posicionPal.get(i)[1];
-                    ficham = tableroCas.getCasilla(x, y).getFicha();
-                    ficham.setCasillaAct(tableroCas.getCasilla(x, y));
-                    palabra.agregarFic(ficham);
+                    ficham.add( tableroCas.getCasilla(x, y).getFicha());
+                    ficham.get(i).setCasillaAct(tableroCas.getCasilla(x, y));
+                    palabra.agregarFic(ficham.get(i));
                     tableroBot[x][y].setEnabled(false);
                 }
             } else if (posicionPal.get(0)[1].intValue() == posicionPal.get(1)[1].intValue()) {
                 for (int i = 0; i < posicionPal.size(); i++) {
                     int x = posicionPal.get(i)[0];
                     int y = posicionPal.get(0)[1];
-                    ficham = tableroCas.getCasilla(x, y).getFicha();
-                    ficham.setCasillaAct(tableroCas.getCasilla(x, y));
-                    palabra.agregarFic(ficham);
+                    ficham.add( tableroCas.getCasilla(x, y).getFicha());
+                    ficham.get(i).setCasillaAct(tableroCas.getCasilla(x, y));
+                    palabra.agregarFic(ficham.get(i));
                     tableroBot[x][y].setEnabled(false);
                 }
             }
@@ -2522,10 +2522,16 @@ public class FRMTablero extends javax.swing.JFrame {
         
         boton.setPressedIcon(fichaSel.getImagenPeq());
         tableroCas.setCasilla(ii, jj, fichaSel);   
-        
-        habilitarCas(ii, jj);
-        
-        if (!quitarLet) {
+       if(posicionPal.size() < 2){
+           habilitarCas(true,true, true);
+       } else if (posicionPal.get(0)[0].intValue() == posicionPal.get(1)[0].intValue()) {
+            habilitarCas(false, true, true);
+        } else if (posicionPal.get(0)[1].intValue() == posicionPal.get(1)[1].intValue()) {
+            habilitarCas(true, false, true);
+        }
+
+
+            if (!quitarLet) {
             Integer[] posicion = new Integer[2];
             posicion[0] = ii;
             posicion[1] = jj;
@@ -2720,6 +2726,34 @@ public class FRMTablero extends javax.swing.JFrame {
 //        }catch(NullPointerException nu){ /*por si son casillas del borde}
     }
     */
+    //Se utlizan ambos paramatros por aparte para cuando sean combinados o uno solo
+    private void habilitarCas(boolean verticales, boolean horizontales, boolean activa) {
+        try {
+            for (int i = 0; i < 15; i++) {
+                for (int j = 0; j < 15; j++) {
+                    tableroBot[i][j].setEnabled(false);
+                    if (tableroCas.getCasilla(i, j).isOcupado()) {
+                        if(activa){
+                            tableroBot[i][j].setEnabled(true);
+                        }
+                        if (!tableroCas.getCasilla(i + 1, j).isOcupado() && verticales) {
+                            tableroBot[i + 1][j].setEnabled(true);
+                        }
+                        if (!tableroCas.getCasilla(i, j + 1).isOcupado() && horizontales) {
+                            tableroBot[i][j + 1].setEnabled(true);
+                        }
+                        if (!tableroCas.getCasilla(i - 1, j).isOcupado() && verticales) {
+                            tableroBot[i - 1][j].setEnabled(true);
+                        }
+                        if (!tableroCas.getCasilla(i, j - 1).isOcupado() && horizontales) {
+                            tableroBot[i][j - 1].setEnabled(true);
+                        }
+                    }
+                }
+            }
+        } catch (NullPointerException nu) {
+        }
+    }
 // </editor-fold> 
     
     private void btnCambiarFicMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCambiarFicMouseEntered
@@ -2830,7 +2864,7 @@ public class FRMTablero extends javax.swing.JFrame {
 
     
     private void btnSaltarTurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaltarTurActionPerformed
-        quitarFicTab();
+        quitarFicTab(); // Este metodo no borra la imagen
         cambiarTur();
         cambiarColJug();
         mostrarFic();
@@ -2874,6 +2908,8 @@ public class FRMTablero extends javax.swing.JFrame {
         cambiarTur();
         cambiarColJug();
         mostrarFic();
+        habilitarCas(true, true, false);
+        posicionPal.clear();
     }//GEN-LAST:event_btnHacerJugActionPerformed
 
     private void btnCambiarFicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCambiarFicActionPerformed
@@ -2902,6 +2938,9 @@ public class FRMTablero extends javax.swing.JFrame {
             btnFicha6.setEnabled(true);
             btnFicha7.setEnabled(true);
         }
+        mostrarFic();
+        cambiarTur();
+        cambiarColJug();
     }//GEN-LAST:event_btnCambiarFicActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
